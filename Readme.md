@@ -1,4 +1,6 @@
-# Análisis del algoritmo de gradiente descendente y estudio empírico comparativo con técnicas metaheurísticas
+**English version below**
+
+# ES: Análisis del algoritmo de gradiente descendente y estudio empírico comparativo con técnicas metaheurísticas
 
 [![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue.svg)](https://www.python.org/)
 [![Jupyter Notebooks](https://img.shields.io/badge/Notebook-Jupyter-orange)](https://jupyter.org/)
@@ -47,7 +49,7 @@ Este proyecto ofrece una comprensión más precisa de las limitaciones y fortale
 - [PyADE](https://github.com/jmmvruano/PyADE)
 - `pickle` para guardado/carga de datos experimentales
 
----
+
 
 ## Cómo ejecutar los experimentos
 
@@ -62,7 +64,7 @@ El código está estructurado por dataset, y cada notebook puede ejecutarse de f
 
 >  Nota: El código no está extensamente comentado, pero su estructura es modular y fácilmente interpretable.
 
----
+
 
 ## Resultados y análisis
 
@@ -88,7 +90,7 @@ El estudio empírico se estructura en torno a cuatro ejes principales:
 - **SHADE-ILS-GD** mejora en algunas tareas concretas, pero no ofrece un rendimiento robusto en redes profundas.
 - En general, **SHADE-GD** es la propuesta más prometedora entre las metaheurísticas evaluadas.
 **Aportación original**: Se observa que el **rendimiento de las MH depende más del tamaño del dataset que de su complejidad** o del número de parámetros del modelo. Esta dependencia no ha sido ampliamente documentada en trabajos anteriores y representa una contribución novedosa.
----
+
 
 ## Conclusiones
 
@@ -105,13 +107,12 @@ Graduado en Matemáticas
 Graduado en Informática
 Universidad de Granada · 2025
 
----
+
 
 ## Licencia
 
 Este proyecto se publica bajo la licencia [MIT](LICENSE).
 
----
 
 ##  Portfolio
 
@@ -122,4 +123,133 @@ Este repositorio forma parte de mi portfolio profesional, como muestra de mi cap
 - Ejecutar experimentos reproducibles y realizar análisis comparativos rigurosos.
 
 ¡Gracias por tu interés!
+
+---------
+
+
+
+
+# EN: Analysis of the gradient descent algorithm and comparative empirical study with metaheuristic techniques
+
+[![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue.svg)](https://www.python.org/)
+[![Jupyter Notebooks](https://img.shields.io/badge/Notebook-Jupyter-orange)](https://jupyter.org/)
+[![PyTorch](https://img.shields.io/badge/Framework-PyTorch-red)](https://pytorch.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+- Developed entirely by Eduardo Morales Muñoz.
+- Directed by Pablo Mesejo Santiago and Javier Meri de la Maza.
+- Final project for the **Double Degree in Computer Engineering and Mathematics** at the **University of Granada**.
+- Grade obtained: **10.0  (Honors)**
+
+This repository contains the complete material of a research thesis that studies in depth the Gradient Descent (GD) algorithm and compares it empirically with various metaheuristic (MH) techniques for training deep neural networks.
+
+## Summary
+
+The work is divided into two main parts:
+
+-  **Mathematical part**: Theoretical study of the convergence conditions of Gradient Descent in its deterministic and stochastic versions, with an emphasis on the use of martingale theory as an analytical tool in the stochastic case.
+- **Computational part**: Extensive experimental analysis comparing GD- and MH-based optimizers (including the state-of-the-art SHADE-ILS algorithm) on classification and regression tasks, using both MLPs and ConvNets, with datasets and models of varying complexity. In addition, two original memetic techniques combining GD with MH are proposed.
+
+This project offers a more accurate understanding of the limitations and strengths of MHs compared to GD, providing a useful framework for future research and development of new hybrid or adaptive algorithms.
+
+## Repository structure
+
+```text
+├── memoria.pdf                # Complete thesis document
+├── presentacion.pdf           # Slides used in the defense
+├── codigo/                      # Source code in Python
+│   ├── comparative.ipynb      # Final analysis of results
+│   ├── dataset_X.ipynb        # One notebook per dataset
+│   ├── utilsTFG.py            # Reusable functions for notebooks
+│   ├── *.csv, *.txt           # Generated data and results
+├── latex/                     # LaTeX files of the thesis (compilable)
+```
+
+## Technologies used
+
+- Python 3.x
+- [PyTorch](https://pytorch.org/)
+- [scikit-learn](https://scikit-learn.org/)
+- [NumPy](https://numpy.org/)
+- [Pandas](https://pandas.pydata.org/)
+- [Matplotlib](https://matplotlib.org/)
+- [Seaborn](https://seaborn.pydata.org/)
+- [SciPy](https://scipy.org/)
+- [PyADE](https://github.com/jmmvruano/PyADE)
+- `pickle` for saving/loading experimental data
+
+
+
+## How to run the experiments
+
+The code is structured by dataset, and each notebook can be run independently.
+
+1. Open the corresponding notebook (`dataset_X.ipynb`).
+2. Run the data loading and processing cells.
+3. Run the code block corresponding to the desired experiment.
+4. The results are automatically stored as `.csv` or `.txt`.
+
+> Reproducibility is guaranteed by explicitly setting seeds in all experiments.
+
+> Note: The code is not extensively commented, but its structure is modular and easily interpretable.
+
+
+
+## Results and analysis
+
+The empirical study is structured around four main axes:
+
+###  1. Influence of task type
+- The impact of **classification vs. regression** tasks on the performance of MLPs trained with MH is analyzed.
+- The performance of models trained with GD is not significantly affected by task type.
+- In contrast, models trained with MH do show differences: using a Wilcoxon test (p-value = 0.023), it is concluded that **there are statistically significant differences in the performance of MHs depending on the nature of the task**, although this conclusion is sensitive to the set of optimizers selected.
+
+###  2. Factors affecting performance
+- A partial dependency analysis is used on classification tasks.
+- The most influential factor for **MH performance** is the **size of the dataset**.
+- In contrast, for GD training, performance depends more on the **complexity of the dataset** (number of classes, imbalance, information structure, etc.).
+
+###  3. Execution time
+- MH requires **less time per epoch**, but a **much higher number of epochs** (up to 100-200x more) to achieve results comparable to GD.
+- This makes it a **slower option overall**.
+- The number of instances in the dataset has a greater influence on time than the number of model parameters.
+
+###  4. Performance comparison
+- The new **SHADE-GD** approach outperforms SHADE in **17 out of 25 tasks**, showing greater consistency and generalization.
+- **SHADE-ILS-GD** improves on some specific tasks, but does not offer robust performance on deep networks.
+- Overall, **SHADE-GD** is the most promising proposal among the metaheuristics evaluated.
+**Original contribution**: It is observed that the **performance of MHs depends more on the size of the dataset than on its complexity** or the number of model parameters. This dependence has not been widely documented in previous work and represents a novel contribution.
+
+
+## Conclusions
+
+The results support the **superiority of gradient descent-based optimizers** over metaheuristics in terms of efficiency, stability, and overall performance in deep learning model training.
+
+However, this work offers a critical and detailed view of the **limitations and real potential of MH techniques**, identifying scenarios where they could be competitive and establishing a useful framework for future research and hybrid developments.
+
+
+## Author
+
+Produced by [Eduardo Morales Muñoz](https://www.linkedin.com/in/eduardo-morales-264101346/)  
+Directed by Pablo Mesejo Santiago and Javier Meri de la Maza
+Graduate in Mathematics
+Graduate in Computer Science
+University of Granada · 2025
+
+
+
+## License
+
+This project is published under the [MIT](LICENSE) license.
+
+
+##  Portfolio
+
+This repository is part of my professional portfolio, demonstrating my ability to:
+
+- Conduct applied research combining mathematics and data science.
+- Develop and evaluate advanced optimization and deep learning algorithms.
+- Perform reproducible experiments and conduct rigorous comparative analyses.
+
+Thank you for your interest!
 
