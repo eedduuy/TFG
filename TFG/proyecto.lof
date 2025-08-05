@@ -1,0 +1,29 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {figure}{\numberline {1}{\ignorespaces Ejemplo del proceso de optimización mediante el algoritmo de gradiente descendente}}{3}{figure.caption.7}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Evolución del número de artículos indexados anualmente en la base de datos Scopus relacionados con optimización y aprendizaje mediante métodos de descenso de gradiente}}{15}{figure.caption.8}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Efecto del tamaño del \textit {learning rate} en el comportamiento del algoritmo de gradiente descendente}}{18}{figure.caption.9}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Funciones de activación basadas en ReLU y su impacto en la optimización mediante gradiente descendente}}{20}{figure.caption.10}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Cálculo del error para una unidad oculta ilustando la propagación hacia delante y la propagación hacia atrás del error}}{42}{figure.caption.11}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Proceso de \textit {backpropagation} en una arquitectura modular de aprendizaje profundo}}{45}{figure.caption.12}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Representación de una red computacional como un grafo dirigido acíclico para diferenciación automática y \textit {backpropagation}}}{48}{figure.caption.13}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Aclaración de la diferencia entre el algoritmo de gradiente descendente y \textit {backpropagation}}}{56}{figure.caption.14}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Esquema general de la parte Informática de este TFG con los objetivos parciales a abordar en el mismo}}{57}{figure.caption.15}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Planificación de la parte Informática del presente TFG en modelo de cascada retroalimentada}}{63}{figure.caption.17}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Diagramas de Gantt de la planificación inicial y final del proyecto}}{64}{figure.caption.18}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Representación esquemática de una neurona artificial inspirada en el modelo biológico}}{66}{figure.caption.19}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Estructura de una red neuronal profunda con dos capas ocultas}}{67}{figure.caption.20}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Operación de correlación cruzada en una red neuronal convolucional}}{69}{figure.caption.21}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Proceso de convolución en una red neuronal convolucional}}{71}{figure.caption.22}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Ejemplo de una operación \textit {max pooling} en una red convolucional}}{71}{figure.caption.23}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Comparación entre una red neuronal tradicional y una red residual}}{73}{figure.caption.24}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Bloques residuales utilizados en \textit {Residual Networks}}}{74}{figure.caption.25}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Comparación entre el algoritmo de gradiente descendente estocástico original y usando el momento}}{76}{figure.caption.26}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Comparación del cálculo del tamaño del paso entre los métodos del momento original y el momento de Nesterov}}{77}{figure.caption.27}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Representación y cruce de cromosomas en algoritmos genéticos}}{80}{figure.caption.28}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Etapas de un algoritmo genético}}{81}{figure.caption.29}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Número de documentos indexados anualmente en la base de datos Scopus relacionados con el entrenamiento de modelos de aprendizaje profundo mediante diferentes enfoques}}{90}{figure.caption.30}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Diagramas de flujo de los algoritmos SHADE-GD y SHADE-ILS-GD}}{101}{figure.caption.31}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Ejemplos de imágenes de los conjuntos de datos utilizados en la experimentación para clasificación de imágenes}}{117}{figure.caption.51}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Análisis de dependencias parciales del rendimiento relativo al clasificador aleatorio en función de la complejidad del conjunto de datos, el tamaño del conjunto de datos y el número de parámetros del modelo}}{130}{figure.caption.61}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Representación gráfica del tiempo de ejecución de los algoritmos SHADE-ILS y AdamW en función del número de parámetros del modelo}}{132}{figure.caption.63}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Representación gráfica del tiempo de ejecución de AdamW en función del número de parámetros del modelo}}{133}{figure.caption.64}%

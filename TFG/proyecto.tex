@@ -1,0 +1,407 @@
+﻿\documentclass[a4paper,11pt]{article}
+%\documentclass[a4paper,twoside,11pt,titlepage]{book}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[backend=biber, style=alphabetic, date=year, eprint=false, isbn=false, url=false, doi=false]{biblatex} 
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{multirow}
+\usepackage{subfig}
+\usepackage{diagbox}
+\usepackage{verbatim}
+\usepackage{breakcites}
+%\usepackage{datetime}
+
+\DefineBibliographyStrings{spanish}{references = {Bibliografía}}
+\addbibresource{bibliografia.bib}
+\AtEveryBibitem{\clearfield{address}}
+\addto\captionsspanish{\renewcommand{\tablename}{Tabla}}
+%Que no se muestren las imagenes
+%\setkeys{Gin}{draft}
+
+% \usepackage[style=list, number=none]{glossary} %
+%\usepackage{titlesec}
+%\usepackage{pailatino}
+
+\decimalpoint
+\usepackage{dcolumn}
+\newcolumntype{.}{D{.}{\esperiod}{-1}}
+\makeatletter
+\addto\shorthandsspanish{\let\esperiod\es@period@code}
+\makeatother
+
+
+%\usepackage[chapter]{algorithm}
+\RequirePackage{verbatim}
+%\RequirePackage[Glenn]{fncychap}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{afterpage}
+
+\DefineBibliographyStrings{spanish}{
+  in = {}
+}
+
+
+
+\usepackage{longtable}
+
+%%%REFERENCIAS
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+% Definir colores personalizados
+\definecolor{urlblue}{rgb}{0.2, 0.4, 0.8}    % Azul apagado (web)
+\definecolor{citeviolet}{rgb}{0.5, 0.0, 0.2} % Violeta elegante (citas)
+\definecolor{anchorgray}{rgb}{0.4, 0.4, 0.4} % Gris neutro (otros)
+
+
+% Configurar los hipervínculos con colores personalizados
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,       % Enlaces internos
+    urlcolor=urlblue,         % Enlaces web
+    citecolor=citeviolet,     % Citas
+    anchorcolor=anchorgray    % Anclajes especiales
+}
+
+
+
+%Math packages
+\usepackage{dsfont}
+
+% ********************************************************************
+% Re-usable information
+% ********************************************************************
+\newcommand{\myTitle}{TFG\xspace}
+\newcommand{\myDegree}{Grado en ...\xspace}
+\newcommand{\myName}{Eduardo Morales Muñoz\xspace}
+\newcommand{\myProf}{Pablo Mesejo Santiago\xspace}
+\newcommand{\myOtherProf}{Javier Merí de la Maza\xspace}
+%\newcommand{\mySupervisor}{Put name here\xspace}
+\newcommand{\myFaculty}{Escuela Técnica Superior de Ingenierías Informática y de
+Telecomunicación\xspace}
+\newcommand{\myFacultyShort}{E.T.S. de Ingenierías Informática y de
+Telecomunicación\xspace}
+\newcommand{\myDepartment}{Departamento de ...\xspace}
+\newcommand{\myUni}{\protect{Universidad de Granada}\xspace}
+\newcommand{\myLocation}{Granada\xspace}
+\newcommand{\myTime}{\today\xspace}
+\newcommand{\myVersion}{Version 0.1\xspace}
+
+
+
+\hypersetup{
+pdfauthor = {\myName eedduuy@correo.ugr.es},
+pdftitle = {\myTitle TFG},
+pdfsubject = {},
+pdfkeywords = {palabra_clave1, palabra_clave2, palabra_clave3, ...},
+pdfcreator = {LaTeX con el paquete ....},
+pdfproducer = {pdflatex}
+}
+
+%\hyphenation{}
+
+
+%\usepackage{doxygen/doxygen}
+%\usepackage{pdfpages}
+\usepackage{url}
+\usepackage{colortbl,longtable}
+\usepackage[stable]{footmisc}
+%\usepackage{index}
+
+\makeindex
+%\usepackage[style=long, cols=2,border=plain,toc=true,number=none]{glossary}
+% \makeglossary
+
+% Definición de comandos que me son tiles:
+%\renewcommand{\indexname}{Índice alfabético}
+%\renewcommand{\glossaryname}{Glosario}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LO]{\leftmark}
+\fancyhead[RE]{\rightmark}
+\fancyhead[RO,LE]{\textbf{\thepage}}
+%\renewcommand{\chaptermark}[1]{\markboth{\textbf{#1}}{}}
+%\renewcommand{\sectionmark}[1]{\markright{\textbf{\thesection. #1}}}
+
+\setlength{\headheight}{1.5\headheight}
+
+
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+%Definimos los tipos teorema, ejemplo y definición podremos usar estos tipos
+%simplemente poniendo \begin{teorema} \end{teorema} ...
+\newtheorem{resultado}{Resultado}[section]
+\newtheorem{teorema}[resultado]{Teorema}
+\newtheorem{ejemplo}[resultado]{Ejemplo}
+\newtheorem{definicion}[resultado]{Definición}
+\newtheorem{proposicion}[resultado]{Proposición}
+\newtheorem{observacion}[resultado]{Observación}
+
+
+
+\definecolor{gray97}{gray}{.97}
+\definecolor{gray75}{gray}{.75}
+\definecolor{gray45}{gray}{.45}
+\definecolor{gray30}{gray}{.94}
+
+\lstset{ frame=Ltb,
+     framerule=0.5pt,
+     aboveskip=0.5cm,
+     framextopmargin=3pt,
+     framexbottommargin=3pt,
+     framexleftmargin=0.1cm,
+     framesep=0pt,
+     rulesep=.4pt,
+     backgroundcolor=\color{gray97},
+     rulesepcolor=\color{black},
+     %
+     stringstyle=\ttfamily,
+     showstringspaces = false,
+     basicstyle=\scriptsize\ttfamily,
+     commentstyle=\color{gray45},
+     keywordstyle=\bfseries,
+     %
+     numbers=left,
+     numbersep=6pt,
+     numberstyle=\tiny,
+     numberfirstline = false,
+     breaklines=true,
+   }
+ 
+% minimizar fragmentado de listados
+\lstnewenvironment{listing}[1][]
+   {\lstset{#1}\pagebreak[0]}{\pagebreak[0]}
+
+\newcommand{\bigrule}{\titlerule[0.5mm]}
+
+
+%Para conseguir que en las páginas en blanco no ponga cabecerass
+\makeatletter
+\def\clearpage{%
+  \ifvmode
+    \ifnum \@dbltopnum =\m@ne
+      \ifdim \pagetotal <\topskip
+        \hbox{}
+      \fi
+    \fi
+  \fi
+  \newpage
+  \thispagestyle{empty}
+  \write\m@ne{}
+  \vbox{}
+  \penalty -\@Mi
+}
+\makeatother
+
+%Uso Babel como paquete en español
+\addto\captionsspanish{\renewcommand{\listfigurename}{Índice de Figuras}}
+\addto\captionsspanish{\renewcommand{\listtablename}{Índice de Tablas}}
+
+
+%Empiezo con la numeración en romano para portada, prefacio e indices
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+
+\usepackage{pdfpages}
+
+%%%PRUEBA PARA NO IM SOLAS
+
+% Mejorar el control de las posiciones de las figuras
+\usepackage{float}
+\usepackage{placeins}
+
+% Ajustar parámetros de los flotantes
+\setcounter{totalnumber}{5}      % Permitir más figuras por página
+\renewcommand{\topfraction}{0.85} % Máximo 85% de la página para figuras
+\renewcommand{\textfraction}{0.15} % Mínimo 15% de la página para texto
+\renewcommand{\floatpagefraction}{0.7} % Mínimo 70% de contenido en una página de flotantes
+
+%EMPIEZA EL DOCUMENTO
+\begin{document}
+
+\sloppy
+%PORTADA
+\input{Plantilla_TFG_latex/portada/portada}
+
+%ORIGINALIDAD, FIRMAS, AGRADECIMIENTOS
+\input{Plantilla_TFG_latex/prefacios/prefacio}
+
+\newpage
+
+%\newpage
+%\thispagestyle{empty}
+%\mbox{}
+%\newpage
+
+
+%INDICE PRINCIPAL
+\tableofcontents
+\newpage
+
+%INDICES DE FIGURAS Y TABLAS
+\listoffigures
+\addcontentsline{toc}{section}{Índice de Figuras}
+\newpage
+
+\listoftables
+\addcontentsline{toc}{section}{Índice de Tablas}
+
+\newpage
+
+
+%\newpage
+%\thispagestyle{empty}
+%\mbox{}
+%\newpage
+
+\hypersetup{linkcolor=red}
+%
+%\mainmatter
+%\setlength{\parskip}{5pt}
+
+\setcounter{section}{0}
+%\input{Plantilla_TFG_latex/Informatica/capitulos/01_Introduccion}
+
+
+
+
+
+\input{Plantilla_TFG_latex/prefacios/abstract}
+
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+%\part{Parte matemática: gradiente descendente y \textit{backpropagation}}
+\vspace{4cm}
+
+\newpage 
+
+\part{Parte matemática: análisis del gradiente descendente, su convergencia y \textit{backpropagation}}
+
+\pagestyle{fancy}
+\fancyhead[LO]{\leftmark}
+\newpage
+
+
+%\input{Plantilla_TFG_latex/Matemática/Abstract}
+
+%\newpage
+%\thispagestyle{empty}
+%\mbox{}
+%\newpage
+
+\input{Plantilla_TFG_latex/Matemática/00Intro}
+
+\newpage
+
+\input{Plantilla_TFG_latex/Matemática/01_01Fundamentos}
+\newpage
+
+\input{Plantilla_TFG_latex/Matemática/2.GD}
+\newpage
+
+\input{Plantilla_TFG_latex/Matemática/Definición}
+\newpage
+\input{Plantilla_TFG_latex/Matemática/Conclusión}
+
+%\newpage
+%\thispagestyle{empty}
+%\mbox{}
+%\newpage
+
+
+\part{Parte informática: Estudio empírico comparativo entre gradiente descendiente y metaheurísticas para el entrenamiento de redes neuronales profundas}
+
+\vspace{4cm}
+
+\newpage
+
+%\input{Plantilla_TFG_latex/Informatica/Abstract}
+
+%\newpage
+%\thispagestyle{empty}
+%\mbox{}
+%\newpage
+
+\input{Plantilla_TFG_latex/Informatica/Introducción}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+\input{Plantilla_TFG_latex/Informatica/Fundamentos}
+\newpage
+\input{Plantilla_TFG_latex/Informatica/EstadoDelArte}
+\newpage
+
+
+\input{Plantilla_TFG_latex/Informatica/Propuestas}
+\newpage
+
+\input{Plantilla_TFG_latex/Informatica/Experimentacion}
+
+\input{Plantilla_TFG_latex/Informatica/Resultados}
+\newpage
+\input{Plantilla_TFG_latex/Informatica/Conclusiones
+}
+
+
+
+
+
+
+
+
+
+
+
+%
+%\input{capitulos/02_EspecificacionRequisitos}
+%
+%\input{capitulos/03_Planificacion}
+%
+%\input{capitulos/04_Analisis}
+%
+%\input{capitulos/05_Diseno}
+%
+%\input{capitulos/06_Implementacion}
+%
+%\input{capitulos/07_Pruebas}
+%
+%\input{capitulos/08_Conclusiones}
+%
+%%\chapter{Conclusiones y Trabajos Futuros}
+%
+%
+%%\nocite{*}
+
+\addcontentsline{toc}{section}{Bibliografía}
+%\addcontentsline{toc}{section}{Apéndice A}
+%\addcontentsline{toc}{section}{Apéndice B}
+\newpage
+\printbibliography
+
+
+%\newpage
+%\input{Plantilla_TFG_latex/Apéndices/ApendiceA}
+%\newpage
+%\input{Plantilla_TFG_latex/Apéndices/ApendiceB}
+%\bibliographystyle{miunsrturl}
+%
+%\appendix
+%\input{apendices/manual_usuario/manual_usuario}
+%%\input{apendices/paper/paper}
+%\input{glosario/entradas_glosario}
+% \addcontentsline{toc}{chapter}{Glosario}
+% \printglossary
+%\chapter*{}
+%\thispagestyle{empty}
+
+\end{document}

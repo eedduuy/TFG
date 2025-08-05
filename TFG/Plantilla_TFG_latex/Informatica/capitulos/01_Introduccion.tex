@@ -1,0 +1,89 @@
+\section{Introducción}
+
+ %El más común es el aprendizaje supervisado \cite{mitchell1997machine}, donde la tarea $T$ es mapear una función $f$ desde unas entradas $x \in X$ hacia unas salidas $y \in Y$. Las entradas también son llamadas características y las salidas etiquetas. La experiencia $E$ es el conjunto de N parejas $\mathcal{D}=\left \{ (x_n,y_n) \right \} ^{N}_{n=1} $ que llamamos conjunto de entrenamiento. 
+
+
+%En los problemas de clasificación, la salida es un conjunto no ordenado $Y= \left \{ 1,2,...,C \right \}$ donde sus elementos son denominados clases. Las tareas de clasificación de imágenes tienen un conjunto de imágenes $X$ como entrada, siendo $X=\mathds{R}^D$ donde $D=C \times D_1 \times D_2$. $C$ es el número de canales de la imágen (por ejemplo 3 si es en color RGB y 1 en escala de grises) y $D_1 \times D_2$ las dimensiones en píxeles de las imágenes.
+
+ %Se trata también del enfoque sobre el que más se ha investigado en el aprendizae automático. \footnote{Realizando una búsqueda en Google Scholar obtenemos 6.8M de resultados para \textit{deep learning}, por encima de los 3.21M para \textit{logistic regression}, 5.51M para \textit{linear regression}, 3.58M para \textit{support vector machine} y 0.78M para \textit{gradient boosting}}. 
+
+
+
+
+
+
+%Este término muchas veces se confunde con el propio algoritmo de aprendizaje (gradiente descentente), ya que aunque existen otras alternativas para este cálculo como los métodos numéricos 
+
+
+%En las principales familias de modelos en cuanto a avances y resultados obtenidos como redes neuronales (ya sea convolucionales, recurrentes o con memoria), redes generativas adversarias o \textit{transformers}, el algoritmo de aprendizaje más usado es el descenso de gradiente, por ende en la mayoría está implícito el uso de \textit{backpropagation}.
+
+%
+
+
+
+Las metaheurísticas \cite{MHDef} son métodos de resolución que combinan procedimientos de mejora local y estrategias de alto nivel para crear un algoritmo capaz de escapar óptimos locales y desarrollar una búsqueda robusta del espacio de soluciones . Resultan especialmente útiles en problemas donde no existe una heurística específica o ésta es demasiado costosa computacionalmente, ya que pueden alcanzar soluciones cercanas a la óptima con un coste muy reducido. Su uso en el aprendizaje automático es cada vez más extendido, siendo usadas en diferentes tareas como entrenamiento de modelos, selección de hiperparámetros o elección de las arquitecturas de los modelos, con resultados diversos en cada una de estas tareas. 
+
+
+%Los algoritmos genéticos \cite{MHDef} son una clase de algoritmos metaheurísticos inspirados en el proceso de selección natural y de evolución. Se basan en los principios de herencia, mutación y selección para desarrollar una población de soluciones de manera iterativa. Las soluciones son representadas como individuos o cromosomas, con una estructura dependiente del problema, y se evalúa su calidad con una función objetivo. Son una aproximación flexible y potente a la optimización, resolviendo una amplia gama de problemas de diversos ámbitos como financias, ingeniería o aprendizaje automático. Los algoritmos meméticos \cite{MHDef} son técnicas de optimización metaheurísticas basadas en la combinación de componentes de búsqueda global y local, usando conocimiento específico del problema, a diferencia de los algoritmos genéticos que no la usan. Suelen fundamentarse en estrategias basadas en población donde cada cierto número de generaciones se aplica un algoritmo de búsqueda local.
+
+
+\subsection{Motivación}
+
+Las redes neuronales profundas han permitido desarrollar modelos con muy buenos resultados en la última década y han favorecido en gran medida el desarrollo de la investigación en el aprendizaje automático. La estrategia más común que se ha tenido de entrenarlas ha sido, y sigue siendo a día de hoy, el algoritmo de gradiente descendente, por lo que están estrechamente relacionadas. La herramienta que hace posible a nivel de eficiencia computacional y escalabilidad el cálculo del gradiente y por tanto el entrenamiento de estos modelos, es \textit{backpropagation}. Aunque se estén desarrollando nuevas estrategias \cite{Metaheuristics_train} para el ajuste de pesos, sigue resultando una piedra angular y su papel en el entrenamiento de modelos desde la década de los 1990s es crucial. Estas nuevas técnicas, principalmente metaheurísticas, todavía no han logrado igualarse a las clásicas en sus resultados y costes computacionales en la tarea del ajuste de pesos, aunque se usan muy satisfactoriamente en otras tareas como la selección de hiperparámetros y arquitecturas de un modelo \cite{MHforNeuralArchAndHyper}.
+
+Algunos problemas importantes abiertos en el campo son:
+
+\begin{itemize}
+ %   \item \textbf{Interpretabilidad}: a pesar de su gran rendimiento las redes neuronales profundas carecen totalmente de interpretabilidad, y se están desarrollando técnicas para poder explicar qué decisiones toman los modelos y por qué. \cite{interpr}
+
+    \item \textbf{Estabilidad en el entrenamiento}: los algoritmos de aprendizaje son en general muy sensibles a la elección de los hiperparámetros y la inicialización de los pesos de los modelos, que pueden llevar a problemas de convergencia como desvanecimiento o explosión de gradiente. \cite{stabilityProblem2}
+
+    \item \textbf{
+
+    \item \textbf{Entender las dinámicas de optimización y las gráficas de la función de coste}: estos afectan a las propiedades de convergencia y a la propiedad de generalización. Se busca desarrollar conocimientos teóricos y herramientas prácticas para poder visualizar las trayectorias de optimización y las gráficas de la función de coste. \cite{problem4Loss&LandScape}
+
+    \item \textbf{Sobreajuste}: ocurre cuando un modelo memoriza el conjunto de entrenamiento en lugar de aprender los patrones de los datos. Son necesarias técnicas y modelos que eviten esto y permitan generalizar el conocimiento ante datos de entrada no vistos anteriormente \cite{GoodFellowBook}.
+\end{itemize}
+
+Como vemos estos problemas se relacionan directamente con el aprendizaje, y podrían aproximarse desde dos perspectivas: buscando estrategias alternativas que mejoren al gradiente descente en la minimización del error o bien ofrecer mejoras dentro de este enfoque, ya sea con optimizadores o consiguiendo un mejor rendimiento a través de modificaciones sobre el algoritmo \textit{backpropagation}. El enfoque de este TFG es doble intentando afrontar ambas. 
+
+
+En cuanto a la primera, se están desarrollando nuevas estrategias mayoritariamenta basadas en el uso de metaheurísticas como algoritmos bioinspirados. Aunque son interesantes en ciertos aspectos, aún están lejos de sustituir a las basadas en gradiente descendente debido al sobreajuste y tiempos de cálculo necesario \cite{MHtrainingClase}. Se analizarán las ventajas y desventajas de estas con respecto al enfoque clásico del gradiente descendente, realizando una descripción teórica de ambos enfoques y comparación empírica entre tres optimizadores clásicos: Adam \cite{Adam}, \textit{Nesterov Accelerated Gradient} \cite{Nesterov} y RMSProp \footnote{http://www.cs.toronto.edu/\~tijmen/csc321/slides/lecture\_slides\_lec6.pdf}; con un algoritmo genético. 
+
+
+Los optimizadores son modificaciones realizadas al algoritmo de aprendizaje de descenso de gradiente para mejorar su rendimiento, ya sea acelerando la convergencia, evitando mínimos locales o mejorando la capacidad de generalización del modelo. En base a si usan sólo información del gradiente o también de la matriz hessiana, se denominan respectivamente de primer o segundo orden. En la práctica los de segundo orden no se usan ya que requieren demasiados recursos computacionales en los problemas reales, aunque tienen mejor base teórica \cite{pml1Book}. Los optimizadores de primer orden enfocan la mejora desde tres estrategias distintas: el uso del momento, \textit{learning rates} adaptativos y una combinación de los dos anteriores \cite{overview_GD}. En base a esto se ha realizado la elección de los optimizadores a usar, seleccionando uno de cada estrategia, eligiendo el más citado en el caso del momento y de la combinación (\textit{Nesterov Accelerated Gradient} y Adam) y RMSProp en el otro caso, ya que no existe artículo de publicación para contar las citaciones pero es ampliamente usado y hay resultados empíricos que demuestran un mejor rendimiento frente a otros del mismo enfoque como Adagrad \cite{AdaGrad, overview_GD}. 
+
+
+Atendiendo a la segunda cuestión se investigará acerca del algoritmo \textit{backpropagation}. Se atenderá a su origen e importancia en la investigación en el aprendizaje automático y profundo, entendiendo que debido a su gran y extendido uso, una mejora aunque fuera pequeña tendría gran repercusión en campo. Para ello es necesario comprender sus bases, funcionamiento y usos, por lo que se definirá de forma detallada y se explicará su implementación práctica en librerías de programación especializadas como PyTorch \cite{PyTorch}. Además se analizarán propuestas alternativas actuales y posibles futuras. 
+
+
+ %Hablar del entrenamiento, que está muy muy muy estrechamente relacionado con backprop. Parte indispensable de la mejora en el campo es la mejora en el entrenamiento, y dos partes fundamentales de esto son mejorar backprop y mejorar la manera de ajustar los pesos. En cuanto a la primera se trata de lo más usado a nivel general, y en cada proceso de entrenamiento se usa tantas veces que cualquier cambio supondrá una mejora sustancial, por ello para poder proporcionar alguna mejora hay que entender qué es, en qué se basa y cómo se usa.
+
+%En cuanto a lo segundo, hay muchas maneras de entrenamiento de redes neuronales, la mas comun es descenso de gradiente, pero hay más. Tanto dentro como fuera del ambito de descenso de gradiente la literatura puede ser liosa. Queda claro que actualmente gradiente descendente es mejor pero ahí dentro hay muchas opciones y literatura confusa. Fuera hay opciones interesantes pero que no están asentadas. Describirlas y realizar una comparación, proponiendo una nueva.
+
+\subsection{Objetivos}
+
+El objetivo principal de este TFG es investigar acerca de la posibilidad de mejoras en las técnicas de entrenamiento de modelos en aprendizaje profundo, revisando para ello las técnicas clásicas basadas en gradiente descendiente y alternativas metaheurísticas. Se definen por tanto los siguiente objetivos y objetivos parciales:
+
+
+
+    \item Realizar una investigación teórica entre los enfoques de entrenamiento clásico basados en descenso de gradiente y las técnicas metaheurísticas, justificando la superioridad actual de las técnicas clásicas. 
+
+    \begin{enumerate}
+        \item Investigación sobre los optimizadores de primer orden del descenso de gradiente, analizando su base teórica, ventajas y desventajas.
+
+        \item Investigación de las técnicas metaheurísticas para el ajuste de pesos en los modelos, analizando sus ventajas y desventajas con respecto a las técnicas clásicas.
+
+        
+    \end{enumerate}
+
+    \item Realizar pruebas experimentales usando optimizadores de primer orden. Realizar una propuesta de técnica metaheurística y realizar desarrollo teórico y empírico. Dividimos entre los siguientes sobjetivos parciales:
+
+    \begin{enumerate}
+        \item Realización de pruebas experimentales de los tres optimizadores elegidos, comparando los resultados entre sí para analizar las ventajas y desventajas de cada estrategia.
+
+        \item Describir una propuesta de algoritmo genético y memético y realizar un desarrollo tanto teórico como empírico, comparándolo con los resultados obtenidos en el objetivo anterior.
+    \end{enumerate}
+\end{enumerate}
+
+

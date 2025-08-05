@@ -1,0 +1,43 @@
+\fancypagestyle{sin_titulo_cab}{
+    \fancyhf{}
+\fancyhead[LO]{}
+\fancyhead[RE]{\rightmark}
+\fancyhead[RO,LE]{\textbf{\thepage}}
+}
+
+\pagestyle{sin_titulo_cab}
+
+\section*{Resumen}
+\addcontentsline{toc}{section}{Resumen}
+
+En el presente Trabajo de Fin de Grado se realiza un estudio integral del algoritmo de gradiente descendente (GD) y su comparación con técnicas metaheurísticas (MH) en el entrenamiento de redes neuronales profundas. La investigación se divide en dos partes: una \textbf{teórica-matemática}, centrada en el \textbf{análisis del GD y su convergencia}, y otra \textbf{empírica-informática}, enfocada en la \textbf{evaluación comparativa del rendimiento de GD y MH} en diferentes tareas de aprendizaje profundo.
+
+En la parte matemática, se aborda el algoritmo de GD desde una perspectiva teórica,  analizando su funcionamiento, variantes, y problemas asociados a la convergencia. Se exploran las diferentes versiones del algoritmo, así como los elementos clave de su funcionamiento, prestando especial atención a su implementación en redes neuronales mediante el proceso de \textbf{\textit{backpropagation}}. Se estudia también el \textbf{concepto de subgradiente y su aplicación en funciones no diferenciables}. 
+
+El análisis de la convergencia se desarrolla utilizando herramientas avanzadas de teoría de probabilidad, como el \textbf{teorema de Robbins-Siegmund, el concepto de martingalas} y otros derivados del mismo como las casi supermartingalas. Se demuestra que, \textbf{bajo condiciones específicas de convexidad y suavidad, el algoritmo de GD converge al mínimo global en su versión por \textit{batches}} (\textit{Batch Gradient Descent}), mientras que \textbf{la versión estocástica} (\textit{Stochastic Gradient Descent}) \textbf{requiere un tratamiento probabilístico detallado para caracterizar las condiciones bajo las cuales la convergencia es posible}. Este análisis teórico proporciona una comprensión más profunda de los aspectos matemáticos subyacentes al comportamiento del GD y establece las condiciones necesarias para garantizar una convergencia estable en entornos de alta dimensionalidad y con ruido estocástico.
+
+En la parte informática, se presenta un estudio empírico comparativo entre el algoritmo de GD y técnicas MH para el entrenamiento de redes neuronales profundas. Utilizando \textbf{Perceptrones Multicapa} (MLP) para conjuntos de datos tabulares y \textbf{Redes Convolucionales} (ConvNets) para análisis de imágenes, se comparan optimizadores basados en GD, como RMSProp, NAG, Adam y AdamW, con algoritmos MH como SHADE y SHADE-ILS, que actualmente representan métodos de referencia en optimización continua \cite{MHtrainingClase}. \textbf{Como contribución original, se introducen dos enfoques híbridos meméticos novedosos: SHADE-GD y SHADE-ILS-GD, que combinan técnicas MH con GD}.
+
+La evaluación experimental se estructura en torno a cuatro ejes principales:
+
+\begin{itemize}
+
+\item \textbf{Impacto de la tarea (clasificación vs. regresión) en el rendimiento de los MLP entrenados con MH}: Entrenamos varios MLPs usando GD y MH para tareas de clasificación y regresión. Observamos que el rendimiento de los modelos entrenados con GD no varía según el tipo de tarea, medimos el rendimiento relativo de los modelos entrenados con MH respecto a los entrenados con GD. Tras comprobar la no normalidad de los datos, aplicamos el test de los rangos con signo de Wilcoxon y obtenemos un p-valor de 0.023, concluyendo que \textbf{existe una diferencia de rendimiento significativa} entre ambos tipos de tareas para los MLPs entrenados con MH, aunque la detección parece bastante sensible a los optimizadores incluidos, por lo que deben tomarse los resultados con cautela.
+
+\item \textbf{Estudio de factores que afectan el rendimiento en tareas de clasificación, tanto en MLPs como en ConvNets}: Realizamos un análisis de dependencias parciales, y utilizamos como medida de rendimiento la ganancia de \textit{accuracy} con respecto al clasificador aleatorio. De esta manera se determinó que \textbf{el tamaño del conjunto de datos es el factor más influyente en el empeoramiento del rendimiento de los modelos entrenados con MH}, mientras que en el caso del entrenamiento \textbf{con optimizadores basados en GD el factor más influyente resulta la complejidad del conjunto de datos}, entendiendo por ella factores como el número de clases, el desbalanceo de las mismas, o la cantidad y complejidad de información estructural y semántica dentro de una imagen (para los conjuntos de imágenes).
+
+\item \textbf{Tiempo de ejecución de las MH}: Analizamos los tiempos de ejecución obtenidos en la experimentación. Comprobamos si sus valores corresponden con los esperados y desglosamos el tiempo del algoritmo. Obtenemos la conclusión de que \textbf{las MH requieren de menor tiempo de ejecución por época, pero la necesidad de realizar muchas más épocas (del orden de 100 o 200 veces) para obtener resultados que se puedan acercar a las técnicas clásicas, las convierte en una opción más lenta}. Tanto en GD como en MH, el número de instancias afecta en un factor de entre 7 y 10 veces mayor que el número de parámetros del modelo.
+
+\item \textbf{Rendimiento general de las técnicas propuestas}: SHADE-GD demostró un mejor rendimiento que SHADE en 17 de las 25 tareas ejecutadas, mientras que SHADE solo destacó en 4 de ellas. Esto hace de \textbf{SHADE-GD una versión más consistente y con mejores resultados que el origina}l. Por otro lado, \textbf{SHADE-ILS-GD no presenta una mejora consistente con respecto a SHADE-ILS}. Aunque mejora el rendimiento hasta en un 14\% de \textit{accuracy} en algunas tareas sencillas concretas, es una opción menos estable en redes profundas. Entre las dos propuestas existe un rendimiento similar, aunque \textbf{consideramos mejor a SHADE-GD} ya que tiene mayor capacidad de generalización, y obtiene mejor resultado en la métrica en 11 tareas, por las 10 en las que lo hace SHADE-ILS-GD.
+
+\end{itemize}
+
+Este estudio nos ha permitido realizar una aportación que, hasta donde sabemos, es nueva en la literatura referente a optimizadores MH:
+
+\begin{itemize}
+
+\item \textbf{El rendimiento de los modelos entrenados con MH se ve más afectado por el tamaño del conjunto de datos que por la complejidad del mismo o por el número de parámetros del modelo}. En nuestros experimentos, las MH tienden a obtener peores resultados en conjuntos de datos más grandes, posiblemente debido a su limitada capacidad para extraer patrones complejos cuando el número de iteraciones se mantiene constante.
+
+\end{itemize}
+
+En conclusión, nuestros resultados respaldan la preferencia por los optimizadores basados en GD frente a las MH en el entrenamiento de modelos profundos, debido a su mayor eficiencia y robustez. Sin embargo, este trabajo aporta una visión más precisa sobre las limitaciones y el potencial de las MH, ofreciendo un marco analítico útil para futuras investigaciones que busquen mejorar su rendimiento o explorar aplicaciones específicas donde puedan ser competitivas.

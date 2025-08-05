@@ -1,0 +1,3186 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.9)  15 JUN 2025 18:45
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**proyecto.tex
+(./proyecto.tex
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-08-16>
+(c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2024/02/08 v1.4n Standard LaTeX document class
+(c:/texlive/2024/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2024/02/08 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count194
+\c@section=\count195
+\c@subsection=\count196
+\c@subsubsection=\count197
+\c@paragraph=\count198
+\c@subparagraph=\count199
+\c@figure=\count266
+\c@table=\count267
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+)
+(c:/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
+(c:/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+\lst@mode=\count268
+\lst@gtempboxa=\box52
+\lst@token=\toks18
+\lst@length=\count269
+\lst@currlwidth=\dimen142
+\lst@column=\count270
+\lst@pos=\count271
+\lst@lostspace=\dimen143
+\lst@width=\dimen144
+\lst@newlines=\count272
+\lst@lineno=\count273
+\lst@maxwidth=\dimen145
+
+(c:/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2024/05/25 1.10b (Carsten Heinz)
+)
+(c:/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/05/25 1.10b (Carsten Heinz)
+\c@lstnumber=\count274
+\lst@skipnumbers=\count275
+\lst@framebox=\box53
+)
+(c:/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2024/05/25 1.10b listings configuration
+))
+Package: listings 2024/05/25 1.10b (Carsten Heinz)
+
+(c:/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+
+(c:/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(c:/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+)
+(c:/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+)
+(c:/texlive/2024/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
+)
+(c:/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2024/08/29 v24.9 The Babel package
+\babel@savecnt=\count276
+\U@D=\dimen146
+\l@unhyphenated=\language89
+
+(c:/texlive/2024/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count277
+
+(c:/texlive/2024/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
+\es@quottoks=\toks21
+\es@quotdepth=\count278
+Package babel Info: Making " an active character on input line 570.
+Package babel Info: Making . an active character on input line 675.
+Package babel Info: Making < an active character on input line 722.
+Package babel Info: Making > an active character on input line 722.
+))
+(c:/texlive/2024/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
+Package babel Info: Importing font and identification data for spanish
+(babel)             from babel-es.ini. Reported on input line 11.
+)
+(c:/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
+
+(c:/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(c:/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(c:/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+(c:/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(c:/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count279
+)
+(c:/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(c:/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(c:/texlive/2024/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count280
+
+(c:/texlive/2024/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(c:/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(c:/texlive/2024/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count281
+\c@listtotal=\count282
+\c@listcount=\count283
+\c@liststart=\count284
+\c@liststop=\count285
+\c@citecount=\count286
+\c@citetotal=\count287
+\c@multicitecount=\count288
+\c@multicitetotal=\count289
+\c@instcount=\count290
+\c@maxnames=\count291
+\c@minnames=\count292
+\c@maxitems=\count293
+\c@minitems=\count294
+\c@citecounter=\count295
+\c@maxcitecounter=\count296
+\c@savedcitecounter=\count297
+\c@uniquelist=\count298
+\c@uniquename=\count299
+\c@refsection=\count300
+\c@refsegment=\count301
+\c@maxextratitle=\count302
+\c@maxextratitleyear=\count303
+\c@maxextraname=\count304
+\c@maxextradate=\count305
+\c@maxextraalpha=\count306
+\c@abbrvpenalty=\count307
+\c@highnamepenalty=\count308
+\c@lownamepenalty=\count309
+\c@maxparens=\count310
+\c@parenlevel=\count311
+\blx@tempcnta=\count312
+\blx@tempcntb=\count313
+\blx@tempcntc=\count314
+\c@blx@maxsection=\count315
+\blx@maxsegment@0=\count316
+\blx@notetype=\count317
+\blx@parenlevel@text=\count318
+\blx@parenlevel@foot=\count319
+\blx@sectionciteorder@0=\count320
+\blx@sectionciteorderinternal@0=\count321
+\blx@entrysetcounter=\count322
+\blx@biblioinstance=\count323
+\labelnumberwidth=\skip51
+\labelalphawidth=\skip52
+\biblabelsep=\skip53
+\bibitemsep=\skip54
+\bibnamesep=\skip55
+\bibinitsep=\skip56
+\bibparsep=\skip57
+\bibhang=\skip58
+\blx@bcfin=\read3
+\blx@bcfout=\write3
+\blx@langwohyphens=\language90
+\c@mincomprange=\count324
+\c@maxcomprange=\count325
+\c@mincompwidth=\count326
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(c:/texlive/2024/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'alphabetic.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count327
+\c@savedafterword=\count328
+\c@annotator=\count329
+\c@savedannotator=\count330
+\c@author=\count331
+\c@savedauthor=\count332
+\c@bookauthor=\count333
+\c@savedbookauthor=\count334
+\c@commentator=\count335
+\c@savedcommentator=\count336
+\c@editor=\count337
+\c@savededitor=\count338
+\c@editora=\count339
+\c@savededitora=\count340
+\c@editorb=\count341
+\c@savededitorb=\count342
+\c@editorc=\count343
+\c@savededitorc=\count344
+\c@foreword=\count345
+\c@savedforeword=\count346
+\c@holder=\count347
+\c@savedholder=\count348
+\c@introduction=\count349
+\c@savedintroduction=\count350
+\c@namea=\count351
+\c@savednamea=\count352
+\c@nameb=\count353
+\c@savednameb=\count354
+\c@namec=\count355
+\c@savednamec=\count356
+\c@translator=\count357
+\c@savedtranslator=\count358
+\c@shortauthor=\count359
+\c@savedshortauthor=\count360
+\c@shorteditor=\count361
+\c@savedshorteditor=\count362
+\c@labelname=\count363
+\c@savedlabelname=\count364
+\c@institution=\count365
+\c@savedinstitution=\count366
+\c@lista=\count367
+\c@savedlista=\count368
+\c@listb=\count369
+\c@savedlistb=\count370
+\c@listc=\count371
+\c@savedlistc=\count372
+\c@listd=\count373
+\c@savedlistd=\count374
+\c@liste=\count375
+\c@savedliste=\count376
+\c@listf=\count377
+\c@savedlistf=\count378
+\c@location=\count379
+\c@savedlocation=\count380
+\c@organization=\count381
+\c@savedorganization=\count382
+\c@origlocation=\count383
+\c@savedoriglocation=\count384
+\c@origpublisher=\count385
+\c@savedorigpublisher=\count386
+\c@publisher=\count387
+\c@savedpublisher=\count388
+\c@language=\count389
+\c@savedlanguage=\count390
+\c@origlanguage=\count391
+\c@savedoriglanguage=\count392
+\c@pageref=\count393
+\c@savedpageref=\count394
+\shorthandwidth=\skip59
+\shortjournalwidth=\skip60
+\shortserieswidth=\skip61
+\shorttitlewidth=\skip62
+\shortauthorwidth=\skip63
+\shorteditorwidth=\skip64
+\locallabelnumberwidth=\skip65
+\locallabelalphawidth=\skip66
+\localshorthandwidth=\skip67
+\localshortjournalwidth=\skip68
+\localshortserieswidth=\skip69
+\localshorttitlewidth=\skip70
+\localshortauthorwidth=\skip71
+\localshorteditorwidth=\skip72
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(c:/texlive/2024/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(c:/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+\c@textcitecount=\count395
+\c@textcitetotal=\count396
+\c@textcitemaxnames=\count397
+\c@biburlbigbreakpenalty=\count398
+\c@biburlbreakpenalty=\count399
+\c@biburlnumpenalty=\count400
+\c@biburlucpenalty=\count401
+\c@biburllcpenalty=\count402
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count403
+)
+Package biblatex Info: Trying to load bibliography style 'alphabetic'...
+Package biblatex Info: ... file 'alphabetic.bbx' found.
+
+(c:/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/alphabetic.bbx
+File: alphabetic.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(c:/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count404
+\c@bbx:relatedtotal=\count405
+))
+Package biblatex Info: Trying to load citation style 'alphabetic'...
+Package biblatex Info: ... file 'alphabetic.cbx' found.
+
+(c:/texlive/2024/texmf-dist/tex/latex/biblatex/cbx/alphabetic.cbx
+File: alphabetic.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(c:/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+
+(c:/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2024-08-16 L3 programming layer (loader) 
+
+(c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count406
+\l__pdf_internal_box=\box54
+))
+Package biblatex Info: ... and expl3
+(biblatex)             2024-08-16 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(c:/texlive/2024/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+(c:/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
+))
+(c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/05/23 v2.17q AMS math features
+\@mathmargin=\skip73
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks22
+\ex@=\dimen147
+))
+(c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen148
+)
+(c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count407
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count408
+\leftroot@=\count409
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count410
+\DOTSCASE@=\count411
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box55
+\strutbox@=\box56
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen149
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count412
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count413
+\dotsspace@=\muskip22
+\c@parentequation=\count414
+\dspbrk@lvl=\count415
+\tag@help=\toks23
+\row@=\count416
+\column@=\count417
+\maxfields@=\count418
+\andhelp@=\toks24
+\eqnshift@=\dimen150
+\alignsep@=\dimen151
+\tagshift@=\dimen152
+\tagwidth@=\dimen153
+\totwidth@=\dimen154
+\lineht@=\dimen155
+\@envbody=\toks25
+\multlinegap=\skip74
+\multlinetaggap=\skip75
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(c:/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(c:/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(c:/texlive/2024/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(c:/texlive/2024/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count419
+\float@exts=\toks27
+\float@box=\box57
+\@float@everytoks=\toks28
+\@floatcapt=\box58
+)
+\@float@every@algorithm=\toks29
+\c@algorithm=\count420
+)
+(c:/texlive/2024/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(c:/texlive/2024/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count421
+\c@ALG@rem=\count422
+\c@ALG@nested=\count423
+\ALG@tlm=\skip76
+\ALG@thistlm=\skip77
+\c@ALG@Lnr=\count424
+\c@ALG@blocknr=\count425
+\c@ALG@storecount=\count426
+\c@ALG@tmpcounter=\count427
+\ALG@tmplength=\skip78
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (c:/texlive/2024/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip79
+\multirow@cntb=\count428
+\multirow@dima=\skip80
+\bigstrutjot=\dimen156
+)
+(c:/texlive/2024/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(c:/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(c:/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen157
+\captionmargin=\dimen158
+\caption@leftmargin=\dimen159
+\caption@rightmargin=\dimen160
+\caption@width=\dimen161
+\caption@indent=\dimen162
+\caption@parindent=\dimen163
+\caption@hangindent=\dimen164
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count429
+\c@continuedfloat=\count430
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+)
+\c@KVtest=\count431
+\sf@farskip=\skip81
+\sf@captopadj=\dimen165
+\sf@capskip=\skip82
+\sf@nearskip=\skip83
+\c@subfigure=\count432
+\c@subfigure@save=\count433
+\c@lofdepth=\count434
+\c@subtable=\count435
+\c@subtable@save=\count436
+\c@lotdepth=\count437
+\sf@top=\skip84
+\sf@bottom=\skip85
+)
+(c:/texlive/2024/texmf-dist/tex/latex/diagbox/diagbox.sty
+Package: diagbox 2020/02/09 v2.3 Making table heads with diagonal lines
+
+(c:/texlive/2024/texmf-dist/tex/latex/pict2e/pict2e.sty
+Package: pict2e 2020/09/30 v0.4b Improved picture commands (HjG,RN,JT)
+
+(c:/texlive/2024/texmf-dist/tex/latex/pict2e/pict2e.cfg
+File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
+)
+Package pict2e Info: Driver file: pdftex.def on input line 112.
+Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 114.
+
+(c:/texlive/2024/texmf-dist/tex/latex/pict2e/p2e-pdftex.def
+File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
+)
+(c:/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+\pIIe@GRAPH=\toks30
+\@arclen=\dimen166
+\@arcrad=\dimen167
+\pIIe@tempdima=\dimen168
+\pIIe@tempdimb=\dimen169
+\pIIe@tempdimc=\dimen170
+\pIIe@tempdimd=\dimen171
+\pIIe@tempdime=\dimen172
+\pIIe@tempdimf=\dimen173
+)
+(c:/texlive/2024/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count438
+\calc@Bcount=\count439
+\calc@Adimen=\dimen174
+\calc@Bdimen=\dimen175
+\calc@Askip=\skip86
+\calc@Bskip=\skip87
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count440
+\calc@Cskip=\skip88
+)
+(c:/texlive/2024/texmf-dist/tex/latex/tools/array.sty
+Package: array 2024/06/14 v2.6d Tabular extension package (FMi)
+\col@sep=\dimen176
+\ar@mcellbox=\box59
+\extrarowheight=\dimen177
+\NC@list=\toks31
+\extratabsurround=\skip89
+\backup@length=\skip90
+\ar@cellbox=\box60
+)
+\diagbox@boxa=\box61
+\diagbox@boxb=\box62
+\diagbox@boxm=\box63
+\diagbox@wd=\dimen178
+\diagbox@ht=\dimen179
+\diagbox@insepl=\dimen180
+\diagbox@insepr=\dimen181
+\diagbox@outsepl=\dimen182
+\diagbox@outsepr=\dimen183
+)
+(c:/texlive/2024/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks32
+\verbatim@line=\toks33
+\verbatim@in@stream=\read4
+)
+(c:/texlive/2024/texmf-dist/tex/latex/breakcites/breakcites.sty)
+(c:/texlive/2024/texmf-dist/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2023/07/08 v1.06 decimal alignment package (DPC)
+)
+(c:/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2024/07/23 v4.3.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip91
+\f@nch@O@elh=\skip92
+\f@nch@O@erh=\skip93
+\f@nch@O@olh=\skip94
+\f@nch@O@orh=\skip95
+\f@nch@O@elf=\skip96
+\f@nch@O@erf=\skip97
+\f@nch@O@olf=\skip98
+\f@nch@O@orf=\skip99
+)
+(c:/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/05/23 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+)
+\Gin@req@height=\dimen184
+\Gin@req@width=\dimen185
+)
+(c:/texlive/2024/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
+\AP@output=\toks34
+\AP@partial=\box64
+\AP@footins=\box65
+)
+(c:/texlive/2024/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2024-04-26 v4.20 Multi-page Table package (DPC)
+\LTleft=\skip100
+\LTright=\skip101
+\LTpre=\skip102
+\LTpost=\skip103
+\LTchunksize=\count441
+\LTcapwidth=\dimen186
+\LT@head=\box66
+\LT@firsthead=\box67
+\LT@foot=\box68
+\LT@lastfoot=\box69
+\LT@gbox=\box70
+\LT@cols=\count442
+\LT@rows=\count443
+\c@LT@tables=\count444
+\c@LT@chunks=\count445
+\LT@p@ftn=\toks35
+)
+(c:/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-07-10 v7.01j Hypertext links for LaTeX
+
+(c:/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(c:/texlive/2024/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(c:/texlive/2024/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(c:/texlive/2024/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(c:/texlive/2024/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(c:/texlive/2024/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count446
+)
+(c:/texlive/2024/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen187
+\Hy@linkcounter=\count447
+\Hy@pagecounter=\count448
+
+(c:/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-07-10 v7.01j Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(c:/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count449
+
+(c:/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-07-10 v7.01j Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4157.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count450
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen188
+
+(c:/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(c:/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count451
+\Field@Width=\dimen189
+\Fld@charsize=\dimen190
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring OFF on input line 6062.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+
+(c:/texlive/2024/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count452
+\c@Item=\count453
+\c@Hfootnote=\count454
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(c:/texlive/2024/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2024-07-10 v7.01j Hyperref driver for pdfTeX
+
+(c:/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count455
+\c@bookmark@seq@number=\count456
+
+(c:/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(c:/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip104
+)
+(c:/texlive/2024/texmf-dist/tex/latex/cleveref/cleveref.sty
+Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
+Package cleveref Info: `hyperref' support loaded on input line 2370.
+LaTeX Info: Redefining \cref on input line 2370.
+LaTeX Info: Redefining \Cref on input line 2370.
+LaTeX Info: Redefining \crefrange on input line 2370.
+LaTeX Info: Redefining \Crefrange on input line 2370.
+LaTeX Info: Redefining \cpageref on input line 2370.
+LaTeX Info: Redefining \Cpageref on input line 2370.
+LaTeX Info: Redefining \cpagerefrange on input line 2370.
+LaTeX Info: Redefining \Cpagerefrange on input line 2370.
+LaTeX Info: Redefining \labelcref on input line 2370.
+LaTeX Info: Redefining \labelcpageref on input line 2370.
+Package cleveref Info: `algorithmicx' support loaded on input line 3120.
+Package cleveref Info: `listings' support loaded on input line 3131.
+Package cleveref Info: `subfig' support loaded on input line 3164.
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 70.
+
+(c:/texlive/2024/texmf-dist/tex/latex/doublestroke/dsfont.sty
+Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
+)
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 105.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 105.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 105.
+
+(c:/texlive/2024/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
+\everycr=\toks36
+\minrowclearance=\skip105
+\rownum=\count457
+)
+(c:/texlive/2024/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2023/07/05 v6.0f a miscellany of footnote facilities
+\FN@temptoken=\toks37
+\footnotemargin=\dimen191
+\@outputbox@depth=\dimen192
+Package footmisc Info: Declaring symbol style bringhurst on input line 696.
+Package footmisc Info: Declaring symbol style chicago on input line 704.
+Package footmisc Info: Declaring symbol style wiley on input line 713.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 724.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 744.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 765
+.
+)
+\@indexfile=\write4
+\openout4 = `proyecto.idx'.
+
+
+Writing index file proyecto.idx
+
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less.
+(fancyhdr)                Please consider using the `twoside' option on input l
+ine 128.
+
+
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less.
+(fancyhdr)                Please consider using the `twoside' option on input l
+ine 129.
+
+\c@resultado=\count458
+(c:/texlive/2024/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2024/08/20 v0.6b Insert pages of external PDF documents (AM)
+
+(c:/texlive/2024/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen193
+\ESO@tempdimb=\dimen194
+)
+\AM@pagewidth=\dimen195
+\AM@pageheight=\dimen196
+\AM@fboxrule=\dimen197
+
+(c:/texlive/2024/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2024/08/20 v0.6b Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count459
+\AM@pagebox=\box71
+\AM@global@opts=\toks38
+\AM@pagecnt=\count460
+\AM@toc@title=\toks39
+\AM@lof@heading=\toks40
+\c@AM@survey=\count461
+\AM@templatesizebox=\box72
+)
+(c:/texlive/2024/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count462
+\@quotereset=\count463
+(./proyecto.aux
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
+
+
+LaTeX Warning: Label `fig:tiemposgraf' multiply defined.
+
+
+LaTeX Warning: Label `fig:tiemposgraf@cref' multiply defined.
+
+)
+\openout1 = `proyecto.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 228.
+LaTeX Font Info:    ... okay on input line 228.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 228.
+LaTeX Font Info:    ... okay on input line 228.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 228.
+LaTeX Font Info:    ... okay on input line 228.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 228.
+LaTeX Font Info:    ... okay on input line 228.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 228.
+LaTeX Font Info:    ... okay on input line 228.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 228.
+LaTeX Font Info:    ... okay on input line 228.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 228.
+LaTeX Font Info:    ... okay on input line 228.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 228.
+LaTeX Font Info:    ... okay on input line 228.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 228.
+LaTeX Font Info:    ... okay on input line 228.
+\c@lstlisting=\count464
+ (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count465
+\scratchdimen=\dimen198
+\scratchbox=\box73
+\nofMPsegments=\count466
+\nofMParguments=\count467
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count468
+\MPscratchDim=\dimen199
+\MPnumerator=\count469
+\makeMPintoPDFobject=\count470
+\everyMPtoPDFconversion=\toks42
+) (c:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(c:/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Info: Redefining \. on input line 228.
+LaTeX Info: Redefining \% on input line 228.
+Package biblatex Info: Trying to load language 'spanish'...
+Package biblatex Info: ... file 'spanish.lbx' found.
+
+(c:/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/spanish.lbx
+File: spanish.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `proyecto.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'proyecto.bbl' found.
+ (./proyecto.bbl)
+Package biblatex Info: Reference section=0 on input line 228.
+Package biblatex Info: Reference segment=0 on input line 228.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+ (c:/texlive/2024/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring ON on input line 228.
+ (./proyecto.out) (./proyecto.out)
+\@outlinefile=\write5
+\openout5 = `proyecto.out'.
+
+ (c:/texlive/2024/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+(c:/texlive/2024/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+
+(c:/texlive/2024/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+(./Plantilla_TFG_latex/portada/portada.tex
+\centeroffset=\skip106
+<Plantilla_TFG_latex/imagenes/logo_ugr.jpg, id=381, 777.90625pt x 231.86626pt>
+File: Plantilla_TFG_latex/imagenes/logo_ugr.jpg Graphic file (type jpg)
+<use Plantilla_TFG_latex/imagenes/logo_ugr.jpg>
+Package pdftex.def Info: Plantilla_TFG_latex/imagenes/logo_ugr.jpg  used on inp
+ut line 12.
+(pdftex.def)             Requested size: 251.9989pt x 75.11151pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
+
+
+(c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
+
+
+(c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<Plantilla_TFG_latex/imagenes/fcienciasLogo.png, id=382, 289.08pt x 245.718pt>
+File: Plantilla_TFG_latex/imagenes/fcienciasLogo.png Graphic file (type png)
+<use Plantilla_TFG_latex/imagenes/fcienciasLogo.png>
+Package pdftex.def Info: Plantilla_TFG_latex/imagenes/fcienciasLogo.png  used o
+n input line 35.
+(pdftex.def)             Requested size: 43.19824pt x 36.71738pt.
+<Plantilla_TFG_latex/imagenes/etsiit_logo.png, id=384, 110.814pt x 40.4712pt>
+File: Plantilla_TFG_latex/imagenes/etsiit_logo.png Graphic file (type png)
+<use Plantilla_TFG_latex/imagenes/etsiit_logo.png>
+Package pdftex.def Info: Plantilla_TFG_latex/imagenes/etsiit_logo.png  used on 
+input line 36.
+(pdftex.def)             Requested size: 108.0011pt x 39.44412pt.
+
+
+[1
+
+{c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Plantilla_TFG
+_latex/imagenes/logo_ugr.jpg> <./Plantilla_TFG_latex/imagenes/fcienciasLogo.png
+> <./Plantilla_TFG_latex/imagenes/etsiit_logo.png>])
+(./Plantilla_TFG_latex/prefacios/prefacio.tex
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
+(Font)              using `OT1/cmr/bx/n' instead on input line 20.
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 20.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20 \newpage
+              [1]
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 52.
+
+[2]
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 73.
+
+[3])
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 237.
+
+[4] (./proyecto.toc
+LaTeX Info: Redefining \sptext on input line 1.
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 2.
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 3.
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 4.
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 5.
+
+
+
+LaTeX Info: Redefining \sptext on input line 36.
+LaTeX Info: Redefining \. on input line 36.
+LaTeX Info: Redefining \% on input line 36.
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 36.
+
+[5]
+
+LaTeX Info: Redefining \sptext on input line 73.
+LaTeX Info: Redefining \. on input line 73.
+LaTeX Info: Redefining \% on input line 73.
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 73.
+
+[6])
+\tf@toc=\write6
+\openout6 = `proyecto.toc'.
+
+
+
+LaTeX Info: Redefining \. on input line 247.
+LaTeX Info: Redefining \% on input line 247.
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 247.
+
+[7] (./proyecto.lof
+LaTeX Info: Redefining \sptext on input line 1.
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+
+
+LaTeX Info: Redefining \sptext on input line 26.
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 26.
+
+[8])
+\tf@lof=\write7
+\openout7 = `proyecto.lof'.
+
+
+
+LaTeX Info: Redefining \. on input line 252.
+LaTeX Info: Redefining \% on input line 252.
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 252.
+
+[9] (./proyecto.lot
+LaTeX Info: Redefining \sptext on input line 1.
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@lot=\write8
+\openout8 = `proyecto.lot'.
+
+
+
+LaTeX Info: Redefining \. on input line 257.
+LaTeX Info: Redefining \% on input line 257.
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 257.
+
+[10{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+
+LaTeX Info: Redefining \. on input line 257.
+LaTeX Info: Redefining \% on input line 257.
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 257.
+
+[11] (./Plantilla_TFG_latex/prefacios/abstract.tex
+
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less.
+(fancyhdr)                Please consider using the `twoside' option on input l
+ine 8.
+
+
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less.
+(fancyhdr)                Please consider using the `twoside' option on input l
+ine 8.
+
+
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 26.
+
+[12]
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 32.
+
+[13])
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 279.
+
+[14]
+
+[1] (./Plantilla_TFG_latex/Matemática/00Intro.tex
+
+LaTeX Info: Redefining \. on input line 10.
+LaTeX Info: Redefining \% on input line 10.
+[2]
+<Plantilla_TFG_latex//imagenes//Mat//1.intro/1.1GDMatIntroGoodFellowBook.png, i
+d=746, 573.64313pt x 392.96812pt>
+File: Plantilla_TFG_latex//imagenes//Mat//1.intro/1.1GDMatIntroGoodFellowBook.p
+ng Graphic file (type png)
+<use Plantilla_TFG_latex//imagenes//Mat//1.intro/1.1GDMatIntroGoodFellowBook.pn
+g>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Mat//1.intro/1.1GDMatIn
+troGoodFellowBook.png  used on input line 15.
+(pdftex.def)             Requested size: 270.0pt x 184.96486pt.
+
+
+LaTeX Info: Redefining \. on input line 23.
+LaTeX Info: Redefining \% on input line 23.
+[3 <./Plantilla_TFG_latex//imagenes//Mat//1.intro/1.1GDMatIntroGoodFellowBook.p
+ng>]
+
+LaTeX Info: Redefining \. on input line 34.
+LaTeX Info: Redefining \% on input line 34.
+[4])
+
+LaTeX Info: Redefining \. on input line 303.
+LaTeX Info: Redefining \% on input line 303.
+[5] (./Plantilla_TFG_latex/Matemática/01_01Fundamentos.tex
+
+LaTeX Info: Redefining \. on input line 37.
+LaTeX Info: Redefining \% on input line 37.
+[6]
+Underfull \hbox (badness 1708) in paragraph at lines 38--39
+\OT1/cmr/m/it/10.95 cial-men-te de-ri-va-ble con res-pec-to a la $\OML/cmm/m/it
+/10.95 k$\OT1/cmr/m/it/10.95 -^^Sesi-ma va-ria-ble $\OML/cmm/m/it/10.95 x[]$ \O
+T1/cmr/m/it/10.95 en $\OML/cmm/m/it/10.95 a \OT1/cmr/m/n/10.95 =
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 83.
+LaTeX Info: Redefining \% on input line 83.
+[7]
+
+LaTeX Info: Redefining \. on input line 121.
+LaTeX Info: Redefining \% on input line 121.
+[8]
+
+LaTeX Info: Redefining \. on input line 183.
+LaTeX Info: Redefining \% on input line 183.
+[9]
+Underfull \hbox (badness 4378) in paragraph at lines 193--194
+[]\OT1/cmr/m/it/10.95 Un es-pa-cio me-di-ble es un par
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 234.
+LaTeX Info: Redefining \% on input line 234.
+[10]
+Overfull \hbox (11.50822pt too wide) in paragraph at lines 249--250
+[]
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 286.
+LaTeX Info: Redefining \% on input line 286.
+[11])
+
+LaTeX Info: Redefining \. on input line 306.
+LaTeX Info: Redefining \% on input line 306.
+[12]
+
+LaTeX Info: Redefining \. on input line 306.
+LaTeX Info: Redefining \% on input line 306.
+[13] (./Plantilla_TFG_latex/Matemática/2.GD.tex
+<Plantilla_TFG_latex//imagenes//Mat//GD/scopus_gd.png, id=878, 359.9046pt x 203
+.8014pt>
+File: Plantilla_TFG_latex//imagenes//Mat//GD/scopus_gd.png Graphic file (type p
+ng)
+<use Plantilla_TFG_latex//imagenes//Mat//GD/scopus_gd.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Mat//GD/scopus_gd.png  
+used on input line 19.
+(pdftex.def)             Requested size: 270.0pt x 152.90352pt.
+
+
+LaTeX Info: Redefining \. on input line 31.
+LaTeX Info: Redefining \% on input line 31.
+[14]
+
+LaTeX Info: Redefining \. on input line 49.
+LaTeX Info: Redefining \% on input line 49.
+[15 <./Plantilla_TFG_latex//imagenes//Mat//GD/scopus_gd.png>]
+
+LaTeX Info: Redefining \. on input line 70.
+LaTeX Info: Redefining \% on input line 70.
+[16]
+
+LaTeX Info: Redefining \. on input line 85.
+LaTeX Info: Redefining \% on input line 85.
+[17]
+<Plantilla_TFG_latex//imagenes//Mat//GD/lr.png, id=909, 818.05624pt x 345.29pt>
+
+File: Plantilla_TFG_latex//imagenes//Mat//GD/lr.png Graphic file (type png)
+<use Plantilla_TFG_latex//imagenes//Mat//GD/lr.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Mat//GD/lr.png  used on
+ input line 90.
+(pdftex.def)             Requested size: 270.0pt x 113.96185pt.
+
+
+LaTeX Info: Redefining \. on input line 106.
+LaTeX Info: Redefining \% on input line 106.
+[18 <./Plantilla_TFG_latex//imagenes//Mat//GD/lr.png>]
+<3ReLU&oth.jpg, id=921, 520.94624pt x 532.99126pt>
+File: 3ReLU&oth.jpg Graphic file (type jpg)
+<use 3ReLU&oth.jpg>
+Package pdftex.def Info: 3ReLU&oth.jpg  used on input line 126.
+(pdftex.def)             Requested size: 180.0pt x 184.15869pt.
+
+
+LaTeX Info: Redefining \. on input line 140.
+LaTeX Info: Redefining \% on input line 140.
+[19]
+
+LaTeX Info: Redefining \. on input line 154.
+LaTeX Info: Redefining \% on input line 154.
+[20 <./3ReLU&oth.jpg>]
+Overfull \hbox (0.98663pt too wide) detected at line 185
+\OML/cmm/m/it/10.95 h\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.9
+5 ) = \OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 Mx \OT1/cmr/
+m/n/10.95 + \OML/cmm/m/it/10.95 b\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^U \
+OML/cmm/m/it/10.95 h\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x[]\OT1/cmr/m/n/10.
+95 ) + \OML/cmm/m/it/10.95 g[]M\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x \OMS/c
+msy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 x[]\OT1/cmr/m/n/10.95 ) \OML/cmm/m/it/10.
+95 forallx[]Mx \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 b \OMS/cmsy/m/n/10.95 2
+ \OML/cmm/m/it/10.95 U[]:
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 200.
+LaTeX Info: Redefining \% on input line 200.
+[21]
+
+LaTeX Info: Redefining \. on input line 241.
+LaTeX Info: Redefining \% on input line 241.
+[22]
+Overfull \hbox (10.80365pt too wide) detected at line 282
+[]
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 288.
+LaTeX Info: Redefining \% on input line 288.
+[23]
+Underfull \hbox (badness 1490) in paragraph at lines 339--340
+[]\OT1/cmr/m/it/10.95 La fun-ci^^Son Re-LU
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 341.
+LaTeX Info: Redefining \% on input line 341.
+[24]
+
+LaTeX Info: Redefining \. on input line 365.
+LaTeX Info: Redefining \% on input line 365.
+[25]
+
+LaTeX Info: Redefining \. on input line 396.
+LaTeX Info: Redefining \% on input line 396.
+[26]
+
+LaTeX Info: Redefining \. on input line 451.
+LaTeX Info: Redefining \% on input line 451.
+[27]
+
+LaTeX Info: Redefining \. on input line 495.
+LaTeX Info: Redefining \% on input line 495.
+[28]
+Overfull \hbox (30.01677pt too wide) detected at line 514
+[]
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 534.
+LaTeX Info: Redefining \% on input line 534.
+[29]
+
+LaTeX Info: Redefining \. on input line 560.
+LaTeX Info: Redefining \% on input line 560.
+[30]
+
+LaTeX Info: Redefining \. on input line 586.
+LaTeX Info: Redefining \% on input line 586.
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 587--588
+[]
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 634.
+LaTeX Info: Redefining \% on input line 634.
+[32]
+
+LaTeX Info: Redefining \. on input line 669.
+LaTeX Info: Redefining \% on input line 669.
+[33]
+Overfull \hbox (1.86295pt too wide) detected at line 708
+[]
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 717.
+LaTeX Info: Redefining \% on input line 717.
+[34]
+Underfull \hbox (badness 3078) in paragraph at lines 740--741
+[]\OT1/cmr/m/it/10.95 Con las su-po-si-
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 766.
+LaTeX Info: Redefining \% on input line 766.
+[35]
+
+LaTeX Info: Redefining \. on input line 797.
+LaTeX Info: Redefining \% on input line 797.
+[36])
+
+LaTeX Info: Redefining \. on input line 309.
+LaTeX Info: Redefining \% on input line 309.
+[37] (./Plantilla_TFG_latex/Matemática/Definición.tex
+
+LaTeX Info: Redefining \. on input line 16.
+LaTeX Info: Redefining \% on input line 16.
+[38]
+
+LaTeX Info: Redefining \. on input line 37.
+LaTeX Info: Redefining \% on input line 37.
+[39]
+
+LaTeX Info: Redefining \. on input line 91.
+LaTeX Info: Redefining \% on input line 91.
+[40]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 93.
+<Plantilla_TFG_latex/imagenes/Mat/Definicion/bp_1.png, id=1113, 152.12836pt x 9
+9.37125pt>
+File: Plantilla_TFG_latex/imagenes/Mat/Definicion/bp_1.png Graphic file (type p
+ng)
+<use Plantilla_TFG_latex/imagenes/Mat/Definicion/bp_1.png>
+Package pdftex.def Info: Plantilla_TFG_latex/imagenes/Mat/Definicion/bp_1.png  
+used on input line 149.
+(pdftex.def)             Requested size: 251.9989pt x 164.6105pt.
+
+
+LaTeX Info: Redefining \. on input line 155.
+LaTeX Info: Redefining \% on input line 155.
+[41]
+
+LaTeX Info: Redefining \. on input line 155.
+LaTeX Info: Redefining \% on input line 155.
+[42
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.155 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.2}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.155 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.3}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.155 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.4}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.155 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.5}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.155 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.6}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.155 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.7}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.155 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.8}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.155 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.9}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.155 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.10})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.155 
+       <./Plantilla_TFG_latex/imagenes/Mat/Definicion/bp_1.png>]
+
+LaTeX Info: Redefining \. on input line 181.
+LaTeX Info: Redefining \% on input line 181.
+[43]
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.200         \State
+                     //Propagación hacia delante
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.2}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.201         \State
+                     $x_1:=x$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.3}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.202         \For
+                  {$l \in \left \{1,\ldots,L \right \}$}
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.4}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.203             \State
+                         $x_{l+1}=f_k(x_l, W_l)$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.5}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.204         \EndFor
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.6}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.206         \State
+                     //Propagación hacia atrás
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.7}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.208         \State
+                     $u_{L+1}=1$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.8}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.209         \For
+                  {$l \in \left \{L,\ldots,1 \right \}$}
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.9}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.210             \State
+                         $g_l:= u_{l+1}^T \frac{\partial f_l(x_l, W_l)}{\par...
+
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.10})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.211             \State
+                         $u_l^T:=u_{l+1}^T\frac{\partial f_l(x_l, W_l)}{\par...
+
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.11})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.212         \EndFor
+                     
+<Plantilla_TFG_latex/imagenes/Mat/Definicion/bp_2.png, id=1147, 271.7352pt x 10
+2.6234pt>
+File: Plantilla_TFG_latex/imagenes/Mat/Definicion/bp_2.png Graphic file (type p
+ng)
+<use Plantilla_TFG_latex/imagenes/Mat/Definicion/bp_2.png>
+Package pdftex.def Info: Plantilla_TFG_latex/imagenes/Mat/Definicion/bp_2.png  
+used on input line 225.
+(pdftex.def)             Requested size: 360.0pt x 135.96437pt.
+
+
+LaTeX Info: Redefining \. on input line 236.
+LaTeX Info: Redefining \% on input line 236.
+[44]
+
+LaTeX Info: Redefining \. on input line 258.
+LaTeX Info: Redefining \% on input line 258.
+[45 <./Plantilla_TFG_latex/imagenes/Mat/Definicion/bp_2.png>]
+
+LaTeX Info: Redefining \. on input line 295.
+LaTeX Info: Redefining \% on input line 295.
+[46]
+
+LaTeX Info: Redefining \. on input line 338.
+LaTeX Info: Redefining \% on input line 338.
+[47]
+<Plantilla_TFG_latex/imagenes/Mat/Definicion/graf.png, id=1172, 595.47469pt x 2
+12.29312pt>
+File: Plantilla_TFG_latex/imagenes/Mat/Definicion/graf.png Graphic file (type p
+ng)
+<use Plantilla_TFG_latex/imagenes/Mat/Definicion/graf.png>
+Package pdftex.def Info: Plantilla_TFG_latex/imagenes/Mat/Definicion/graf.png  
+used on input line 346.
+(pdftex.def)             Requested size: 360.0pt x 128.34216pt.
+
+
+LaTeX Info: Redefining \. on input line 360.
+LaTeX Info: Redefining \% on input line 360.
+[48 <./Plantilla_TFG_latex/imagenes/Mat/Definicion/graf.png>]
+
+LaTeX Info: Redefining \. on input line 384.
+LaTeX Info: Redefining \% on input line 384.
+[49]
+
+LaTeX Info: Redefining \. on input line 414.
+LaTeX Info: Redefining \% on input line 414.
+[50])
+
+LaTeX Info: Redefining \. on input line 312.
+LaTeX Info: Redefining \% on input line 312.
+[51]
+
+LaTeX Info: Redefining \. on input line 312.
+LaTeX Info: Redefining \% on input line 312.
+[52] (./Plantilla_TFG_latex/Matemática/Conclusión.tex
+
+LaTeX Info: Redefining \. on input line 20.
+LaTeX Info: Redefining \% on input line 20.
+[53])
+
+LaTeX Info: Redefining \. on input line 325.
+LaTeX Info: Redefining \% on input line 325.
+[54]
+
+[55] (./Plantilla_TFG_latex/Informatica/Introducción.tex
+<Plantilla_TFG_latex//imagenes//Inf//Int/gd_bp.png, id=1230, 696.6025pt x 289.0
+8pt>
+File: Plantilla_TFG_latex//imagenes//Inf//Int/gd_bp.png Graphic file (type png)
+
+<use Plantilla_TFG_latex//imagenes//Inf//Int/gd_bp.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//Int/gd_bp.png  use
+d on input line 7.
+(pdftex.def)             Requested size: 323.9978pt x 134.45168pt.
+
+
+LaTeX Info: Redefining \. on input line 13.
+LaTeX Info: Redefining \% on input line 13.
+[56 <./Plantilla_TFG_latex//imagenes//Inf//Int/gd_bp.png>]
+<Plantilla_TFG_latex//imagenes//Inf//Int/fig.jpg, id=1248, 963.6pt x 542.025pt>
+
+File: Plantilla_TFG_latex//imagenes//Inf//Int/fig.jpg Graphic file (type jpg)
+<use Plantilla_TFG_latex//imagenes//Inf//Int/fig.jpg>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//Int/fig.jpg  used 
+on input line 20.
+(pdftex.def)             Requested size: 323.9978pt x 182.24321pt.
+
+
+LaTeX Info: Redefining \. on input line 27.
+LaTeX Info: Redefining \% on input line 27.
+[57 <./Plantilla_TFG_latex//imagenes//Inf//Int/fig.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+[]|\OT1/cmr/bx/sc/10.95 Fundamento
+ []
+
+
+Underfull \hbox (badness 1629) in paragraph at lines 82--82
+[]|\OT1/cmr/m/n/10.95 Se ba-san en heur^^S^^Psti-
+ []
+
+
+Underfull \hbox (badness 6792) in paragraph at lines 82--82
+\OT1/cmr/m/n/10.95 ex-plo-ta-ci^^Son en zo-nas
+ []
+
+
+Underfull \hbox (badness 1902) in paragraph at lines 82--82
+[]\OT1/cmr/m/n/10.95 - Ma-yor co-no-ci-mien-to
+ []
+
+
+Underfull \hbox (badness 1377) in paragraph at lines 82--82
+\OT1/cmr/m/n/10.95 te-rios de con-ver-gen-cia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+[]|\OT1/cmr/m/n/10.95 - Per-mi-ten ex-plo-rar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+\OT1/cmr/m/n/10.95 gran-des es-pa-cios de
+ []
+
+
+Underfull \hbox (badness 2573) in paragraph at lines 82--82
+\OT1/cmr/m/n/10.95 b^^Susque-da sin re-que-rir
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+\OT1/cmr/m/n/10.95 in-for-ma-ci^^Son del gra-
+ []
+
+
+Underfull \hbox (badness 2237) in paragraph at lines 82--82
+\OT1/cmr/m/n/10.95 mas com-ple-jos o con
+ []
+
+
+Underfull \hbox (badness 3439) in paragraph at lines 82--82
+\OT1/cmr/m/n/10.95 ^^Sopti-mos lo-ca-les si la
+ []
+
+
+Underfull \hbox (badness 2126) in paragraph at lines 82--82
+[]\OT1/cmr/m/n/10.95 - Re-quie-ren de-ri-va-das
+ []
+
+
+Underfull \hbox (badness 1337) in paragraph at lines 82--82
+\OT1/cmr/m/n/10.95 lo que pue-de re-sul-tar
+ []
+
+
+Underfull \hbox (badness 2512) in paragraph at lines 82--82
+[]|\OT1/cmr/m/n/10.95 Aumenta la com-ple-ji-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+[]|\OT1/cmr/m/n/10.95 Combina ex-plo-ta-ci^^Son
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+\OT1/cmr/m/n/10.95 te) con ex-plo-ra-ci^^Son
+ []
+
+
+Underfull \hbox (badness 1082) in paragraph at lines 82--82
+\OT1/cmr/m/n/10.95 (a trav^^Ses de SHA-DE,
+ []
+
+
+Underfull \hbox (badness 1320) in paragraph at lines 82--82
+\OT1/cmr/m/n/10.95 ba-sa-do en \OT1/cmr/m/it/10.95 Dif-fe-ren-tial
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+[]|\OT1/cmr/m/n/10.95 Adam [[][]KB14[][]], NAG
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+\OT1/cmr/m/n/10.95 [[][]Nes83[][]], RMS-Prop
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+\OT1/cmr/m/n/10.95 [[][]Hin12[][]], AdamW
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+[]|\OT1/cmr/m/n/10.95 SHADE [[][]TF13[][]],
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 86.
+LaTeX Info: Redefining \% on input line 86.
+[58]
+
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
+[59]
+
+LaTeX Info: Redefining \. on input line 124.
+LaTeX Info: Redefining \% on input line 124.
+[60]
+
+LaTeX Info: Redefining \. on input line 155.
+LaTeX Info: Redefining \% on input line 155.
+[61]
+<Plantilla_TFG_latex//imagenes//Inf//Int/workflow.png, id=1317, 656.4525pt x 28
+9.08pt>
+File: Plantilla_TFG_latex//imagenes//Inf//Int/workflow.png Graphic file (type p
+ng)
+<use Plantilla_TFG_latex//imagenes//Inf//Int/workflow.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//Int/workflow.png  
+used on input line 170.
+(pdftex.def)             Requested size: 381.59912pt x 168.04585pt.
+
+Overfull \hbox (21.59912pt too wide) in paragraph at lines 170--171
+ [][] 
+ []
+
+<Plantilla_TFG_latex//imagenes//Inf//Int/plan1.png, id=1320, 480.79625pt x 208.
+78pt>
+File: Plantilla_TFG_latex//imagenes//Inf//Int/plan1.png Graphic file (type png)
+
+<use Plantilla_TFG_latex//imagenes//Inf//Int/plan1.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//Int/plan1.png  use
+d on input line 187.
+(pdftex.def)             Requested size: 270.0pt x 117.2473pt.
+<Plantilla_TFG_latex//imagenes//Inf//Int/plan2.png, id=1321, 799.98875pt x 207.
+77625pt>
+File: Plantilla_TFG_latex//imagenes//Inf//Int/plan2.png Graphic file (type png)
+
+<use Plantilla_TFG_latex//imagenes//Inf//Int/plan2.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//Int/plan2.png  use
+d on input line 189.
+(pdftex.def)             Requested size: 323.9978pt x 84.14891pt.
+
+
+LaTeX Info: Redefining \. on input line 197.
+LaTeX Info: Redefining \% on input line 197.
+[62])
+
+LaTeX Info: Redefining \. on input line 335.
+LaTeX Info: Redefining \% on input line 335.
+[63 <./Plantilla_TFG_latex//imagenes//Inf//Int/workflow.png>]
+
+[64 <./Plantilla_TFG_latex//imagenes//Inf//Int/plan1.png> <./Plantilla_TFG_late
+x//imagenes//Inf//Int/plan2.png>]
+(./Plantilla_TFG_latex/Informatica/Fundamentos.tex
+<Plantilla_TFG_latex//imagenes//Inf//2.Fund/neuron_model.jpeg, id=1357, 661.471
+25pt x 377.41pt>
+File: Plantilla_TFG_latex//imagenes//Inf//2.Fund/neuron_model.jpeg Graphic file
+ (type jpg)
+<use Plantilla_TFG_latex//imagenes//Inf//2.Fund/neuron_model.jpeg>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//2.Fund/neuron_mode
+l.jpeg  used on input line 27.
+(pdftex.def)             Requested size: 270.0pt x 154.04803pt.
+
+
+LaTeX Info: Redefining \. on input line 37.
+LaTeX Info: Redefining \% on input line 37.
+[65]
+
+LaTeX Info: Redefining \. on input line 46.
+LaTeX Info: Redefining \% on input line 46.
+[66 <./Plantilla_TFG_latex//imagenes//Inf//2.Fund/neuron_model.jpeg>]
+<Plantilla_TFG_latex//imagenes//Inf//2.Fund/neural_net2.jpeg, id=1373, 793.9662
+5pt x 389.455pt>
+File: Plantilla_TFG_latex//imagenes//Inf//2.Fund/neural_net2.jpeg Graphic file 
+(type jpg)
+<use Plantilla_TFG_latex//imagenes//Inf//2.Fund/neural_net2.jpeg>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//2.Fund/neural_net2
+.jpeg  used on input line 51.
+(pdftex.def)             Requested size: 270.0pt x 132.44266pt.
+
+
+LaTeX Info: Redefining \. on input line 65.
+LaTeX Info: Redefining \% on input line 65.
+[67 <./Plantilla_TFG_latex//imagenes//Inf//2.Fund/neural_net2.jpeg>]
+<Plantilla_TFG_latex//imagenes//Inf//2.Fund/Conv.png, id=1383, 377.91188pt x 38
+7.69844pt>
+File: Plantilla_TFG_latex//imagenes//Inf//2.Fund/Conv.png Graphic file (type pn
+g)
+<use Plantilla_TFG_latex//imagenes//Inf//2.Fund/Conv.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//2.Fund/Conv.png  u
+sed on input line 96.
+(pdftex.def)             Requested size: 180.0pt x 184.6615pt.
+
+
+LaTeX Info: Redefining \. on input line 105.
+LaTeX Info: Redefining \% on input line 105.
+[68]
+
+LaTeX Info: Redefining \. on input line 111.
+LaTeX Info: Redefining \% on input line 111.
+[69 <./Plantilla_TFG_latex//imagenes//Inf//2.Fund/Conv.png (PNG copy)>]
+<Plantilla_TFG_latex//imagenes//Inf//2.Fund/2.stride.jpeg, id=1396, 864.22874pt
+ x 172.645pt>
+File: Plantilla_TFG_latex//imagenes//Inf//2.Fund/2.stride.jpeg Graphic file (ty
+pe jpg)
+<use Plantilla_TFG_latex//imagenes//Inf//2.Fund/2.stride.jpeg>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//2.Fund/2.stride.jp
+eg  used on input line 135.
+(pdftex.def)             Requested size: 270.0pt x 53.93561pt.
+<Plantilla_TFG_latex//imagenes//Inf//2.Fund/maxpool.jpeg, id=1403, 789.95125pt 
+x 369.38pt>
+File: Plantilla_TFG_latex//imagenes//Inf//2.Fund/maxpool.jpeg Graphic file (typ
+e jpg)
+<use Plantilla_TFG_latex//imagenes//Inf//2.Fund/maxpool.jpeg>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//2.Fund/maxpool.jpe
+g  used on input line 149.
+(pdftex.def)             Requested size: 270.0pt x 126.25261pt.
+
+
+LaTeX Info: Redefining \. on input line 157.
+LaTeX Info: Redefining \% on input line 157.
+[70]
+
+LaTeX Info: Redefining \. on input line 157.
+LaTeX Info: Redefining \% on input line 157.
+[71 <./Plantilla_TFG_latex//imagenes//Inf//2.Fund/2.stride.jpeg> <./Plantilla_T
+FG_latex//imagenes//Inf//2.Fund/maxpool.jpeg>]
+
+LaTeX Info: Redefining \. on input line 181.
+LaTeX Info: Redefining \% on input line 181.
+[72]
+<Plantilla_TFG_latex//imagenes//Inf//2.Fund/resblock.png, id=1436, 374.39874pt 
+x 297.11pt>
+File: Plantilla_TFG_latex//imagenes//Inf//2.Fund/resblock.png Graphic file (typ
+e png)
+<use Plantilla_TFG_latex//imagenes//Inf//2.Fund/resblock.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//2.Fund/resblock.pn
+g  used on input line 186.
+(pdftex.def)             Requested size: 270.0pt x 214.27264pt.
+<Plantilla_TFG_latex//imagenes//Inf//2.Fund/resblock1x1.png, id=1440, 547.04375
+pt x 346.29375pt>
+File: Plantilla_TFG_latex//imagenes//Inf//2.Fund/resblock1x1.png Graphic file (
+type png)
+<use Plantilla_TFG_latex//imagenes//Inf//2.Fund/resblock1x1.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//2.Fund/resblock1x1
+.png  used on input line 195.
+(pdftex.def)             Requested size: 270.0pt x 170.91658pt.
+
+
+LaTeX Info: Redefining \. on input line 198.
+LaTeX Info: Redefining \% on input line 198.
+[73 <./Plantilla_TFG_latex//imagenes//Inf//2.Fund/resblock.png>]
+
+LaTeX Info: Redefining \. on input line 211.
+LaTeX Info: Redefining \% on input line 211.
+[74 <./Plantilla_TFG_latex//imagenes//Inf//2.Fund/resblock1x1.png>]
+<Plantilla_TFG_latex//imagenes//Inf//2.Fund/sgdwoutmom.png, id=1460, 203.25937p
+t x 194.97844pt>
+File: Plantilla_TFG_latex//imagenes//Inf//2.Fund/sgdwoutmom.png Graphic file (t
+ype png)
+<use Plantilla_TFG_latex//imagenes//Inf//2.Fund/sgdwoutmom.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//2.Fund/sgdwoutmom.
+png  used on input line 227.
+(pdftex.def)             Requested size: 143.9978pt x 138.13516pt.
+<Plantilla_TFG_latex//imagenes//Inf//2.Fund/sgdwmom.png, id=1461, 213.79875pt x
+ 208.52907pt>
+File: Plantilla_TFG_latex//imagenes//Inf//2.Fund/sgdwmom.png Graphic file (type
+ png)
+<use Plantilla_TFG_latex//imagenes//Inf//2.Fund/sgdwmom.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//2.Fund/sgdwmom.png
+  used on input line 229.
+(pdftex.def)             Requested size: 143.9978pt x 140.44876pt.
+
+
+LaTeX Info: Redefining \. on input line 242.
+LaTeX Info: Redefining \% on input line 242.
+[75]
+<Plantilla_TFG_latex//imagenes//Inf//2.Fund/NAG.png, id=1471, 444.15938pt x 124
+.96687pt>
+File: Plantilla_TFG_latex//imagenes//Inf//2.Fund/NAG.png Graphic file (type png
+)
+<use Plantilla_TFG_latex//imagenes//Inf//2.Fund/NAG.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//2.Fund/NAG.png  us
+ed on input line 252.
+(pdftex.def)             Requested size: 270.0pt x 75.96463pt.
+
+
+LaTeX Info: Redefining \. on input line 262.
+LaTeX Info: Redefining \% on input line 262.
+[76 <./Plantilla_TFG_latex//imagenes//Inf//2.Fund/sgdwoutmom.png> <./Plantilla_
+TFG_latex//imagenes//Inf//2.Fund/sgdwmom.png>]
+
+LaTeX Info: Redefining \. on input line 278.
+LaTeX Info: Redefining \% on input line 278.
+[77 <./Plantilla_TFG_latex//imagenes//Inf//2.Fund/NAG.png>]
+Underfull \hbox (badness 1286) in paragraph at lines 305--306
+[]\OT1/cmr/m/n/10.95 El m^^Seto-do L-BFGS-B (\OT1/cmr/m/it/10.95 Limited-memory
+ Broyden-Fletcher-Goldfarb-
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 306.
+LaTeX Info: Redefining \% on input line 306.
+[78]
+
+LaTeX Info: Redefining \. on input line 318.
+LaTeX Info: Redefining \% on input line 318.
+[79]
+<Plantilla_TFG_latex//imagenes//Inf//2.Fund/cruce_mh.png, id=1519, 1011.78pt x 
+304.2567pt>
+File: Plantilla_TFG_latex//imagenes//Inf//2.Fund/cruce_mh.png Graphic file (typ
+e png)
+<use Plantilla_TFG_latex//imagenes//Inf//2.Fund/cruce_mh.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//2.Fund/cruce_mh.pn
+g  used on input line 325.
+(pdftex.def)             Requested size: 270.0pt x 81.19403pt.
+
+
+LaTeX Info: Redefining \. on input line 333.
+LaTeX Info: Redefining \% on input line 333.
+[80 <./Plantilla_TFG_latex//imagenes//Inf//2.Fund/cruce_mh.png>]
+<Plantilla_TFG_latex//imagenes//Inf//2.Fund/alg_gen.png, id=1526, 1027.84pt x 4
+78.78876pt>
+File: Plantilla_TFG_latex//imagenes//Inf//2.Fund/alg_gen.png Graphic file (type
+ png)
+<use Plantilla_TFG_latex//imagenes//Inf//2.Fund/alg_gen.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//2.Fund/alg_gen.png
+  used on input line 340.
+(pdftex.def)             Requested size: 270.0pt x 125.76794pt.
+
+
+LaTeX Info: Redefining \. on input line 349.
+LaTeX Info: Redefining \% on input line 349.
+[81 <./Plantilla_TFG_latex//imagenes//Inf//2.Fund/alg_gen.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.382 		\State
+               $t:=0$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.2}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.383 		\State
+               Inicializar Pob$_t$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.3}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.384 		\State
+               Evaluar $x \quad \forall x \in$ Pob$_t$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.4}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.385 		\While
+              {No se cumpla condición de parada}
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.5}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.386 			\State
+                $t:=t+1$			
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.6}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.387 			\State
+                Mutar Pob$_t$ para obtener Pob'
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.7}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.388 			\State
+                Recombinar Pob' y Pob para obtener Pob''
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.8}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.389 			\State
+                Evaluar Pob''			
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.9}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.390 			\State
+                Reemplazar Pob$_t$ a partir de Pob'' y Pob$_{t-1}$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.10})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.391 		\EndWhile
+                 
+Underfull \hbox (badness 3209) in paragraph at lines 404--405
+[]\OT1/cmr/m/n/10.95 SHADE (\OT1/cmr/m/it/10.95 Success-History ba-sed Adap-ta-
+ti-ve Dif-fe-ren-tial Evo-lu-tion\OT1/cmr/m/n/10.95 )
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 407.
+LaTeX Info: Redefining \% on input line 407.
+[82]
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.420 		\State
+               $t:=0$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.2}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.421 		\State
+               Inicializar Pob$_t$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.3}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.422 		\State
+               Inicializar $A$ (archivo externo)
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.4}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.423 		\State
+               Inicializar $M$ (memoria de parámetros)
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.5}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.424 		\State
+               Evaluar $x \quad \forall x \in$ Pob$_t$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.6}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.425 		\While
+              {evals $<$ total\_evals}
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.7}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.426 			\State
+                $t:=t+1$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.8}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.427 			\State
+                Seleccionar $p$ soluciones para la mutación
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.9}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.428 			\State
+                Mutar Pob$_{t-1}$ para obtener Pob'
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.10})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.429 			\State
+                Recombinar Pob' y Pob$_{t-1}$ para obtener Pob''
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.11})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.430 			\State
+                Evaluar Pob''
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.12})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.431 			\State
+                Actualizar $A$ y $M$ a partir de Pob'' y Pob$_{t-1}$
+
+LaTeX Info: Redefining \. on input line 441.
+LaTeX Info: Redefining \% on input line 441.
+[83]
+
+LaTeX Info: Redefining \. on input line 457.
+LaTeX Info: Redefining \% on input line 457.
+[84]
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.471 		\State
+               $t := 0$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.2}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.472 		\State
+               Inicializar Pob$_t$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.3}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.473 		\State
+               $x_0 :=$ (maximo+minimo)/2
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.4}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.474 		\State
+               $x_{\text{best}} := \text{L-BFGS-B}(x_0)$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.5}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.475 		\State
+               $x_{\text{global}} := x_{\text{best}}$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.6}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.477 		\While
+              {evals $<$ total\_evals}
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.7}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.478 			\State
+                $t := t+1$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.8}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.479 			\State
+                $f_{\text{prev}} := f(x_{\text{best}})$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.9}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.480 			\State
+                $x_{\text{best}}, \text{Pob}_t := \text{SHADE}(\text{Pob}_{t...
+
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.10})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.481 			\State
+                $x_{\text{best}} := \text{L-BFGS-B}(x_{\text{best}})$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.11})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.482 			\State
+                $\Delta f := \frac{f_{\text{prev}} - f(x_{\text{best}})}{f_{...
+
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.12})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.484 			\If
+            {$f(x_{\text{best}}) < f(x_{\text{global}})$}
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.13})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.485 				\State
+                 $x_{\text{global}} := x_{\text{best}}$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.14})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.486 			\EndIf
+               
+
+LaTeX Info: Redefining \. on input line 510.
+LaTeX Info: Redefining \% on input line 510.
+[85]
+
+LaTeX Info: Redefining \. on input line 513.
+LaTeX Info: Redefining \% on input line 513.
+[86]
+
+LaTeX Info: Redefining \. on input line 543.
+LaTeX Info: Redefining \% on input line 543.
+[87])
+
+LaTeX Info: Redefining \. on input line 340.
+LaTeX Info: Redefining \% on input line 340.
+[88] (./Plantilla_TFG_latex/Informatica/EstadoDelArte.tex
+<Plantilla_TFG_latex//imagenes//Inf//EdA/scopus_mh.png, id=1608, 649.67719pt x 
+359.09157pt>
+File: Plantilla_TFG_latex//imagenes//Inf//EdA/scopus_mh.png Graphic file (type 
+png)
+<use Plantilla_TFG_latex//imagenes//Inf//EdA/scopus_mh.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//EdA/scopus_mh.png 
+ used on input line 25.
+(pdftex.def)             Requested size: 360.0pt x 198.98586pt.
+<Plantilla_TFG_latex//imagenes//Inf//EdA/scopus_gd.png, id=1609, 648.17157pt x 
+361.35pt>
+File: Plantilla_TFG_latex//imagenes//Inf//EdA/scopus_gd.png Graphic file (type 
+png)
+<use Plantilla_TFG_latex//imagenes//Inf//EdA/scopus_gd.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//EdA/scopus_gd.png 
+ used on input line 27.
+(pdftex.def)             Requested size: 360.0pt x 200.7005pt.
+
+
+LaTeX Info: Redefining \. on input line 42.
+LaTeX Info: Redefining \% on input line 42.
+[89]
+
+LaTeX Info: Redefining \. on input line 42.
+LaTeX Info: Redefining \% on input line 42.
+[90 <./Plantilla_TFG_latex//imagenes//Inf//EdA/scopus_mh.png> <./Plantilla_TFG_
+latex//imagenes//Inf//EdA/scopus_gd.png>]
+
+LaTeX Info: Redefining \. on input line 53.
+LaTeX Info: Redefining \% on input line 53.
+[91]
+
+LaTeX Info: Redefining \. on input line 65.
+LaTeX Info: Redefining \% on input line 65.
+[92]
+
+LaTeX Info: Redefining \. on input line 84.
+LaTeX Info: Redefining \% on input line 84.
+[93]
+
+LaTeX Info: Redefining \. on input line 118.
+LaTeX Info: Redefining \% on input line 118.
+[94]
+
+LaTeX Info: Redefining \. on input line 137.
+LaTeX Info: Redefining \% on input line 137.
+[95]
+
+LaTeX Info: Redefining \. on input line 162.
+LaTeX Info: Redefining \% on input line 162.
+[96]
+
+LaTeX Info: Redefining \. on input line 182.
+LaTeX Info: Redefining \% on input line 182.
+[97])
+
+LaTeX Info: Redefining \. on input line 342.
+LaTeX Info: Redefining \% on input line 342.
+[98] (./Plantilla_TFG_latex/Informatica/Propuestas.tex
+
+LaTeX Info: Redefining \. on input line 16.
+LaTeX Info: Redefining \% on input line 16.
+[99]
+<Plantilla_TFG_latex//imagenes//Inf//Propias/SHADE-GD.png, id=1760, 582.4962pt 
+x 535.5207pt>
+File: Plantilla_TFG_latex//imagenes//Inf//Propias/SHADE-GD.png Graphic file (ty
+pe png)
+<use Plantilla_TFG_latex//imagenes//Inf//Propias/SHADE-GD.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//Propias/SHADE-GD.p
+ng  used on input line 19.
+(pdftex.def)             Requested size: 360.0pt x 330.98164pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.28 		\State
+              $t := 0$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.2}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.29 		\State
+              $g:= 0$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.3}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.30 		\State
+              Inicializar Pob$_t$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.4}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.31 		\State
+              Inicializar $A$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.5}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.32 		\State
+              Inicializar $M$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.6}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.33 		\State
+              Evaluar $x \quad \forall x \in$ Pob$_t$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.7}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.34 		\State
+              $m := 0$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.8}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.36 		\While
+             {$t <$ total\_evals}
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.9}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.37 			\State
+               $i := 0$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.10})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.38 			\State
+               $g:= g+1$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.11})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.39 			\While
+              {$i<$Gen$_{SHADE}$}
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.12})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.40 				\State
+                $t := t + 1$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.13})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.41 				\State
+                $i := i+1$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.14})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.42 				\State
+                $f_{\text{prev}} := \text{min} f(x) \quad \forall x \in$ Pob...
+
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.15})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.43 				\State
+                Seleccionar $p$ soluciones para la mutación
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.16})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.44 				\State
+                Mutar Pob$_{t-1}$ para obtener Pob'
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.17})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.45 				\State
+                Recombinar Pob' y Pob$_{t-1}$ para obtener Pob''
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.18})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.46 				\State
+                Evaluar Pob''
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.19})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.47 				\State
+                Actualizar $A$ y $M$ a partir de Pob'' y Pob$_{t-1}$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.20})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.48 				\State
+                Obtener Pob$_t$ a partir de Pob'' y Pob$_{t-1}$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.21})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.49 			\EndWhile
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.22})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.51 			\If
+           {$g \text{mod} 2 = 0$}
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.23})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.52 				\State
+                Seleccionar aleatoriamente $x \in$ Pob$_t$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.24})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.53 				\State
+                $x := \text{GD}(x)$
+
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
+[100]
+
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
+[101 <./Plantilla_TFG_latex//imagenes//Inf//Propias/SHADE-GD.png>]
+
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
+[102]
+
+LaTeX Info: Redefining \. on input line 134.
+LaTeX Info: Redefining \% on input line 134.
+[103]
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.150 		\State
+               $t := 0$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.2}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.151 		\State
+               Inicializar Pob$_t$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.3}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.152 		\State
+               $x_0 := (\text{max}_{Pob_t} + \text{min}_{Pob_t})/2$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.4}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.153 		\State
+               $x_{\text{best}} := \text{L-BFGS-B}(x_0)$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.5}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.154 		\State
+               $x_{\text{global}} := x_{\text{best}}$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.6}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.155 		\State
+               $g := 0$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.7}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.157 		\While
+              {t $<$ total\_evals}
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.8}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.158 			\State
+                $t := t+1$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.9}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.159 			\State
+                $f_{\text{prev}} := f(x_{\text{best}})$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.10})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.160 			\State
+                $x_{\text{best}}, \text{Pob}_t := \text{SHADE}(\text{Pob}_{t...
+
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.11})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.161 			\State
+                $x_{\text{best}} := \text{L-BFGS-B}(x_{\text{best}})$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.12})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.163 			\If
+            {$t \text{mod} 2 = 0$}
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.13})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.164 				\State
+                 Seleccionar aleatoriamente $x \in$ Pob$_t$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.14})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.165 				\State
+                 $x := \text{GD}(x)$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.15})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.166 			\EndIf
+               
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.16})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.168 			\State
+                $\Delta f := \frac{f_{\text{prev}} - f(x_{\text{best}})}{f_{...
+
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.17})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.170 			\If
+            {$f(x_{\text{best}}) < f(x_{\text{global}})$}
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.18})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.171 				\State
+                 $x_{\text{global}} := x_{\text{best}}$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.19})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.172 			\EndIf
+               
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.20})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.174 			\If
+            {$\Delta f < 5$}
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.21})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.175 				\State
+                 $g := g + 1$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.22})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.176 			\Else
+              
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.23})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.177 				\State
+                 $g := 0$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.24})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.178 			\EndIf
+               
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.25})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.180 			\If
+            {$g \geq 3$}
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.26})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.181 				\State
+                 Reiniciar población conservando la mejor solución con per...
+
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.27})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.182 				\State
+                 $g := 0$
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.28})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.183 			\EndIf
+               		
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.29})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.184 		\EndWhile
+                 
+
+LaTeX Info: Redefining \. on input line 216.
+LaTeX Info: Redefining \% on input line 216.
+[104]
+
+LaTeX Info: Redefining \. on input line 216.
+LaTeX Info: Redefining \% on input line 216.
+[105]
+Underfull \hbox (badness 1028) in paragraph at lines 247--248
+[] \OT1/cmr/m/n/10.95 El al-go-rit-mo con-clu-ye cuan-do se al-can-za el l^^S^^
+Pmi-te de eva-lua-cio-nes
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 256.
+LaTeX Info: Redefining \% on input line 256.
+[106])
+
+LaTeX Info: Redefining \. on input line 346.
+LaTeX Info: Redefining \% on input line 346.
+[107] (./Plantilla_TFG_latex/Informatica/Experimentacion.tex
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\OT1/cmr/m/n/10.95 SHADE, SHADE-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+\OT1/cmr/m/n/10.95 ILS, AdamW,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\OT1/cmr/m/n/10.95 SHADE, SHADE-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+\OT1/cmr/m/n/10.95 ILS, AdamW,
+ []
+
+
+Underfull \hbox (badness 8038) in paragraph at lines 32--32
+[]|\OT1/cmr/m/n/10.95 SHADE-ILS, SHA-
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 41.
+LaTeX Info: Redefining \% on input line 41.
+[108]
+
+LaTeX Info: Redefining \. on input line 59.
+LaTeX Info: Redefining \% on input line 59.
+[109]
+
+LaTeX Info: Redefining \. on input line 76.
+LaTeX Info: Redefining \% on input line 76.
+[110]
+
+LaTeX Info: Redefining \. on input line 86.
+LaTeX Info: Redefining \% on input line 86.
+[111]
+
+LaTeX Info: Redefining \. on input line 97.
+LaTeX Info: Redefining \% on input line 97.
+[112]
+
+LaTeX Info: Redefining \. on input line 129.
+LaTeX Info: Redefining \% on input line 129.
+[113]
+
+LaTeX Info: Redefining \. on input line 157.
+LaTeX Info: Redefining \% on input line 157.
+[114]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 163.
+
+
+Overfull \hbox (10.856pt too wide) in paragraph at lines 183--183
+[][][][][]$\OT1/cmtt/m/n/9 https : / / www . kaggle . com / conjuntosdedatos / 
+uciml / breast-[]cancer-[]wisconsin-[]data$[][]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
+[][][][][]$\OT1/cmtt/m/n/9 https : / / www . kaggle . com / conjuntosdedatos / 
+altavish /
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 187.
+LaTeX Info: Redefining \% on input line 187.
+[115]
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
+[][][][][]$\OT1/cmtt/m/n/9 https : / / www . kaggle . com / conjuntosdedatos / 
+yasserh /
+ []
+
+<Plantilla_TFG_latex//imagenes//Inf//exp/mnist.png, id=1902, 1076.823pt x 497.2
+176pt>
+File: Plantilla_TFG_latex//imagenes//Inf//exp/mnist.png Graphic file (type png)
+
+<use Plantilla_TFG_latex//imagenes//Inf//exp/mnist.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//exp/mnist.png  use
+d on input line 205.
+(pdftex.def)             Requested size: 270.0pt x 124.66826pt.
+<Plantilla_TFG_latex//imagenes//Inf//exp/fmnist.png, id=1903, 1076.823pt x 497.
+2176pt>
+File: Plantilla_TFG_latex//imagenes//Inf//exp/fmnist.png Graphic file (type png
+)
+<use Plantilla_TFG_latex//imagenes//Inf//exp/fmnist.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//exp/fmnist.png  us
+ed on input line 209.
+(pdftex.def)             Requested size: 270.0pt x 124.66826pt.
+<Plantilla_TFG_latex//imagenes//Inf//exp/cifar10.png, id=1904, 1076.823pt x 497
+.2176pt>
+File: Plantilla_TFG_latex//imagenes//Inf//exp/cifar10.png Graphic file (type pn
+g)
+<use Plantilla_TFG_latex//imagenes//Inf//exp/cifar10.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//exp/cifar10.png  u
+sed on input line 213.
+(pdftex.def)             Requested size: 270.0pt x 124.66826pt.
+
+LaTeX Warning: Float too large for page by 37.25372pt on input line 215.
+
+
+
+LaTeX Info: Redefining \. on input line 218.
+LaTeX Info: Redefining \% on input line 218.
+[116]
+
+LaTeX Info: Redefining \. on input line 218.
+LaTeX Info: Redefining \% on input line 218.
+[117 <./Plantilla_TFG_latex//imagenes//Inf//exp/mnist.png> <./Plantilla_TFG_lat
+ex//imagenes//Inf//exp/fmnist.png> <./Plantilla_TFG_latex//imagenes//Inf//exp/c
+ifar10.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 240.
+
+
+
+LaTeX Info: Redefining \. on input line 255.
+LaTeX Info: Redefining \% on input line 255.
+[118]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 260.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 289.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 312.
+
+) (./Plantilla_TFG_latex/Informatica/Resultados.tex
+
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
+[119]
+
+LaTeX Info: Redefining \. on input line 10.
+LaTeX Info: Redefining \% on input line 10.
+[120]
+Underfull \hbox (badness 1383) in paragraph at lines 11--12
+[]\OT1/cmr/bx/sc/10.95 Finalmente, el cuar-to ex-pe-ri-men-to eval^^Sua el ren-
+di-mien-to
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 19.
+
+
+
+LaTeX Info: Redefining \. on input line 46.
+LaTeX Info: Redefining \% on input line 46.
+[121]
+
+LaTeX Info: Redefining \. on input line 50.
+LaTeX Info: Redefining \% on input line 50.
+[122]
+
+LaTeX Info: Redefining \. on input line 55.
+LaTeX Info: Redefining \% on input line 55.
+[123]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 64.
+
+
+
+LaTeX Info: Redefining \. on input line 77.
+LaTeX Info: Redefining \% on input line 77.
+[124]
+
+LaTeX Info: Redefining \. on input line 91.
+LaTeX Info: Redefining \% on input line 91.
+[125]
+
+LaTeX Info: Redefining \. on input line 120.
+LaTeX Info: Redefining \% on input line 120.
+[126]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 134.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 161.
+
+
+
+LaTeX Info: Redefining \. on input line 203.
+LaTeX Info: Redefining \% on input line 203.
+[127]
+Overfull \vbox (12.86176pt too high) has occurred while \output is active []
+
+
+
+LaTeX Info: Redefining \. on input line 203.
+LaTeX Info: Redefining \% on input line 203.
+[128]
+<Plantilla_TFG_latex//imagenes//Inf//Resultados/P1/pda_mh.png, id=1990, 570.933
+pt x 216.0873pt>
+File: Plantilla_TFG_latex//imagenes//Inf//Resultados/P1/pda_mh.png Graphic file
+ (type png)
+<use Plantilla_TFG_latex//imagenes//Inf//Resultados/P1/pda_mh.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//Resultados/P1/pda_
+mh.png  used on input line 214.
+(pdftex.def)             Requested size: 360.0pt x 136.2577pt.
+<Plantilla_TFG_latex//imagenes//Inf//Resultados/P1/pda_gd.png, id=1991, 570.933
+pt x 216.0873pt>
+File: Plantilla_TFG_latex//imagenes//Inf//Resultados/P1/pda_gd.png Graphic file
+ (type png)
+<use Plantilla_TFG_latex//imagenes//Inf//Resultados/P1/pda_gd.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//Resultados/P1/pda_
+gd.png  used on input line 217.
+(pdftex.def)             Requested size: 360.0pt x 136.2577pt.
+
+Overfull \hbox (3.65pt too wide) in paragraph at lines 214--218
+ [][] 
+ []
+
+
+Overfull \hbox (7.29999pt too wide) in paragraph at lines 214--218
+ [][] 
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 229.
+LaTeX Info: Redefining \% on input line 229.
+[129]
+
+LaTeX Info: Redefining \. on input line 229.
+LaTeX Info: Redefining \% on input line 229.
+[130 <./Plantilla_TFG_latex//imagenes//Inf//Resultados/P1/pda_mh.png> <./Planti
+lla_TFG_latex//imagenes//Inf//Resultados/P1/pda_gd.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 243.
+
+<Plantilla_TFG_latex//imagenes//Inf//Resultados/tiempo/instancias.png, id=2007,
+ 425.6703pt x 328.8285pt>
+File: Plantilla_TFG_latex//imagenes//Inf//Resultados/tiempo/instancias.png Grap
+hic file (type png)
+<use Plantilla_TFG_latex//imagenes//Inf//Resultados/tiempo/instancias.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//Resultados/tiempo/
+instancias.png  used on input line 280.
+(pdftex.def)             Requested size: 306.0022pt x 236.39006pt.
+<Plantilla_TFG_latex//imagenes//Inf//Resultados/tiempo/parametros.png, id=2008,
+ 425.6703pt x 328.8285pt>
+File: Plantilla_TFG_latex//imagenes//Inf//Resultados/tiempo/parametros.png Grap
+hic file (type png)
+<use Plantilla_TFG_latex//imagenes//Inf//Resultados/tiempo/parametros.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//Resultados/tiempo/
+parametros.png  used on input line 282.
+(pdftex.def)             Requested size: 306.0022pt x 236.39006pt.
+
+LaTeX Warning: Float too large for page by 20.3799pt on input line 285.
+
+<Plantilla_TFG_latex//imagenes//Inf//Resultados/tiempo/instancias_gd.png, id=20
+09, 413.3844pt x 328.1058pt>
+File: Plantilla_TFG_latex//imagenes//Inf//Resultados/tiempo/instancias_gd.png G
+raphic file (type png)
+<use Plantilla_TFG_latex//imagenes//Inf//Resultados/tiempo/instancias_gd.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//Resultados/tiempo/
+instancias_gd.png  used on input line 290.
+(pdftex.def)             Requested size: 306.0022pt x 242.8796pt.
+<Plantilla_TFG_latex//imagenes//Inf//Resultados/tiempo/parametros_gd.png, id=20
+10, 416.2752pt x 328.1058pt>
+File: Plantilla_TFG_latex//imagenes//Inf//Resultados/tiempo/parametros_gd.png G
+raphic file (type png)
+<use Plantilla_TFG_latex//imagenes//Inf//Resultados/tiempo/parametros_gd.png>
+Package pdftex.def Info: Plantilla_TFG_latex//imagenes//Inf//Resultados/tiempo/
+parametros_gd.png  used on input line 292.
+(pdftex.def)             Requested size: 306.0022pt x 241.20242pt.
+
+
+LaTeX Info: Redefining \. on input line 304.
+LaTeX Info: Redefining \% on input line 304.
+[131]
+
+LaTeX Info: Redefining \. on input line 304.
+LaTeX Info: Redefining \% on input line 304.
+[132 <./Plantilla_TFG_latex//imagenes//Inf//Resultados/tiempo/instancias.png> <
+./Plantilla_TFG_latex//imagenes//Inf//Resultados/tiempo/parametros.png>]
+
+LaTeX Info: Redefining \. on input line 304.
+LaTeX Info: Redefining \% on input line 304.
+[133 <./Plantilla_TFG_latex//imagenes//Inf//Resultados/tiempo/instancias_gd.png
+> <./Plantilla_TFG_latex//imagenes//Inf//Resultados/tiempo/parametros_gd.png>]
+
+LaTeX Info: Redefining \. on input line 306.
+LaTeX Info: Redefining \% on input line 306.
+[134]
+
+LaTeX Info: Redefining \. on input line 320.
+LaTeX Info: Redefining \% on input line 320.
+[135]
+
+LaTeX Info: Redefining \. on input line 396.
+LaTeX Info: Redefining \% on input line 396.
+[136]
+
+LaTeX Info: Redefining \. on input line 396.
+LaTeX Info: Redefining \% on input line 396.
+[137]
+
+LaTeX Info: Redefining \. on input line 453.
+LaTeX Info: Redefining \% on input line 453.
+[138]
+
+LaTeX Info: Redefining \. on input line 453.
+LaTeX Info: Redefining \% on input line 453.
+[139]
+
+LaTeX Info: Redefining \. on input line 506.
+LaTeX Info: Redefining \% on input line 506.
+[140]
+
+LaTeX Info: Redefining \. on input line 506.
+LaTeX Info: Redefining \% on input line 506.
+[141])
+
+LaTeX Info: Redefining \. on input line 351.
+LaTeX Info: Redefining \% on input line 351.
+[142] (./Plantilla_TFG_latex/Informatica/Conclusiones.tex
+
+LaTeX Info: Redefining \. on input line 13.
+LaTeX Info: Redefining \% on input line 13.
+[143]
+
+LaTeX Info: Redefining \. on input line 21.
+LaTeX Info: Redefining \% on input line 21.
+[144]
+
+LaTeX Info: Redefining \. on input line 37.
+LaTeX Info: Redefining \% on input line 37.
+[145])
+
+LaTeX Info: Redefining \. on input line 388.
+LaTeX Info: Redefining \% on input line 388.
+[146]
+
+LaTeX Info: Redefining \. on input line 389.
+LaTeX Info: Redefining \% on input line 389.
+[147]
+Underfull \hbox (badness 1082) in paragraph at lines 390--390
+[]\OT1/cmr/m/n/10.95 S^^Sebas-tien Bu-beck. ``Con-vex Op-ti-mi-za-tion: Al-go-r
+ithms and
+ []
+
+
+Underfull \hbox (badness 2799) in paragraph at lines 390--390
+\OT1/cmr/m/it/10.95 Neu-ral In-for-ma-tion Pro-ces-sing Sys-tems (Neu-rIPS)\OT1
+/cmr/m/n/10.95 . 2012,
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 389.
+LaTeX Info: Redefining \% on input line 389.
+[148]
+
+LaTeX Info: Redefining \. on input line 389.
+LaTeX Info: Redefining \% on input line 389.
+[149]
+! Misplaced alignment tab character &.
+<argument> Chapman &
+                     Hall/CRC
+l.390 
+      
+? 
+
+Underfull \hbox (badness 1629) in paragraph at lines 390--390
+[]\OT1/cmr/m/n/10.95 Hao Li et al. ``Vi-sua-li-zing the loss lands-ca-pe of neu
+-ral
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 389.
+LaTeX Info: Redefining \% on input line 389.
+[150]
+
+LaTeX Info: Redefining \. on input line 389.
+LaTeX Info: Redefining \% on input line 389.
+[151]
+! Misplaced alignment tab character &.
+\namepartsuffix ...ibnamedelimi J.\bibnamedelimi &
+                                                  \bibnamedelima Norvig
+l.390 
+      
+? 
+
+
+LaTeX Info: Redefining \. on input line 389.
+LaTeX Info: Redefining \% on input line 389.
+[152]
+Underfull \hbox (badness 6032) in paragraph at lines 390--390
+[]\OT1/cmr/m/n/10.95 Frank. Wil-co-xon. ``In-di-vi-dual Com-pa-ri-sons by Ran-k
+ing
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 389.
+LaTeX Info: Redefining \% on input line 389.
+[153]
+
+LaTeX Info: Redefining \. on input line 407.
+LaTeX Info: Redefining \% on input line 407.
+[154] (./proyecto.aux
+LaTeX Info: Redefining \sptext on input line 12.
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
+)
+ ***********
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-08-16>
+ ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `proyecto.out' has not changed.
+(rerunfilecheck)             Checksum: 1CC6B254E5385B641D6255BE41AC12BD;19430.
+Package logreq Info: Writing requests to 'proyecto.run.xml'.
+\openout1 = `proyecto.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 27716 strings out of 473578
+ 505374 string characters out of 5732243
+ 1978960 words of memory out of 5000000
+ 49599 multiletter control sequences out of 15000+600000
+ 572375 words of font info for 87 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 69i,17n,84p,1696b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.31} has been referenced but does not exis
+t, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exis
+t, replaced by a fixed one
+
+<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texli
+ve/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2024/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2024/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfo
+nts/cmextra/cmex7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/c
+mextra/cmex8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c
+:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/
+2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2024/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
+pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/tex
+live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2024/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2024/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmti10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9
+.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
+><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:
+/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2
+024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on proyecto.pdf (169 pages, 2785553 bytes).
+PDF statistics:
+ 2401 PDF objects out of 2487 (max. 8388607)
+ 2060 compressed objects within 21 object streams
+ 630 named destinations out of 1000 (max. 500000)
+ 948 words of extra memory for PDF output out of 10000 (max. 10000000)
+

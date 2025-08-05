@@ -1,0 +1,18 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {table}{\numberline {1}{\ignorespaces Tabla comparativa entre las técnicas clásicas basadas en gradiente, las metaheurísticas y las dos propuestas algorítmicas propias (SHADE-GD y SHADE-ILS-GD)}}{59}{table.caption.16}%
+\contentsline {table}{\numberline {2}{\ignorespaces Descripción de los experimentos realizados, optimizadores evaluados, conjuntos de datos utilizados y modelos empleados en el estudio}}{108}{table.caption.45}%
+\contentsline {table}{\numberline {3}{\ignorespaces Hiperparámetros utilizados en el entrenamiento}}{113}{table.caption.46}%
+\contentsline {table}{\numberline {4}{\ignorespaces Características de los conjuntos de datos tabulares utilizados en la experimentación}}{115}{table.caption.50}%
+\contentsline {table}{\numberline {5}{\ignorespaces Características de los modelos de Perceptrón Multicapa utilizados en la experimentación}}{119}{table.caption.52}%
+\contentsline {table}{\numberline {6}{\ignorespaces Arquitectura del modelo LeNet5 utilizado en la experimentación para clasificación de imágenes de 28×28 píxeles con un solo canal de entrada}}{120}{table.caption.53}%
+\contentsline {table}{\numberline {7}{\ignorespaces Arquitectura del modelo ResNet57 utilizado en la experimentación para clasificación de imágenes de 28×28 píxeles con un solo canal de entrada}}{121}{table.caption.54}%
+\contentsline {table}{\numberline {8}{\ignorespaces Arquitectura del modelo ResNet15 utilizado en la experimentación para clasificación de imágenes de 28x28 píxeles con un solo canal de entrada}}{122}{table.caption.55}%
+\contentsline {table}{\numberline {9}{\ignorespaces Resultados del entrenamiento y evaluación de los modelos asociados al primer experimento}}{123}{table.caption.56}%
+\contentsline {table}{\numberline {10}{\ignorespaces Resultado de los tests estadísticos llevados a cabo durante el primer experimento}}{124}{table.caption.57}%
+\contentsline {table}{\numberline {11}{\ignorespaces Resultados del entrenamiento para SHADE y SHADE-ILS en tareas de clasificación, considerando la complejidad del conjunto de datos, su tamaño, y el número de parámetros del modelo}}{128}{table.caption.58}%
+\contentsline {table}{\numberline {13}{\ignorespaces Valores analíticos asignados a los conjuntos de datos para el segundo experimento}}{128}{table.caption.60}%
+\contentsline {table}{\numberline {12}{\ignorespaces Resultados del entrenamiento para AdamW y RMSProp en tareas de clasificación, considerando la complejidad del conjunto de datos, su tamaño, y el número de parámetros del modelo}}{129}{table.caption.59}%
+\contentsline {table}{\numberline {14}{\ignorespaces Comparación de tiempos entre los algoritmos SHADE-ILS y AdamW}}{134}{table.caption.62}%
+\contentsline {table}{\numberline {15}{\ignorespaces Comparación del desempeño de SHADE y SHADE-GD en el entrenamiento de modelos de aprendizaje profundo sobre conjuntos de datos tabulares e imágenes}}{137}{table.caption.65}%
+\contentsline {table}{\numberline {16}{\ignorespaces Comparación del desempeño de SHADE-ILS y SHADE-ILS-GD en el entrenamiento de modelos de aprendizaje profundo sobre conjuntos de datos tabulares e imágenes}}{139}{table.caption.67}%
+\contentsline {table}{\numberline {17}{\ignorespaces Comparación del desempeño de SHADE-GD y SHADE-ILS-GD en el entrenamiento de modelos de aprendizaje profundo sobre conjuntos de datos tabulares e imágenes}}{141}{table.caption.69}%

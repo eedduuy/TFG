@@ -1,0 +1,25 @@
+\section*{Resumen}
+\addcontentsline{toc}{section}{Resumen}
+
+En la parte Informática, se presenta un estudio empírico comparativo que enfrenta el clásico gradiente descendente (GD) con técnicas metaheurísticas (MH) en el entrenamiento de redes neuronales profundas. Utilizando Perceptrones Multicapa (MLP) para conjuntos de datos tabulares y Redes Convolucionales (ConvNets) para análisis de imágenes, se comparan optimizadores basados en GD como RMSProp, NAG, Adam y AdamW, con las técnicas MH SHADE y SHADE-ILS, que consiguen un rendimiento del estado del arte: el algoritmo SHADE obtiene los mejores resultados en cuanto a optimización de parámetros continuos dentro de las técnicas MH, mientras que SHADE-ILS consigue escalar esta técnica a problemas de gran dimensionalidad, como la optimización de los parámetros de un modelo en aprendizaje profundo\cite{MHtrainingClase}. Además, como contribución original de este Trabajo Fin de Grado, se introducen dos técnicas híbridas novedosas: SHADE-GD y SHADE-ILS-GD, pertenecientes a la familia de algoritmos denominados meméticos, que combinan MH con GD.
+
+Se llevó a cabo una evaluación experimental vertebrada en torno a los siguientes ejes principales: 
+
+\begin{enumerate}
+
+\item \textbf{Impacto de la tarea (clasificación vs. regresión) en el rendimiento de los MLP entrenados con MH}: Entrenamos varios MLPs usando GD y MH para tareas de clasificación y regresión. Asumiendo que el rendimiento de los modelos entrenados con GD no varía según el tipo de tarea, medimos el rendimiento relativo de los modelos entrenados con MH respecto a los entrenados con GD. Tras comprobar la normalidad de los datos, aplicamos el test de los rangos con signo de Wilcoxon, sin conseguir una evidencia suficiente que indique una diferencia de rendimiento significativa entre ambos tipos de tareas para los MLPs entrenados con MH, aunque obtuvimos un p-valor relativamente bajo (0.109).
+
+\item \textbf{Estudio de factores que afectan el rendimiento en tareas de clasificación, tanto en MLPs como en ConvNets}: Realizamos un análisis de dependencias parciales, y utilizamos como medida de rendimiento la ganancia de \textit{accuracy} con respecto al clasificador aleatorio. De esta manera se determinó que el tamaño del conjunto de datos es el factor más influyente en el empeoramiento del rendimiento de los modelos entrenados con MH, mientras que en el caso del entrenamiento con optimizadores basados en GD el factor más influyente resulta la complejidad del conjunto de datos, entendiendo por ella las características inherentes a los datos que afectan a la dificultad de modelar patrones, generalizar y realizar predicciones precisas.
+
+
+
+\item \textbf{Tiempo de ejecución de las MH}: Analizamos los tiempos de ejecución del algoritmo SHADE-ILS obtenidos en la experimentación. Comprobamos si sus valores corresponden con los esperados y desglosamos el tiempo del algoritmo. Obtenemos la conclusión de que las MH requieren de menor tiempo de ejecución por época, pero la necesidad de realizar muchas más épocas (del orden de 100 o 200 veces) para obtener resultados que se puedan acercar a las técnicas clásicas, las convierte en una opción más lenta. Además, hemos comprobado que el número de instancias del conjunto de datos influye más en el tiempo de ejecución del algoritmo que otras variables como el número de parámetros del modelo.
+
+
+
+\item \textbf{Evaluación holística de las técnicas propuestas}: SHADE-GD demostró un mejor rendimiento que SHADE en 17 de las 25 tareas ejecutadas, mientras que SHADE solo destacó en 4 de ellas. Esto hace de SHADE-GD una versión más consistente y con mejores resultados que el original. Por otro lado, SHADE-ILS-GD no presenta una mejora consistente con respecto a SHADE-ILS. Aunque mejora el rendimiento hasta en un 14\% de \textit{accuracy} en algunas tareas sencillas concretas, es una opción menos estable en redes profundas.
+
+
+\end{enumerate}
+
+Este estudio no solo proporciona una evaluación detallada de los factores que afectan al rendimiento de las técnicas de entrenamiento basadas en GD y MH, sino que también introduce dos enfoques híbridos innovadores. Los resultados obtenidos destacan a SHADE-GD como una alternativa más robusta y eficiente que SHADE en la mayoría de las tareas evaluadas, mientras que SHADE-ILS-GD, aunque presenta mejoras puntuales, no logra una ventaja consistente. Estos hallazgos amplían el conocimiento actual sobre la optimización de redes neuronales profundas y abren nuevas vías para el desarrollo de algoritmos meméticos más eficientes y adaptables a problemas de gran complejidad.

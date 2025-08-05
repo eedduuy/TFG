@@ -1,0 +1,114 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{Agradecimientos}{\es@scroman {iv}}{section*.2}%
+\contentsline {section}{Índice de Figuras}{\es@scroman {ix}}{section*.4}%
+\contentsline {section}{Índice de Tablas}{\es@scroman {xi}}{section*.5}%
+\contentsline {section}{Resumen}{\es@scroman {xii}}{section*.6}%
+\contentsline {part}{I\hspace {1em}Parte matemática: análisis del gradiente descendente, su convergencia y \textit {backpropagation}}{1}{part.1}%
+\contentsline {section}{\numberline {1}Introducción}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Motivación}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Objetivos}{5}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Fundamentos previos}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Cálculo diferencial}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Algunos conceptos sobre álgebra lineal}{9}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Algunos conceptos sobre probabilidad}{10}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Gradiente Descendente}{14}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Gradiente descendente de Cauchy}{15}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Gradiente descendente en el entrenamiento de modelos}{16}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Estrategias de gradiente descendente}{16}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}\textit {Learning rate}}{17}{subsubsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.3}Subgradientes}{18}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Convergencia}{25}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Convergencia para \textit {Batch Gradient Descent}}{26}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Convergencia para versiones estocásticas}{30}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}Problemas en la convergencia}{36}{subsubsection.3.4.3}%
+\contentsline {section}{\numberline {4}\textit {Backpropagation}}{38}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Diferenciación automática}{38}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Diferenciación hacia delante vs hacia atrás}{39}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}\textit {Backpropagation} en perceptrones multicapa}{43}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Capa no-lineal}{45}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Capa de entropía cruzada}{46}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Capa lineal}{47}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}Grafos computacionales}{48}{subsubsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.4}Problemas con el cálculo del gradiente}{49}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Desvanecimiento y explosión del gradiente}{49}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Inicialización de los pesos}{51}{subsubsection.4.4.2}%
+\contentsline {section}{\numberline {5}Conclusiones y trabajos futuros}{53}{section.5}%
+\contentsline {part}{II\hspace {1em}Parte informática: Estudio empírico comparativo entre gradiente descendiente y metaheurísticas para el entrenamiento de redes neuronales profundas}{54}{part.2}%
+\contentsline {section}{\numberline {6}Introducción}{56}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Motivación}{60}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Objetivos}{61}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Planificación}{61}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Fundamentos teóricos}{65}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Redes neuronales y aprendizaje profundo}{65}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Red neuronal}{65}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.2}Aprendizaje profundo y redes neuronales profundas}{65}{subsubsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.3}Perceptrones Multicapa}{66}{subsubsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.2}Redes convolucionales}{67}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Operación de convolución}{68}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2}Capa Convolucional}{69}{subsubsection.7.2.2}%
+\contentsline {subsubsection}{\numberline {7.2.3}Capa \textit {Pooling}}{70}{subsubsection.7.2.3}%
+\contentsline {subsubsection}{\numberline {7.2.4}Capa \textit {Batch Normalization}}{72}{subsubsection.7.2.4}%
+\contentsline {subsubsection}{\numberline {7.2.5}Capa totalmente conectada}{72}{subsubsection.7.2.5}%
+\contentsline {subsection}{\numberline {7.3}\textit {Residual Networks}}{72}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Bloques residuales}{73}{subsubsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}Convoluciones 1x1}{74}{subsubsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.4}Optimizadores basados en gradiente descendente}{75}{subsection.7.4}%
+\contentsline {subsubsection}{\numberline {7.4.1}NAG}{75}{subsubsection.7.4.1}%
+\contentsline {subsubsection}{\numberline {7.4.2}RMSProp}{76}{subsubsection.7.4.2}%
+\contentsline {subsubsection}{\numberline {7.4.3}Adam}{77}{subsubsection.7.4.3}%
+\contentsline {subsubsection}{\numberline {7.4.4}AdamW}{78}{subsubsection.7.4.4}%
+\contentsline {subsubsection}{\numberline {7.4.5}L-BFGS-B}{78}{subsubsection.7.4.5}%
+\contentsline {subsection}{\numberline {7.5}Metaheurísticas}{79}{subsection.7.5}%
+\contentsline {subsubsection}{\numberline {7.5.1}Metaheurísticas basadas en poblaciones}{80}{subsubsection.7.5.1}%
+\contentsline {subsubsection}{\numberline {7.5.2}\textit {Differential Evolution}}{82}{subsubsection.7.5.2}%
+\contentsline {subsubsection}{\numberline {7.5.3}SHADE}{82}{subsubsection.7.5.3}%
+\contentsline {subsubsection}{\numberline {7.5.4}Algoritmos meméticos}{84}{subsubsection.7.5.4}%
+\contentsline {subsubsection}{\numberline {7.5.5}SHADE-ILS}{85}{subsubsection.7.5.5}%
+\contentsline {subsection}{\numberline {7.6}Tests estadísticos}{87}{subsection.7.6}%
+\contentsline {subsubsection}{\numberline {7.6.1}Test de Shapiro-Wilk}{87}{subsubsection.7.6.1}%
+\contentsline {subsubsection}{\numberline {7.6.2}Test de los rangos con signo de Wilcoxon}{88}{subsubsection.7.6.2}%
+\contentsline {section}{\numberline {8}Estado del arte}{89}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Gradiente descendente y optimizadores}{89}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Metaheurísticas en el entrenamiento de modelos}{92}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Neuroevolución}{93}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Aprendizaje Automático Automatizado}{95}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Búsqueda de Arquitectura Neuronal}{96}{subsection.8.5}%
+\contentsline {section}{\numberline {9}Métodos propuestos}{99}{section.9}%
+\contentsline {subsection}{\numberline {9.1}SHADE-GD}{100}{subsection.9.1}%
+\contentsline {paragraph}{1. Inicialización\\}{100}{section*.32}%
+\contentsline {paragraph}{2. Bucle principal de optimización\\}{100}{section*.33}%
+\contentsline {paragraph}{3. Aplicación periódica de GD\\}{103}{section*.34}%
+\contentsline {paragraph}{4. Criterio de reinicio de población\\}{103}{section*.35}%
+\contentsline {paragraph}{5. Finalización\\}{104}{section*.36}%
+\contentsline {paragraph}{Conclusión\\}{104}{section*.37}%
+\contentsline {subsection}{\numberline {9.2}SHADE-ILS-GD}{104}{subsection.9.2}%
+\contentsline {paragraph}{1. Inicialización\\}{104}{section*.38}%
+\contentsline {paragraph}{2. Bucle principal de optimización}{104}{section*.39}%
+\contentsline {paragraph}{3. Aplicación periódica de GD\\}{106}{section*.40}%
+\contentsline {paragraph}{4. Actualización de la mejor solución global\\}{106}{section*.41}%
+\contentsline {paragraph}{5. Criterio de reinicio de población\\}{106}{section*.42}%
+\contentsline {paragraph}{6. Finalización\\}{106}{section*.43}%
+\contentsline {paragraph}{Conclusión\\}{107}{section*.44}%
+\contentsline {section}{\numberline {10}Experimentación y resultados}{108}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Entorno de ejecución y detalles de implementación}{108}{subsection.10.1}%
+\contentsline {subsubsection}{\numberline {10.1.1}Gradiente descendente}{109}{subsubsection.10.1.1}%
+\contentsline {subsubsection}{\numberline {10.1.2}Metaheurísticas}{110}{subsubsection.10.1.2}%
+\contentsline {subsubsection}{\numberline {10.1.3}Entrenamiento}{112}{subsubsection.10.1.3}%
+\contentsline {subsubsection}{\numberline {10.1.4}Métricas de evaluación utilizadas}{114}{subsubsection.10.1.4}%
+\contentsline {paragraph}{Regresión.}{114}{section*.47}%
+\contentsline {paragraph}{Clasificación con clases balanceadas.}{114}{section*.48}%
+\contentsline {paragraph}{Clasificación con clases desbalanceadas.}{114}{section*.49}%
+\contentsline {subsection}{\numberline {10.2}Conjuntos de datos}{115}{subsection.10.2}%
+\contentsline {subsubsection}{\numberline {10.2.1}Tabulares}{115}{subsubsection.10.2.1}%
+\contentsline {subsubsection}{\numberline {10.2.2}Imágenes}{116}{subsubsection.10.2.2}%
+\contentsline {subsection}{\numberline {10.3}Modelos}{118}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Experimentos}{119}{subsection.10.4}%
+\contentsline {subsubsection}{\numberline {10.4.1}Experimento 1: Análisis de diferencias en el rendimiento de MLPs entrenados con MH según el tipo de tarea}{121}{subsubsection.10.4.1}%
+\contentsline {subsubsection}{\numberline {10.4.2}Experimento 2: Evaluación de los factores que más afectan a la pérdida de rendimiento en tareas de clasificación, tanto en MLPs como en ConvNets}{125}{subsubsection.10.4.2}%
+\contentsline {subsubsection}{\numberline {10.4.3}Experimento 3: Análisis de los tiempos de ejecución en el entrenamiento con MH, tanto en MLPs como en ConvNets}{131}{subsubsection.10.4.3}%
+\contentsline {subsubsection}{\numberline {10.4.4}Experimento 4: Análisis comparativo de las propuestas propias}{136}{subsubsection.10.4.4}%
+\contentsline {paragraph}{SHADE y SHADE-GD\\}{136}{section*.66}%
+\contentsline {paragraph}{SHADE-ILS y SHADE-ILS-GD\\}{138}{section*.68}%
+\contentsline {paragraph}{SHADE-GD y SHADE-ILS-GD\\}{140}{section*.70}%
+\contentsline {section}{\numberline {11}Conclusiones y trabajos futuros}{143}{section.11}%
+\contentsline {section}{Bibliografía}{146}{Item.57}%

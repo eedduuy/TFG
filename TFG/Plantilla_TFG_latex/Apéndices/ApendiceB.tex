@@ -1,0 +1,80 @@
+\section{Apéndice B}\label{sec:apendiceB}
+Se muestran los tiempos del entrenamiento para cada modelo y cada algoritmo de aprendizaje, separados por conjunto de datos.
+
+
+
+
+
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|l|}
+\hline
+\backslashbox{Algoritmo}{Capas} & 1    & 2    & 5   & 11  \\ \hline
+NAG                             & 1.05 & 1.02 & 1.2 & 1.8 \\ \hline
+RMSPROP                         & 1.0  & 1.0  & 1.1 & 1.3 \\ \hline
+ADAM                            & 1.0  & 1.1  & 1.2 & 1.4 \\ \hline
+SHADE                           & 52   & 57   & 100 & 728 \\ \hline
+SHADE-ILS                       & 55   & 61   & 109 & 832 \\ \hline
+SHADE-GD                        & 62   & 66   & 109 & 733 \\ \hline
+SHADE-ILS-GD                    & 65   & 68   & 122 & 849 \\ \hline
+\end{tabular}
+\caption{Tiempo del entrenamiento en segundos para el dataset Boston House Pricing.}
+\label{tab:bhp_time}
+\end{table}
+
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\backslashbox{Algoritmo}{Capas} & 1      & 2      & 5       & 11      \\ \hline
+NAG                             & 9.34   & 10.23  & 11.17   & 14.24   \\ \hline
+RMSPROP                         & 9.67   & 10.11  & 11.90   & 15.20   \\ \hline
+ADAM                            & 9.55   & 9.93   & 12.13   & 16.34   \\ \hline
+SHADE                           & 689.94 & 745.08 & 942.50  & 1906.06 \\ \hline
+SHADE-ILS                       & 784.11 & 854.95 & 1121.06 & 2051.48 \\ \hline
+SHADE-GD                        & 701.73 & 757.53 & 946.68  & 1892.01 \\ \hline
+SHADE-ILS-GD                    & 722.12 & 788.90 & 997.56  & 2061.90 \\ \hline
+\end{tabular}
+\caption{Tiempo del entrenamiento en segundos para el dataset Wine Quality (Regresión).}
+\label{tab:wqr_time}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\backslashbox{Algoritmo}{Modelo} & LeNet5      & ResNet15    & ResNet57    \\ \hline
+NAG                              & 52          & 60          & 72          \\ \hline
+RMSPROP                          & \textbf{54} & \textbf{61} & \textbf{72} \\ \hline
+ADAM                             & 54          & 61          & 72          \\ \hline
+SHADE                            & 6852        & 7639        & 8032        \\ \hline
+SHADE-ILS                        & 7190        & 7927        & 8716        \\ \hline
+SHADE-GD                         & 6814        & 7412        & 8559        \\ \hline
+SHADE-ILS-GD                     & 6661        & 7526        & 9467        \\ \hline
+\end{tabular}
+\caption{Tiempo del entrenamiento en segundos para el dataset MNIST.}
+\label{tab:mnist_time}
+\end{table}
+
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\backslashbox{Algoritmo}{Modelo} & LeNet5  & ResNet15 & ResNet57 \\ \hline
+NAG                              & 115.53  & 126.65   & 141.41   \\ \hline
+RMSPROP                          & 107.51  & 113.78   & 123.11   \\ \hline
+ADAM                             & 104.51  & 117.56   & 133.23   \\ \hline
+SHADE                            & 6646.46 & 7690.72  & 10812.27 \\ \hline
+SHADE-ILS                        & 7391.97 & 8104.50  & 8744.10  \\ \hline
+SHADE-GD                         & 7586.15 & 8444.62  & 7856.43  \\ \hline
+SHADE-ILS-GD                     & 6279.19 & 7034.95  & 9035.02  \\ \hline
+\end{tabular}
+\caption{Tiempo del entrenamiento en segundos para el dataset CIFAR-10.}
+\label{tab:cifar_time}
+\end{table}

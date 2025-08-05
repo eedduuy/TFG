@@ -1,0 +1,37 @@
+\section{Conclusiones y trabajos futuros}
+
+Al comienzo de esta parte matemática, se establecieron dos objetivos principales:
+
+\begin{itemize}
+	\item Analizar la convergencia del gradiente descendente.
+	
+	\item Explorar el uso de BP para este algoritmo de aprendizaje.
+\end{itemize}
+
+En primer lugar hemos introducido los conceptos y términos necesarios con los que íbamos a trabajar, y presentamos la idea original de Cauchy de la que surge el algoritmo de aprendizaje que conocemos hoy día. Luego, diferenciamos tres versiones distintas del algoritmo según la cantidad de datos que se usen para calcular el gradiente y vimos los componentes básicos de este método. También introdujimos el concepto de subgradiente, que nos permite analizar de manera rigurosa el algoritmo de gradiente descendente sin necesidad de que todas las funciones que intervienen en el modelo sean diferenciables. \textbf{Hemos visto el enunciado y demostración de un teorema que nos asegura la convergencia al mínimo global del algoritmo en su versión BGD}, aunque con condiciones muy estrictas como que la función de coste sea convexa o de clase $C^2$.
+
+\textbf{Presentamos el concepto de martingala, un tipo de proceso estocástico con el que podemos modelar las versiones estocásticas del algoritmo de gradiente descendente}. A través del \textbf{teorema de Siegmund-Robbins}, que proporciona convergencia para las casi supermartingalas, \textbf{conseguimos demostrar un teorema que nos asegura la convergencia de SGD y MBSGD hacia un minimizador global con probabilidad 1}, consiguiendo un teorema mucho más práctico que el anterior. Aunque es necesario para ello la hipótesis, demasiado estricta, de que la función sea globalmente fuertemente convexa, \textbf{se espera que haya convergencia hacia un minimizador local en caso de que la función de coste sea fuertemente convexa a nivel local}.
+
+\textbf{Para analizar y comprender el algoritmo de BP, hemos visto qué es la diferenciación automática y qué estrategia utiliza para realizar cálculos de manera eficiente}. Usando como ejemplo un MLP, pudimos ver cómo funciona esta técnica y distinguimos entre diferenciación hacia delante y hacia detrás. Una vez presentados estos conceptos, \textbf{exploramos propiamente el algoritmo de BP, en qué se basa y por qué resulta eficiente dicho algoritmo}. Concluimos finalmente poniendo varios ejemplos prácticos de cálculos realizados con esta técnica y resaltando problemas que trae consigo.
+
+%Afirmamos entonces que se han cumplido los objetivos que nos habíamos planteado, no siendo una tarea sencilla. Para cumplirla ha sido necesario recordar muchos conceptos explicados durante el grado, extender algunos ya conocidos y descubrir otros completamente nuevos. Muchos conceptos sobre diferenciabilidad y probabilidad tuve que recordarlos y repasarlos minuciosamente, ya que son la base para el desarrollo posterior del trabajo.
+
+Esto ha permitido conocer los procesos estocásticos de tipo martingala, que no solo son una herramienta poderosa para el análisis del gradiente descendente, sino que resultan una estrategia ampliamente usada para derivar resultados sobre convergencia o probar límites probabilísticos. De esta manera se buscan modelar ciertos procesos con estos objetos para aprovechar sus cualidades y propiedades.
+
+Los conceptos de subgradiente y subdiferenciabilidad, aunque menos ampliamente usados que el anterior, constituyen un recurso indispensable en el campo del aprendizaje profundo para el análisis de técnicas relacionadas con el gradiente descendente a nivel teórico. Gracias a este trabajo he adquirido una visión más teórica y formal del aprendizaje profundo y de cómo se lleva a cabo su entrenamiento. \textbf{En un campo donde en muchas ocasiones prima el ensayo y error, adquirir una perspectiva teórica formal resulta indispensable a la hora de investigar y poder ofrecer mejoras}.
+
+Como conclusión, creo que este trabajo me ha servido para poner en común el aprendizaje de ambos grados y gracias a él he adquirido además destreza y soltura para buscar, consultar y leer publicaciones matemáticas en este ámbito, lo cual es una habilidad muy importante.
+
+
+
+
+Después de comentar los resultados obtenidos, en el futuro podrían resultar interesantes los siguientes trabajos:
+
+\begin{enumerate}
+	\item Para el Teorema \ref{teor:convsgd}, sobre la convergencia de SGD, demostrar de manera rigurosa las suposiciones que se plantean ante la relajación de las condiciones de convexidad: cuando la función de coste no es globalmente fuertemente convexa, sino que es fuertemente convexa a nivel local, entonces el algoritmo converge a un minimizador local en lugar de a uno global.
+	
+	\item Los procesos estocásticos de tipo martingala han demostrado ser herramientas poderosas para el análisis teórico de la convergencia de SGD. Se podrían reformular optimizadores modernos basados en GD, como Adam o RMSProp, en términos de procesos de martingalas para analizar de manera particular y más rigurosa sus propiedades de convergencia y estabilidad.
+	
+	%\item Se propone un análisis teórico de cómo las estrategias de inicialización de pesos afectan la propagación de la varianza y el gradiente en redes neuronales en función de la activación utilizada. Se estudiarán condiciones para evitar la saturación de activaciones y la desaparición/explosión del gradiente. Finalmente, se evaluarán estrategias existentes y se explorarán posibles mejoras en la inicialización.
+\end{enumerate}
+

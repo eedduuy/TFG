@@ -1,0 +1,316 @@
+\section{Fundamentos previos}
+A continuación se definirán los conceptos básicos necesarios con los que se trabajará durante el desarrollo de esta parte. Se tratarán los elementos que se usan en el algoritmo de gradiente descendente y BP. Se presenta únicamente el material estrictamente necesario para comprender el trabajo. 
+
+
+\subsection{Cálculo diferencial}
+Se ha usado para la elaboración de esta sección los apuntes en línea del profesor de la UGR Rafael Payá Albert en su curso de Análisis Matemático I\footnote{\url{https://www.ugr.es/~rpaya/docencia.htm\#Analisis}}.  Salvo otras especificaciones, el material de consulta para el desarrollo de esta parte matemática ha sido el curso en línea de Ciencias de Computación de la universidad Bristish Columbia\footnote{\url{https://www.cs.ubc.ca/~schmidtm/Courses/5XX-S22/}} y los libros Probabilistic Machine Learning \cite{pml1Book} y Deep Learning \cite{GoodFellowBook}.
+
+Los algoritmos de gradiente descendente y BP se basan principalmente en el cálculo diferencial, y el hecho de que no usen herramientas matemáticas demasiado complejas resulta precisamente una de sus virtudes, ya que gracias a la abstracción y a un diseño ingenioso consiguen obtener grandes resultados a partir de operaciones relativamente sencillas. Empezamos con los conceptos más elementales que subyacen durante todo el trabajo.
+
+En lo que sigue se fijan los abiertos $X \subseteq \mathbb{R}^n$, $Y \subseteq \mathbb{R}^m$ y las funciones $f: X \rightarrow Y$ y $g: X \rightarrow \mathbb{R}$. Salvo que se indique lo contrario utilizaremos la norma euclídea en $\mathbb{R}^n$.
+
+
+\begin{definicion}[Función diferenciable]
+    $f$ es diferenciable en el punto $a \in X$ si existe una aplicación lineal y continua $Df(a) \in L(\mathbb{R}^n,\mathbb{R}^m)$,  que verifica:
+
+    $$ \displaystyle \lim_{x \to a} \frac{\left\| f(x)-f(a)-Df(a)(x-a)\right\|}{\left\| x-a\right\|}=0.$$
+    
+    Decimos que $f$ es diferenciable si es diferenciable en todo punto de su dominio.
+\end{definicion}
+
+
+
+
+\begin{definicion}[Derivada parcial de un campo escalar]
+           
+
+	La derivada parcial de $g$ con respecto a la $k$-ésima variable $x_k$ en el punto $a = (a_1, \ldots, a_n)\in X$ se define como
+
+	$$ \frac{\partial g}{\partial x_k}(a) = \underset{h\rightarrow0}{lim}\frac{g(a_1, \ldots, a_{k-1}, a_k + h, a_{k+1}, \ldots, a_n) - g(a_1, \ldots, a_n)}{h}$$
+
+	si existe el límite.
+\end{definicion}
+
+Notamos por $f= \left ( f_1,f_2,\ldots, f_m \right )$ indicando las $m$ componentes de $f$ que es un campo vectorial definido en $X$, siendo $f_j=\pi _j \circ f$. 
+
+
+\begin{definicion}[Derivada parcial de un campo vectorial]
+        $f$ es parcialmente derivable con respecto a la $k$-ésima variable $x_k$ en $a = (a_1, \ldots, a_n)\in X$ si, y sólo si, lo es $f_j \quad \forall j \in I_m$, en tal caso, 
+
+        $$\frac{\partial f}{\partial x_k}(a) = \left ( \frac{\partial f_1}{\partial x_k}(a), \ldots, \frac{\partial f_m}{\partial x_k}(a) \right ) \in \mathbb{R}^m.$$
+
+        $f$ es parcialmente derivable en $a$ si, y sólo si, lo es respecto de todas sus variables.
+\end{definicion}
+
+
+Definimos ahora los elementos clave del algoritmo de entrenamiento: el vector gradiente y la matriz jacobiana. En el algoritmo de descenso de gradiente, el objetivo principal es calcular el vector gradiente, ya que la función de error de los modelos siempre nos devuelve un escalar, es decir que la dimensión de la imagen es 1. Sin embargo las matrices jacobianas también juegan un papel fundamental ya que para calcular ese vector gradiente, el algoritmo de BP necesita realizar cálculos intermedios, que son las matrices jacobianas asociadas a la salida de las capas ocultas (que tienen mayor dimensionalidad) bien con respecto a los parámetros de la capa o bien con respecto al error de la predicción del modelo. En lo que sigue fijamos $x \in X$.
+
+\begin{definicion}[Vector gradiente]
+    Cuando $h$ es parcialmente derivable en $x$, el gradiente de $h$ en $x$ es el vector $\nabla h(x) \in X$ dado por 
+    $$\nabla h(x) = \left ( \frac{\partial h}{\partial x_1}(x), \frac{\partial h}{\partial x_2}(x), \ldots, \frac{\partial h}{\partial x_n}(x) \right ).$$
+\end{definicion}
+
+
+\begin{definicion}[Matriz jacobiana]
+    Si $f$ es diferenciable en $ x$, la matriz jacobiana es la matriz de la aplicación lineal $Df(x) \in L \left (\mathbb{R}^n, \mathbb{R}^m \right )$ y se escribe como $J_f$. Viene dada por:
+
+ \begin{align*}
+	J_f(x)&= \begin{pmatrix}
+	 \frac{\partial f_1}{\partial x_1}(x) & \frac{\partial f_1}{\partial x_2}(x) & \cdots & \frac{\partial f_1}{\partial x_n}(x) \\
+	 \frac{\partial f_2}{\partial x_1}(x) & \frac{\partial f_2}{\partial x_2}(x) & \cdots & \frac{\partial f_2}{\partial x_n}(x) \\
+	 \vdots & \vdots & \ddots & \vdots \\
+	 \frac{\partial f_m}{\partial x_1}(x) & \frac{\partial f_m}{\partial x_2}(x) & \cdots & \frac{\partial f_m}{\partial x_n}(x) \\
+	\end{pmatrix} \\	
+	&= \begin{pmatrix}
+	 \nabla f_1(x)\\
+	 \vdots \\
+	 \nabla f_m(x) \\
+	\end{pmatrix}=
+	\begin{pmatrix}
+	     \frac{\partial f}{\partial x_1}(x)^T, \ldots, \frac{\partial f}{\partial x_n}(x)^T
+	\end{pmatrix}.
+\end{align*}
+
+\end{definicion}
+
+
+
+Si f es de clase $C^2$ (derivable dos veces con sus derivadas continuas) y derivamos el gradiente obtenemos una matriz cuadrada simétrica con derivadas parciales de segundo orden, a la que llamamos matriz Hessiana.
+
+\begin{definicion}[Matriz Hessiana]
+	Definimos la matriz Hessiana de $h$ en $x$ como
+
+	$$\nabla^2h(x)= \begin{pmatrix}
+		\frac{\partial^2h}{\partial x^{2}_1}(x) & \frac{\partial^2h}{\partial x_1\partial x_2}(x) & \cdots & \frac{\partial^2h}{\partial x_1 \partial x_n}(x)\\
+		\frac{\partial^2h}{\partial x_2 \partial x_1}(x) & \frac{\partial^2h}{\partial x^{2}_2}(x) & \cdots & \frac{\partial^2h}{\partial x_2 \partial x_n}(x)\\
+		\vdots & \vdots & \ddots & \vdots \\
+		\frac{\partial^2h}{\partial x_n \partial x_1}(x) & \frac{\partial^2h}{\partial x_n \partial x_2}(x) & \cdots & \frac{\partial^2h}{\partial x^{2}_n}(x)\\
+	\end{pmatrix}$$
+
+\end{definicion}
+
+Este es un concepto muy importante del cálculo multivariable y la optimización. Cuando hablemos del gradiente descendente, especialmente de la convergencia, usaremos algunas de sus propiedades, como por ejemplo la aproximación cuadrática para desplazamientos pequeños: $h(x + \Delta x) \approx h(x) + \nabla h(x)^T \Delta x + \frac{1}{2} \Delta x^T \nabla^2 h(x) \Delta x$. %HAY UN RESULTADO QUE F ES CONVEXA SII LA MATRIZ HESSIANA ES SEMIDEFINIDA POSITIVA PERO NO SE SI PONERLO. ESTO SE APLICA A NIVEL LOCAL TAMBIEN.
+		
+
+
+Se presenta a continuación una de las reglas más útiles para el cálculo de diferenciales, que afirma que la composición de aplicaciones preserva la diferenciabilidad. Será parte clave en el desarrollo próximo ya que a los modelos de aprendizaje automático basados en capas podemos describirlos como una función que se descompone en una función por cada capa, por tanto será una herramienta que usaremos continuamente para calcular estas matrices jacobianas y gradientes. Se define $D(X,Y)$ como el espacio de las funciones entre $X$ e $Y$ que son diferenciables.
+
+\begin{teorema}[Regla de la cadena]
+    Sea $Z \subseteq \mathbb{R}^p$ un abierto y $g:Y \rightarrow Z$. Entonces si $f$ es diferenciable en $x$ y g es diferenciable en $y=f(x)$ se tiene que $g \circ f$ es diferenciable en $x$ con
+
+    $$D(g \circ f)(x) = Dg(y) \circ Df(x) = Dg(f(x)) \circ Df(x).$$
+
+    \raggedright{Si $f \in D(X, Y)$ y  $g \in D(Y,Z)$, entonces $g \circ f \in D(X, Z)$.}
+    
+\end{teorema}
+
+
+En ocasiones en algunos modelos tenemos que lidiar con funciones que no son diferenciables en un punto, y para poder manejarlas extenderemos el concepto de diferenciabilidad a lo que llamaremos subdiferenciabilidad. Esto se expondrá más adelante ya que son conceptos que no se han explorado a lo largo del grado de matemáticas.
+
+
+El último concepto, que también resulta de gran importancia en los resultados teóricos sobre la convergencia del gradiente descendente, es el de la condición de Lipschitz, en concreto aplicada al gradiente. No forma parte del cálculo diferencial ya que la condición de Lipschitz no requiere diferenciabilidad, pero lo usaremos en éste ámbito ya que la condición que nos interesa usar está aplicada al gradiente.
+
+\begin{definicion}[Función Lipschitziana]
+    El campo vectorial $f$ es lipschitziano si existe una constante $M \in \mathbb{R}_0^+$ que verifica:
+	\begin{equation}\label{eq:deslipsint}
+	\| f(x) - f(y) \| \leq M \| x - y \| \qquad \forall x,y \in X.
+	\end{equation}
+\end{definicion}
+
+La definición nos dice de manera intuitiva que el gradiente de la función no puede cambiar a una velocidad arbitraria. Decimos que la función $f$ tiene gradiente lipschitziano si la condición anterior se aplica a su gradiente, es decir:
+
+\begin{equation}
+\| \nabla f(x) - \nabla f(y) \| \leq M \| x - y \| \qquad \forall x,y \in X.
+\end{equation}
+
+
+La mínima constante $M_0=L$ que verifica la desigualdad \eqref{eq:deslipsint} es denominada la constante de Lipschitz de $f$ y viene definida por 
+
+$$L=sup \left \{ \frac{\|f(x)-f(y)\|}{\|x - y \|} : x,y \in X, x \neq y \right \}.$$
+
+
+\subsection{Algunos conceptos sobre álgebra lineal}
+
+
+Para demostrar algunos de los resultados fundamentales del TFG, necesitamos algunos conceptos básicos del Álgebra Lineal. Utilizamos como referencia \cite{axler2024linear}. En lo que sigue, $A \in \mathbb{R}^{n \times n}$ es una matriz cuadrada real.
+
+\begin{definicion}[Autovalores y autovectores]
+	$\lambda \in \mathbb{C}$ es un autovalor de $A$ si existe un vector no nulo $v \in \mathbb{R}^n$, denominado autovector, que verifica:
+
+	\begin{equation*} 
+		Av = \lambda v.
+	\end{equation*}
+
+De manera equivalente, $\lambda$ satisface la ecuación característica \[det(A-\lambda I_n)=0.\]
+\end{definicion}
+
+\begin{definicion}[Radio espectral]
+	El radio espectral de la matriz $A$, $\rho(A)$, se define como el máximo valor absoluto de sus autovalores, es decir, 
+
+	\begin{equation*} 
+		\rho(A) = \text{máx} \left \{ | \lambda | : \lambda \text{ es un valor propio de } A \right \}.
+	\end{equation*}
+\end{definicion}
+
+Para matrices simétricas ($A=A^T$), definimos lo siguiente
+
+
+\begin{definicion}[Matriz semidefinida]
+	La matriz $A$ es semidefinida positiva, y denotamos por $A \succeq 0$ si se cumple alguna de estas propiedades equivalentes: 
+
+	\begin{itemize}
+		\item Todos sus autovalores son no negativos.
+
+		\item $\forall x \in \mathbb{R}^n \quad x^T A x \geq 0$.
+	\end{itemize}
+
+	De modo análogo decimos que la matriz $A$ es semidefinida negativa, y denotamos por $A \preceq 0$ si se cumple alguna de estas propiedades equivalentes: 
+
+	\begin{itemize}
+		\item Todos sus autovalores cumplen $ \lambda _i \leq 0$.
+
+		\item $\forall x \in \mathbb{R}^n \quad x^T A x \leq 0$.
+	\end{itemize}
+\end{definicion}
+
+
+
+Cuando la matriz A es simétrica, se cumplen dos propiedades relevantes:
+
+\begin{enumerate}
+\item Todos los autovalores y autovectores de A son reales.
+
+\item $\| A \| = \rho(A)$.
+
+
+\end{enumerate}
+
+\subsection{Algunos conceptos sobre probabilidad}
+
+Ahora vamos a introducir los conceptos necesarios para el desarrollo teórico relacionado con la versión estocástica del algoritmo de gradiente descendente. Desarrollamos las herramientas necesarias para llegar a las definiciones de esperanza condicionada y convergencia casi segura, necesarias para entender las martingalas. Para esta parte usaremos los apuntes de la asignatura de Probabilidad, los apuntes de la profesora de la UGR Patricia Román Román\footnote{\url{https://www.ugr.es/~proman/PyE/Condicionadas.pdf}} y el curso de Probabilidad del grupo CDPYE\footnote{\url{https://www.ugr.es/~cdpye/CursoProbabilidad/}}. Empezamos con recordando el concepto de espacio medible, para construir sobre él un espacio de probabilidad:
+
+\begin{definicion}[Espacio medible]
+	Un espacio medible es un par $(\Omega, \mathcal{A})$, donde $\Omega$ es un conjunto arbitrario y $\mathcal{A} \subseteq \mathcal{P}(\Omega)$ tiene estructura de $\sigma$-álgebra, es decir, verifica que 
+		
+		\begin{itemize}
+			\item $\mathcal{A} \neq \emptyset \quad \text{y} \quad \Omega \in \mathcal{A}$.
+
+			\item $A \in \mathcal{A} \Rightarrow A^c = \Omega \backslash A \in \mathcal{A}$ (cerrada bajo complementarios).
+
+			\item $A_n \in \mathcal{A} \quad \forall n \in \mathbb{N} \Rightarrow \underset{n \in \mathbb{N}}{\cup} A_n \in \mathcal{A}$ (cerrada bajo uniones numerables).
+		\end{itemize}
+\end{definicion}
+
+
+\begin{definicion}[Espacio de probabilidad]\label{def:esprob}
+	Un espacio de probabilidad es una terna $(\Omega, \mathcal{A},P)$ donde:
+	
+	\begin{enumerate}
+	
+		\item $\Omega$ es un conjunto arbitrario.
+
+		\item{$\mathcal{A} \subseteq \mathcal{P}(\Omega)$ tiene estructura de $\sigma$-álgebra.
+
+		}
+
+		\item{$P:\mathcal{A} \rightarrow [0,1]$ es una función de probabilidad, es decir,
+
+		\begin{itemize}
+			\item $P(A)\geq 0, \quad \forall A \in \mathcal{A}$.
+
+			\item $P(\Omega)=1$.
+
+			\item Para cualquier sucesión $\left \{ A_n \right \}_{n \in \mathbb{N}} \subseteq \mathcal{A}$ de sucesos disjuntos se tiene $P \left ( \underset{n \in \mathbb{N}}{\cup} A_n \right ) = \sum_{n \in \mathbb{N}} P(A_n)$.
+		\end{itemize}
+
+		}
+	\end{enumerate}
+\end{definicion}
+
+Decimos que dos sucesos son disjuntos si $A \cap B=0$. Vemos ahora las funciones medibles y seguidamente las variables aleatorias.
+
+\begin{definicion}[Función medible]
+	Una función medible (unidimensional) sobre un espacio medible $(\Omega, \mathcal{A})$ es una función $f: \Omega \rightarrow \mathbb{R}$ que verifica
+
+	\begin{equation*}
+		f^{-1}(B) \in \mathcal{A}, \quad \forall B \in \mathcal{B}
+	\end{equation*} 
+
+	o, equivalentemente, que $f^{-1}(\mathcal{B}) \subseteq \mathcal{A},$ siendo $\mathcal{B}$ la $\sigma$-álgebra de Borel en $\mathbb{R}$, es decir, la mínima $\sigma$-álgebra que contiene a todos los intervalos.
+
+\end{definicion}
+
+
+\begin{definicion}[Variable aleatoria]
+	Una variable aleatoria sobre un espacio de probabilidad $(\Omega, \mathcal{A}, \mathcal{P})$ es una función medible $X: \Omega \rightarrow \mathbb{R}$.
+\end{definicion}
+
+\begin{definicion}[Función de distribución de una variable aleatoria]
+	Una función $F_X:\mathbb{R} \rightarrow [0,1]$, definida por
+	\begin{equation*}
+		F_X(x)=P(X \leq x) = P_X((- \infty , x]) = P( X \in (- \infty, x ]), \quad \forall x \in \mathbb{R},
+	\end{equation*}
+
+	se dice que es función de distribución de la variable aleatoria $X$.
+\end{definicion}
+
+Una variable aleatoria puede ser discreta o continua. Decimos que es discreta si existe un conjunto numerable $E_X \subseteq \mathbb{R}$, tal que $P_X(X \in E_X) = 1$. Para el objetivo que nos interesa sólo vamos a necesitar del tipo discreto, por lo que nos ceñiremos a ellas y, en caso de no especificar, nos estaremos refiriendo a una variable aleatoria discreta. Pasamos a presentar el último concepto intermedio antes de llegar a la esperanza matemática.
+
+\begin{definicion}[Función masa de probabilidad]
+	Una variable aleatoria discreta $X: (\Omega, \mathcal{A}, P) \rightarrow (\mathbb{R}, \mathcal{B}, P_X)$ tiene como función masa de probabilidad
+	
+	\begin{equation*}
+		p_X: E_X \rightarrow [0,1], \quad p_X(x) = P(X=x), \quad \forall x \in E_X.
+	\end{equation*}
+
+	Tenemos entonces que $\sum_{x \in E_X} p_X(x)=1$.
+\end{definicion}
+
+
+Definimos ahora la esperanza matemática, que además de servirnos para la posterior definición de martingala, la usaremos en la Sección \ref{sec:inipesos} para intentar controlar la explosión y desvanecimiento del gradiente en BP a través de la inicialización de los pesos.
+
+\begin{definicion}[Esperanza matemática]
+	Si para la variable aleatoria $X$ existe $\sum_{x \in E_X} |x| p_X(x) < \infty$, entonces se define la esperanza matemática de $X$ como:
+	\begin{equation*}
+		E[X]= \sum_{x \in E_X} x p_X(x) = \sum_{x \in E_X} x P(X=x).
+	\end{equation*}
+\end{definicion}
+
+Dadas dos variables aleatorias $X$ e $Y$, vamos a ver las dos propiedades más importantes de la esperanza matemática:
+
+\begin{itemize}
+	\item Linealidad: $E[aX+bY]=aE[X]+bE[Y], \quad \forall a,b \in \mathbb{R}$.
+
+	\item Conservación del orden: $ X \leq Y \Rightarrow E[X] \leq E[Y]$.
+
+\end{itemize}
+
+Ahora vamos a presentar las distribuciones condicionadas para, seguidamente, definir finalmente la esperanza condicionada.
+
+\begin{definicion}[Distribución condicionada]
+	Sea $X=(X_1, \ldots, X_n)$ un vector de variables aleatorias discretas sobre el mismo espacio de probabilidad. Sea $X_i$ una componente arbitraria y $x_i \in \mathbb{R}$ tal que $P(X_i=x_i)>0$. Se define la distribución condicionada de $(X_1, \ldots, X_{i-1}, X_{i+1}, \ldots, X_n)$ a $X_i=x_i$ como la determinada por la función masa de probabilidad
+
+\begin{align*}
+	&P(X_1=x_1, \ldots, X_{i-1}=x_{i-1}, X_{i+1}=x_{i+1}, \ldots, X_n=x_n | X_i=x_i)= \\
+	&\frac{P(X_1=x_1, \ldots, X_{i-1}=x_{i-1}, X_i=x_i,  X_{i+1}=x_{i+1}, \ldots, X_n=x_n )}{P(X_i=x_i)} \\
+	& \forall (x_1, \ldots, x_{i-1}, x_{i+1}, \ldots, x_n) / (x_1, \ldots, x_{i-1}, x_i, x_{i+1}, \ldots, x_n) \in E.
+\end{align*}
+\end{definicion}
+
+Vamos a definir la esperanza condicionada de una variable a otra (caso bidimensional), pero para más variables sería un razonamiento análogo.
+
+\begin{definicion}[Esperanza condicionada]
+	Sean $X$ e $Y$ variables aleatorias discretas sobre el mismo espacio de probabilidad. Se define la esperanza matemática condicionada de $X$ a $Y$ como la variable aleatoria, que se denota $E[X|Y]$, que toma el valor $E[X|Y=y]$ cuando $Y=y$, siendo 
+
+\begin{equation}
+	E[X|Y=y] = \sum_{x \in E_X} xP(X=x | Y=y) \quad \text{si } P(Y=y)>0.
+\end{equation}
+\end{definicion}
+
+Ahora definimos el concepto de casi seguridad, necesario también para el mismo desarrollo teórico. Se dice que un suceso es casi seguro cuando la probabilidad de que ocurra es uno. Dada una variable aleatoria $X$, y una sucesión de variables aleatorias $\left \{ X_n \right \} _{n \in \mathbb{N}}$ definidas sobre un mismo espacio de probabilidad, se dice que dicha sucesión converge casi seguramente a $X$ si 
+
+\begin{equation*}
+	P \left ( \underset{n \rightarrow + \infty}{lim} X_n =X \right ) =1.
+\end{equation*}
+
+Ahora vamos a definir un último concepto, que nos servirá para tratar con las versiones estocásticas del gradiente descendente. Es un proceso aleatorio que evoluciona con el tiempo. Más concretamente, un proceso estocástico es una colección de variables aleatorias $X_t$ indexadas por el tiempo. Si el tiempo es un subconjunto de los enteros no negativos $\left \{ 0,1,2, \ldots \right \}$ entonces llamaremos al proceso discreto, mientras que si es un subconjunto de $[0, \infty )$ entonces trataremos con un proceso estocástico continuo. Las variables aleatorias $X_t$ toman valores en un conjunto que llamamos espacio de estados. Este espacio de estados puede ser a su vez discreto, si es un conjunto finito o infinito numerable; o continuo, por ejemplo el conjunto de los números reales $\mathbb{R}$ o un espacio $d$-dimensional $\mathbb{R}^d$.

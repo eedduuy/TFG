@@ -1,0 +1,154 @@
+\section{Apéndice A}\label{sec:apendiceA}
+Se muestran los resultados obtenidos en el entrenamiento para cada modelo y cada algoritmo de aprendizaje, separados por conjunto de datos.
+
+
+
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{\begin{tabular}{|c|ccc|ccc|ccc|ccc|}
+\hline
+\multirow{2}{*}{\backslashbox{Algoritmo}{N\_ capas}} & \multicolumn{3}{c|}{1}                                                                  & \multicolumn{3}{c|}{2}                                                                  & \multicolumn{3}{c|}{5}                                                                 & \multicolumn{3}{c|}{11}                                                                 \\ \cline{2-13} 
+                                                     & \multicolumn{1}{c|}{E}             & \multicolumn{1}{c|}{T}             & A             & \multicolumn{1}{c|}{E}             & \multicolumn{1}{c|}{T}             & A             & \multicolumn{1}{c|}{E}             & \multicolumn{1}{c|}{T}             & A            & \multicolumn{1}{c|}{E}             & \multicolumn{1}{c|}{T}             & A             \\ \hline
+NAG                                                  & \multicolumn{1}{c|}{0.16}          & \multicolumn{1}{c|}{0.11}          & 0.95          & \multicolumn{1}{c|}{0.17}          & \multicolumn{1}{c|}{0.08}          & 0.97          & \multicolumn{1}{c|}{0.13}          & \multicolumn{1}{c|}{0.06}          & 1.0          & \multicolumn{1}{c|}{0.21}          & \multicolumn{1}{c|}{0.08}          & 0.96          \\ \hline
+RMSPROP                                              & \multicolumn{1}{c|}{\textbf{0.14}} & \multicolumn{1}{c|}{\textbf{0.05}} & \textbf{0.97} & \multicolumn{1}{c|}{\textbf{0.15}} & \multicolumn{1}{c|}{\textbf{0.03}} & \textbf{0.99} & \multicolumn{1}{c|}{\textbf{0.07}} & \multicolumn{1}{c|}{\textbf{0.01}} & \textbf{1.0} & \multicolumn{1}{c|}{\textbf{0.13}} & \multicolumn{1}{c|}{\textbf{0.04}} & \textbf{0.98} \\ \hline
+ADAM                                                 & \multicolumn{1}{c|}{0.18}          & \multicolumn{1}{c|}{0.10}          & 0.96          & \multicolumn{1}{c|}{0.14}          & \multicolumn{1}{c|}{0.04}          & 0.98          & \multicolumn{1}{c|}{0.10}          & \multicolumn{1}{c|}{0.02}          & 1.0          & \multicolumn{1}{c|}{1.13}          & \multicolumn{1}{c|}{0.06}          & 0.95          \\ \hline
+SHADE                                                & \multicolumn{1}{c|}{0.10}          & \multicolumn{1}{c|}{0.18}          & 0.93          & \multicolumn{1}{c|}{0.21}          & \multicolumn{1}{c|}{0.49}          & 0.72          & \multicolumn{1}{c|}{0.63}          & \multicolumn{1}{c|}{0.64}          & 0.82         & \multicolumn{1}{c|}{0.70}          & \multicolumn{1}{c|}{0.69}          & 0.5           \\ \hline
+SHADE-ILS                                            & \multicolumn{1}{c|}{0.07}          & \multicolumn{1}{c|}{0.14}          & 0.97          & \multicolumn{1}{c|}{0.06}          & \multicolumn{1}{c|}{0.35}          & 0.93          & \multicolumn{1}{c|}{0.05}          & \multicolumn{1}{c|}{0.47}          & 0.89         & \multicolumn{1}{c|}{0.09}          & \multicolumn{1}{c|}{0.49}          & 0.9           \\ \hline
+SHADE-GD                                             & \multicolumn{1}{c|}{0.10}          & \multicolumn{1}{c|}{0.18}          & 0.91          & \multicolumn{1}{c|}{0.11}          & \multicolumn{1}{c|}{0.22}          & 0.95          & \multicolumn{1}{c|}{0.10}          & \multicolumn{1}{c|}{0.45}          & 0.87         & \multicolumn{1}{c|}{0.27}          & \multicolumn{1}{c|}{0.65}          & 0.6           \\ \hline
+SHADE-ILS-GD                                         & \multicolumn{1}{c|}{0.06}          & \multicolumn{1}{c|}{0.15}          & 0.94          & \multicolumn{1}{c|}{0.06}          & \multicolumn{1}{c|}{0.35}          & 0.93          & \multicolumn{1}{c|}{0.03}          & \multicolumn{1}{c|}{0.61}          & 0.6          & \multicolumn{1}{c|}{0.11}          & \multicolumn{1}{c|}{0.7}           & 0.5           \\ \hline
+\end{tabular}}
+\caption{Resultados del entrenamiento para el dataset Breast Cancer Winsconsin.}
+\label{tab:bcw}
+\end{table}
+
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{\begin{tabular}{|c|ccc|ccc|ccc|ccc|}
+\hline
+\multirow{2}{*}{\backslashbox{Algoritmo}{N\_ capas}} & \multicolumn{3}{c|}{1}                                                                  & \multicolumn{3}{c|}{2}                                                                    & \multicolumn{3}{c|}{5}                                                                    & \multicolumn{3}{c|}{11}                                                                  \\ \cline{2-13} 
+                                                     & \multicolumn{1}{c|}{E}             & \multicolumn{1}{c|}{T}             & R$^2$         & \multicolumn{1}{c|}{E}               & \multicolumn{1}{c|}{T}             & R$^2$         & \multicolumn{1}{c|}{E}               & \multicolumn{1}{c|}{T}             & R$^2$         & \multicolumn{1}{c|}{E}              & \multicolumn{1}{c|}{T}             & R$^2$         \\ \hline
+NAG                                                  & \multicolumn{1}{c|}{127.12}        & \multicolumn{1}{c|}{6.49}          & 0.79          & \multicolumn{1}{c|}{\textbf{132.71}} & \multicolumn{1}{c|}{\textbf{4.37}} & \textbf{0.84} & \multicolumn{1}{c|}{\textbf{102.09}} & \multicolumn{1}{c|}{\textbf{3.17}} & \textbf{0.86} & \multicolumn{1}{c|}{152.89}         & \multicolumn{1}{c|}{5.07}          & 0.79          \\ \hline
+RMSPROP                                              & \multicolumn{1}{c|}{61.71}         & \multicolumn{1}{c|}{4.67}          & 0.82          & \multicolumn{1}{c|}{56.05}           & \multicolumn{1}{c|}{4.38}          & 0.84          & \multicolumn{1}{c|}{59.62}           & \multicolumn{1}{c|}{3.31}          & 0.84          & \multicolumn{1}{c|}{\textbf{57.15}} & \multicolumn{1}{c|}{\textbf{4.02}} & \textbf{0.81} \\ \hline
+ADAM                                                 & \multicolumn{1}{c|}{116.98}        & \multicolumn{1}{c|}{8.14}          & 0.70          & \multicolumn{1}{c|}{161.98}          & \multicolumn{1}{c|}{16.93}         & 0.27          & \multicolumn{1}{c|}{276.60}          & \multicolumn{1}{c|}{128.12}        & -3.55         & \multicolumn{1}{c|}{248.16}         & \multicolumn{1}{c|}{108.41}        & -3.34         \\ \hline
+SHADE                                                & \multicolumn{1}{c|}{430.90}        & \multicolumn{1}{c|}{452.36}        & -19228        & \multicolumn{1}{c|}{430.97}          & \multicolumn{1}{c|}{428.22}        & -960          & \multicolumn{1}{c|}{429.71}          & \multicolumn{1}{c|}{435.00}        & -7317         & \multicolumn{1}{c|}{469.78}         & \multicolumn{1}{c|}{454.78}        & -53812929     \\ \hline
+SHADE-ILS                                            & \multicolumn{1}{c|}{10.04}         & \multicolumn{1}{c|}{7.54}          & 0.57          & \multicolumn{1}{c|}{9.56}            & \multicolumn{1}{c|}{4.64}          & 0.74          & \multicolumn{1}{c|}{13.59}           & \multicolumn{1}{c|}{14.55}         & -0.18         & \multicolumn{1}{c|}{43.18}          & \multicolumn{1}{c|}{26.79}         & -97.40        \\ \hline
+SHADE-GD                                             & \multicolumn{1}{c|}{13.97}         & \multicolumn{1}{c|}{33.09}         & 0.65          & \multicolumn{1}{c|}{384.43}          & \multicolumn{1}{c|}{128.80}        & -4.6          & \multicolumn{1}{c|}{396.34}          & \multicolumn{1}{c|}{324.05}        & -0.93         & \multicolumn{1}{c|}{463.33}         & \multicolumn{1}{c|}{453.89}        & -129350       \\ \hline
+SHADE-ILS-GD                                         & \multicolumn{1}{c|}{\textbf{8.90}} & \multicolumn{1}{c|}{\textbf{4.64}} & \textbf{0.84} & \multicolumn{1}{c|}{9.56}            & \multicolumn{1}{c|}{4.64}          & 0.74          & \multicolumn{1}{c|}{11.68}           & \multicolumn{1}{c|}{14.36}         & -0.07         & \multicolumn{1}{c|}{43.18}          & \multicolumn{1}{c|}{26.79}         & -97.40        \\ \hline
+\end{tabular}}
+\caption{Resultados del entrenamiento para el dataset Boston Housing Price.}
+\label{tab:bhp}
+\end{table}
+
+
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{\begin{tabular}{|c|ccc|ccc|ccc|ccc|}
+\hline
+\multirow{2}{*}{\backslashbox{Algoritmo}{N\_ capas}} & \multicolumn{3}{c|}{1}                                                                  & \multicolumn{3}{c|}{2}                                                                  & \multicolumn{3}{c|}{5}                                                                  & \multicolumn{3}{c|}{11}                                                                 \\ \cline{2-13} 
+                                                     & \multicolumn{1}{c|}{E}             & \multicolumn{1}{c|}{T}             & A             & \multicolumn{1}{c|}{E}             & \multicolumn{1}{c|}{T}             & A             & \multicolumn{1}{c|}{E}             & \multicolumn{1}{c|}{T}             & A             & \multicolumn{1}{c|}{E}             & \multicolumn{1}{c|}{T}             & A             \\ \hline
+NAG                                                  & \multicolumn{1}{c|}{0.99}          & \multicolumn{1}{c|}{0.92}          & 0.34          & \multicolumn{1}{c|}{0.96}          & \multicolumn{1}{c|}{0.90}          & 0.37          & \multicolumn{1}{c|}{0.71}          & \multicolumn{1}{c|}{0.71}          & 0.52          & \multicolumn{1}{c|}{\textbf{0.66}} & \multicolumn{1}{c|}{\textbf{0.65}} & \textbf{0.55} \\ \hline
+RMSPROP                                              & \multicolumn{1}{c|}{\textbf{0.97}} & \multicolumn{1}{c|}{\textbf{0.90}} & \textbf{0.36} & \multicolumn{1}{c|}{\textbf{0.87}} & \multicolumn{1}{c|}{\textbf{0.83}} & \textbf{0.38} & \multicolumn{1}{c|}{0.77}          & \multicolumn{1}{c|}{0.78}          & 0.44          & \multicolumn{1}{c|}{0.93}          & \multicolumn{1}{c|}{0.87}          & 0.35          \\ \hline
+ADAM                                                 & \multicolumn{1}{c|}{0.97}          & \multicolumn{1}{c|}{0.90}          & 0.35          & \multicolumn{1}{c|}{0.88}          & \multicolumn{1}{c|}{0.85}          & 0.38          & \multicolumn{1}{c|}{\textbf{0.62}} & \multicolumn{1}{c|}{\textbf{0.65}} & \textbf{0.56} & \multicolumn{1}{c|}{0.70}          & \multicolumn{1}{c|}{0.69}          & 0.57          \\ \hline
+SHADE                                                & \multicolumn{1}{c|}{2.08}          & \multicolumn{1}{c|}{2.16}          & 0.30          & \multicolumn{1}{c|}{2.12}          & \multicolumn{1}{c|}{2.55}          & 0.21          & \multicolumn{1}{c|}{2.58}          & \multicolumn{1}{c|}{2.30}          & 0.15          & \multicolumn{1}{c|}{2.51}          & \multicolumn{1}{c|}{2.30}          & 0.2           \\ \hline
+SHADE-ILS                                            & \multicolumn{1}{c|}{1.04}          & \multicolumn{1}{c|}{1.05}          & 0.22          & \multicolumn{1}{c|}{1.05}          & \multicolumn{1}{c|}{1.11}          & 0.20          & \multicolumn{1}{c|}{0.93}          & \multicolumn{1}{c|}{1.07}          & 0.23          & \multicolumn{1}{c|}{0.96}          & \multicolumn{1}{c|}{1.14}          & 0.2           \\ \hline
+SHADE-GD                                             & \multicolumn{1}{c|}{0.98}          & \multicolumn{1}{c|}{1.11}          & 0.2           & \multicolumn{1}{c|}{0.91}          & \multicolumn{1}{c|}{1.09}          & 0.20          & \multicolumn{1}{c|}{0.99}          & \multicolumn{1}{c|}{1.00}          & 0.25          & \multicolumn{1}{c|}{1.01}          & \multicolumn{1}{c|}{1.24}          & 0.2           \\ \hline
+SHADE-ILS-GD                                         & \multicolumn{1}{c|}{1.03}          & \multicolumn{1}{c|}{1.09}          & 0.20          & \multicolumn{1}{c|}{0.99}          & \multicolumn{1}{c|}{1.04}          & 0.29          & \multicolumn{1}{c|}{0.96}          & \multicolumn{1}{c|}{1.05}          & 0.27          & \multicolumn{1}{c|}{0.48}          & \multicolumn{1}{c|}{1.37}          & 0.2           \\ \hline
+\end{tabular}}
+\caption{Resultados del entrenamiento para el dataset Wine Quality (Clasificación).}
+\label{tab:wqr}
+\end{table}
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{\begin{tabular}{|c|ccc|ccc|ccc|ccc|}
+\hline
+\multirow{2}{*}{\backslashbox{Algoritmo}{N\_ capas}} & \multicolumn{3}{c|}{1}                                                                   & \multicolumn{3}{c|}{2}                                                                   & \multicolumn{3}{c|}{5}                                                                  & \multicolumn{3}{c|}{11}                                                                  \\ \cline{2-13} 
+                                                     & \multicolumn{1}{c|}{E}             & \multicolumn{1}{c|}{T}             & R$^2$          & \multicolumn{1}{c|}{E}             & \multicolumn{1}{c|}{T}             & R$^2$          & \multicolumn{1}{c|}{E}             & \multicolumn{1}{c|}{T}             & R$^2$         & \multicolumn{1}{c|}{E}             & \multicolumn{1}{c|}{T}             & R$^2$          \\ \hline
+NAG                                                  & \multicolumn{1}{c|}{0.53}          & \multicolumn{1}{c|}{0.41}          & -0.55          & \multicolumn{1}{c|}{0.50}          & \multicolumn{1}{c|}{0.43}          & -0.41          & \multicolumn{1}{c|}{0.44}          & \multicolumn{1}{c|}{0.36}          & -0.006        & \multicolumn{1}{c|}{0.45}          & \multicolumn{1}{c|}{0.35}          & -0.13          \\ \hline
+RMSPROP                                              & \multicolumn{1}{c|}{0.44}          & \multicolumn{1}{c|}{0.37}          & -0.57          & \multicolumn{1}{c|}{0.40}          & \multicolumn{1}{c|}{0.35}          & -0.26          & \multicolumn{1}{c|}{0.38}          & \multicolumn{1}{c|}{0.33}          & -0.09         & \multicolumn{1}{c|}{0.46}          & \multicolumn{1}{c|}{0.38}          & -1.12          \\ \hline
+ADAM                                                 & \multicolumn{1}{c|}{\textbf{0.43}} & \multicolumn{1}{c|}{\textbf{0.36}} & \textbf{-0.45} & \multicolumn{1}{c|}{\textbf{0.38}} & \multicolumn{1}{c|}{\textbf{0.34}} & \textbf{-0.10} & \multicolumn{1}{c|}{\textbf{0.31}} & \multicolumn{1}{c|}{\textbf{0.29}} & \textbf{0.06} & \multicolumn{1}{c|}{\textbf{0.34}} & \multicolumn{1}{c|}{\textbf{0.30}} & \textbf{-0.12} \\ \hline
+SHADE                                                & \multicolumn{1}{c|}{35.40}         & \multicolumn{1}{c|}{32.56}         & -2654          & \multicolumn{1}{c|}{34.56}         & \multicolumn{1}{c|}{31.16}         & -1377          & \multicolumn{1}{c|}{34.75}         & \multicolumn{1}{c|}{32.20}         & -114000       & \multicolumn{1}{c|}{35.30}         & \multicolumn{1}{c|}{32.60}         & -2009566137    \\ \hline
+SHADE-ILS                                            & \multicolumn{1}{c|}{0.489}         & \multicolumn{1}{c|}{0.53}          & -6.11          & \multicolumn{1}{c|}{0.47}          & \multicolumn{1}{c|}{0.53}          & -18.37         & \multicolumn{1}{c|}{0.47}          & \multicolumn{1}{c|}{0.63}          & -3256         & \multicolumn{1}{c|}{0.48}          & \multicolumn{1}{c|}{0.63}          & -2309225       \\ \hline
+SHADE-GD                                             & \multicolumn{1}{c|}{5.14}          & \multicolumn{1}{c|}{0.45}          & -4.02          & \multicolumn{1}{c|}{0.40}          & \multicolumn{1}{c|}{0.53}          & -2.94          & \multicolumn{1}{c|}{6.07}          & \multicolumn{1}{c|}{0.87}          & -0.13         & \multicolumn{1}{c|}{35.93}         & \multicolumn{1}{c|}{32.46}         & -943027        \\ \hline
+SHADE-ILS-GD                                         & \multicolumn{1}{c|}{0.49}          & \multicolumn{1}{c|}{0.53}          & -6.11          & \multicolumn{1}{c|}{0.47}          & \multicolumn{1}{c|}{0.53}          & -4.36          & \multicolumn{1}{c|}{0.47}          & \multicolumn{1}{c|}{0.63}          & -3256         & \multicolumn{1}{c|}{0.48}          & \multicolumn{1}{c|}{0.63}          & -2309225       \\ \hline
+\end{tabular}}
+\caption{Resultados del entrenamiento para el dataset Wine Quality (Regresión).}
+\label{tab:wqr}
+\end{table}
+
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{\begin{tabular}{|c|ccc|ccc|ccc|}
+\hline
+\multirow{2}{*}{\backslashbox{Algoritmo}{Modelo}} & \multicolumn{3}{c|}{LeNet5}                                                             & \multicolumn{3}{c|}{ResNet15}                                                           & \multicolumn{3}{c|}{ResNet57}                                                           \\ \cline{2-10} 
+                                                  & \multicolumn{1}{c|}{E}             & \multicolumn{1}{c|}{T}             & A             & \multicolumn{1}{c|}{E}             & \multicolumn{1}{c|}{T}             & A             & \multicolumn{1}{c|}{E}             & \multicolumn{1}{c|}{T}             & A             \\ \hline
+NAG                                               & \multicolumn{1}{c|}{0.27}          & \multicolumn{1}{c|}{0.24}          & 0.94          & \multicolumn{1}{c|}{0.20}          & \multicolumn{1}{c|}{0.16}          & 0.94          & \multicolumn{1}{c|}{0.20}          & \multicolumn{1}{c|}{0.28}          & 0.91          \\ \hline
+RMSPROP                                           & \multicolumn{1}{c|}{\textbf{0.01}} & \multicolumn{1}{c|}{\textbf{0.06}} & \textbf{0.97} & \multicolumn{1}{c|}{\textbf{0.05}} & \multicolumn{1}{c|}{\textbf{0.11}} & \textbf{0.96} & \multicolumn{1}{c|}{\textbf{0.34}} & \multicolumn{1}{c|}{\textbf{0.26}} & \textbf{0.92} \\ \hline
+ADAM                                              & \multicolumn{1}{c|}{0.06}          & \multicolumn{1}{c|}{0.09}          & 0.97          & \multicolumn{1}{c|}{0.03}          & \multicolumn{1}{c|}{0.11}          & 0.96          & \multicolumn{1}{c|}{0.59}          & \multicolumn{1}{c|}{0.32}          & 0.91          \\ \hline
+SHADE                                             & \multicolumn{1}{c|}{2.42}          & \multicolumn{1}{c|}{2.27}          & 0.17          & \multicolumn{1}{c|}{2.81}          & \multicolumn{1}{c|}{2.30}          & 0.10          & \multicolumn{1}{c|}{3.63}          & \multicolumn{1}{c|}{2.30}          & 0.08          \\ \hline
+SHADE-ILS                                         & \multicolumn{1}{c|}{2.53}          & \multicolumn{1}{c|}{2.30}          & 0.06          & \multicolumn{1}{c|}{0.001}         & \multicolumn{1}{c|}{2.29}          & 0.11          & \multicolumn{1}{c|}{2.3}           & \multicolumn{1}{c|}{2.30}          & 0.1           \\ \hline
+SHADE-GD                                          & \multicolumn{1}{c|}{0.10}          & \multicolumn{1}{c|}{1.92}          & 0.529         & \multicolumn{1}{c|}{0.40}          & \multicolumn{1}{c|}{2.30}          & 0.1           & \multicolumn{1}{c|}{2.73}          & \multicolumn{1}{c|}{2.30}          & 0.12          \\ \hline
+SHADE-ILS-GD                                      & \multicolumn{1}{c|}{2.53}          & \multicolumn{1}{c|}{2.3}           & 0.06          & \multicolumn{1}{c|}{0.0007}        & \multicolumn{1}{c|}{2.29}          & 0.1           & \multicolumn{1}{c|}{0.0001}        & \multicolumn{1}{c|}{2.30}          & 0.1           \\ \hline
+\end{tabular}}
+\caption{Resultados del entrenamiento para el dataset MNIST.}
+\label{tab:mnist}
+\end{table}
+
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{\begin{tabular}{|c|ccc|ccc|ccc|}
+\hline
+\multirow{2}{*}{\backslashbox{Algoritmo}{Modelo}} & \multicolumn{3}{c|}{LeNet5}                                                             & \multicolumn{3}{c|}{ResNet15}                                                           & \multicolumn{3}{c|}{ResNet57}                                                           \\ \cline{2-10} 
+                                                  & \multicolumn{1}{c|}{E}             & \multicolumn{1}{c|}{T}             & A             & \multicolumn{1}{c|}{E}             & \multicolumn{1}{c|}{T}             & A             & \multicolumn{1}{c|}{E}             & \multicolumn{1}{c|}{T}             & A             \\ \hline
+NAG                                               & \multicolumn{1}{c|}{0.60}          & \multicolumn{1}{c|}{0.60}          & 0.79          & \multicolumn{1}{c|}{0.58}          & \multicolumn{1}{c|}{0.54}          & 0.80          & \multicolumn{1}{c|}{0.50}          & \multicolumn{1}{c|}{0.63}          & 0.77          \\ \hline
+RMSPROP                                           & \multicolumn{1}{c|}{0.26}          & \multicolumn{1}{c|}{0.42}          & 0.86          & \multicolumn{1}{c|}{\textbf{0.28}} & \multicolumn{1}{c|}{\textbf{0.45}} & \textbf{0.84} & \multicolumn{1}{c|}{\textbf{0.53}} & \multicolumn{1}{c|}{\textbf{0.63}} & \textbf{0.80} \\ \hline
+ADAM                                              & \multicolumn{1}{c|}{\textbf{0.24}} & \multicolumn{1}{c|}{\textbf{0.41}} & \textbf{0.85} & \multicolumn{1}{c|}{0.36}          & \multicolumn{1}{c|}{0.48}          & 0.83          & \multicolumn{1}{c|}{0.78}          & \multicolumn{1}{c|}{0.64}          & 0.77          \\ \hline
+SHADE                                             & \multicolumn{1}{c|}{1.49}          & \multicolumn{1}{c|}{2.29}          & 0.17          & \multicolumn{1}{c|}{2.66}          & \multicolumn{1}{c|}{2.30}          & 0.10          & \multicolumn{1}{c|}{2.52}          & \multicolumn{1}{c|}{2.30}          & 0.10          \\ \hline
+SHADE-ILS                                         & \multicolumn{1}{c|}{0.40}          & \multicolumn{1}{c|}{1.80}          & 0.36          & \multicolumn{1}{c|}{3.54}          & \multicolumn{1}{c|}{2.30}          & 0.10          & \multicolumn{1}{c|}{2.67}          & \multicolumn{1}{c|}{2.30}          & 0.10          \\ \hline
+SHADE-GD                                          & \multicolumn{1}{c|}{0.70}          & \multicolumn{1}{c|}{2.13}          & 0.36          & \multicolumn{1}{c|}{3.54}          & \multicolumn{1}{c|}{2.30}          & 0.10          & \multicolumn{1}{c|}{1.38}          & \multicolumn{1}{c|}{2.30}          & 0.10          \\ \hline
+SHADE-ILS-GD                                      & \multicolumn{1}{c|}{0.32}          & \multicolumn{1}{c|}{1.64}          & 0.46          & \multicolumn{1}{c|}{0.34}          & \multicolumn{1}{c|}{2.30}          & 0.06          & \multicolumn{1}{c|}{1.20}          & \multicolumn{1}{c|}{2.30}          & 0.10          \\ \hline
+\end{tabular}}
+\caption{Resultados del entrenamiento para el dataset F-MNIST}
+\label{tab:fmnist}
+\end{table}
+
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{\begin{tabular}{|c|ccc|ccc|ccc|}
+\hline
+\multirow{2}{*}{\backslashbox{Algoritmo}{Modelo}} & \multicolumn{3}{c|}{LeNet5}                                                             & \multicolumn{3}{c|}{ResNet15}                                                           & \multicolumn{3}{c|}{ResNet57}                                                          \\ \cline{2-10} 
+                                                  & \multicolumn{1}{c|}{E}             & \multicolumn{1}{c|}{T}             & A             & \multicolumn{1}{c|}{E}             & \multicolumn{1}{c|}{T}             & A             & \multicolumn{1}{c|}{E}             & \multicolumn{1}{c|}{T}             & A            \\ \hline
+NAG                                               & \multicolumn{1}{c|}{\textbf{1.04}} & \multicolumn{1}{c|}{\textbf{1.61}} & \textbf{0.43} & \multicolumn{1}{c|}{1.59}          & \multicolumn{1}{c|}{1.81}          & 0.37          & \multicolumn{1}{c|}{2.04}          & \multicolumn{1}{c|}{2.05}          & 0.27         \\ \hline
+RMSPROP                                           & \multicolumn{1}{c|}{1.50}          & \multicolumn{1}{c|}{1.80}          & 0.38          & \multicolumn{1}{c|}{\textbf{1.93}} & \multicolumn{1}{c|}{\textbf{1.80}} & \textbf{0.37} & \multicolumn{1}{c|}{\textbf{1.11}} & \multicolumn{1}{c|}{\textbf{1.73}} & \textbf{0.4} \\ \hline
+ADAM                                              & \multicolumn{1}{c|}{1.74}          & \multicolumn{1}{c|}{1.68}          & 0.39          & \multicolumn{1}{c|}{1.45}          & \multicolumn{1}{c|}{1.86}          & 0.39          & \multicolumn{1}{c|}{1.64}          & \multicolumn{1}{c|}{1.91}          & 0.33         \\ \hline
+SHADE                                             & \multicolumn{1}{c|}{2.54}          & \multicolumn{1}{c|}{2.30}          & 0.10          & \multicolumn{1}{c|}{2.53}          & \multicolumn{1}{c|}{2.3}           & 0.11          & \multicolumn{1}{c|}{2.72}          & \multicolumn{1}{c|}{2.30}          & 0.09         \\ \hline
+SHADE-ILS                                         & \multicolumn{1}{c|}{2.56}          & \multicolumn{1}{c|}{2.30}          & 0.11          & \multicolumn{1}{c|}{1.69}          & \multicolumn{1}{c|}{2.30}          & 0.10          & \multicolumn{1}{c|}{2.57}          & \multicolumn{1}{c|}{2.30}          & 0.10         \\ \hline
+SHADE-GD                                          & \multicolumn{1}{c|}{1.48}          & \multicolumn{1}{c|}{2.27}          & 0.14          & \multicolumn{1}{c|}{2.79}          & \multicolumn{1}{c|}{2.30}          & 0.09          & \multicolumn{1}{c|}{2.70}          & \multicolumn{1}{c|}{2.30}          & 0.09         \\ \hline
+SHADE-ILS-GD                                      & \multicolumn{1}{c|}{2.56}          & \multicolumn{1}{c|}{2.30}          & 0.11          & \multicolumn{1}{c|}{3.5}           & \multicolumn{1}{c|}{2.30}          & 0.09          & \multicolumn{1}{c|}{2.41}          & \multicolumn{1}{c|}{2.30}          & 0.09         \\ \hline
+\end{tabular}}
+\caption{Resultados del entrenamiento para el dataset CIFAR10.}
+\label{tab:cifar10}
+\end{table}
