@@ -102,9 +102,13 @@ No obstante, este trabajo ofrece una visión crítica y detallada sobre las **li
 ## Autor
 
 Realizado por [Eduardo Morales Muñoz](https://www.linkedin.com/in/eduardo-morales-264101346/)  
+
 Dirigido por Pablo Mesejo Santiago y Javier Meri de la Maza
+
 Graduado en Matemáticas
+
 Graduado en Informática
+
 Universidad de Granada · 2025
 
 
@@ -231,9 +235,13 @@ However, this work offers a critical and detailed view of the **limitations and 
 ## Author
 
 Produced by [Eduardo Morales Muñoz](https://www.linkedin.com/in/eduardo-morales-264101346/)  
+
 Directed by Pablo Mesejo Santiago and Javier Meri de la Maza
+
 Graduate in Mathematics
+
 Graduate in Computer Science
+
 University of Granada · 2025
 
 
