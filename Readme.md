@@ -26,14 +26,14 @@ Este proyecto ofrece una comprensión más precisa de las limitaciones y fortale
 ## Estructura del repositorio
 
 ```text
-├── memoria.pdf                 # Documento completo de la tesis
+├── memoria.pdf                # Documento completo de la tesis
 ├── presentacion.pdf           # Diapositivas usadas en la defensa
-├── codigo/                    # Código fuente en Python
+├── code/                      # Código fuente en Python
 │   ├── comparative.ipynb      # Análisis final de resultados
 │   ├── dataset_X.ipynb        # Un notebook por dataset
 │   ├── utilsTFG.py            # Funciones reutilizables para los notebooks
 │   ├── *.csv, *.txt           # Datos y resultados generados
-├── latex/                     # Archivos LaTeX de la memoria (compilables)
+├── TFG/                       # Archivos LaTeX de la memoria (compilables)
 ```
 
 ## Tecnologías utilizadas
@@ -161,12 +161,12 @@ This project offers a more accurate understanding of the limitations and strengt
 ```text
 ├── memoria.pdf                # Complete thesis document
 ├── presentacion.pdf           # Slides used in the defense
-├── codigo/                      # Source code in Python
+├── code/                      # Source code in Python
 │   ├── comparative.ipynb      # Final analysis of results
 │   ├── dataset_X.ipynb        # One notebook per dataset
 │   ├── utilsTFG.py            # Reusable functions for notebooks
 │   ├── *.csv, *.txt           # Generated data and results
-├── latex/                     # LaTeX files of the thesis (compilable)
+├── TFG/                       # LaTeX files of the thesis (compilable)
 ```
 
 ## Technologies used
